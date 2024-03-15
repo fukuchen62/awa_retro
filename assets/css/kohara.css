@@ -1,0 +1,280 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    background-color: #fffdf0;
+}
+
+.hader_image {
+    width: 100%;
+    height: 200px;
+    background-color: orange;
+}
+
+/* ナビ設定 */
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo_box {
+    width: 15%;
+    height: 100px;
+    display: flex;
+    position: absolute;
+    margin-left: 50px;
+}
+
+.logo_box img {
+    width: 200px;
+}
+
+.gnav {
+
+    width: 100%;
+}
+
+.nav_inner {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.nav_inner nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.nav_item {
+    width: 10%;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 0 0 70px 70px;
+}
+
+.nav_item a {
+    display: block;
+    padding-bottom: 1rem;
+    font-size: 0.8rem;
+    /* height: 100%; */
+    /* padding: 1.8rem 1rem; */
+    line-height: 1.33;
+    text-align: center;
+}
+
+.nav_icon {
+    display: block;
+    margin-top: 0.5rem;
+    height: 50px;
+}
+
+.nav_icon img {
+    width: 40px;
+}
+
+.color1 {
+    background-color: #ff916f;
+}
+
+.color2 {
+    background-color: #fad4b6;
+}
+
+
+/* フォント設定 */
+
+h1,
+h2 {
+    font-size: 42px;
+    font-weight: bold;
+    font-family: "Kaisei Opti", serif;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+p {
+    font-size: 16px;
+}
+
+.small {
+    font-size: 13px;
+}
+
+.dotted {
+    border-bottom: 8px dotted orange;
+    width: fit-content
+}
+
+.title_box {
+    width: 100%;
+    margin: 5rem auto;
+    width: fit-content;
+}
+
+/* ボタンリスト */
+.btn_content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn_item {
+    width: 50%;
+    margin: 20px;
+    padding: 0.8rem;
+    border: 1px solid #028391;
+    background-color: #ffffff;
+    ;
+    text-align: center;
+}
+
+.choice {
+    background-color: #028391;
+}
+
+.choice p {
+    color: #ffffff;
+}
+
+/* カードリスト */
+.ALL {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.contents {
+    /* background-color: #ffeed8; */
+    max-width: 1280px;
+    height: auto;
+}
+
+/* .contents-block {
+    border: solid 1px;
+} */
+
+
+.card {
+    /* border: solid 1px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    max-width: 1280px;
+
+}
+
+.card-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-box-item {
+    border: solid 1px;
+    max-width: 386px;
+    height: 500px;
+    margin: 10px 10px 150px 10px;
+    background-color: #fff;
+}
+
+/* .card-box-item-in {
+    width: auto;
+    height: 585px;
+    margin: 10px 15px 5px 5px;
+    padding: 10px 20px 5px 5px;
+    background-color: aliceblue;
+} */
+
+.card-item-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-item-img-data {
+    border: solid 1px;
+    margin-top: 40px;
+    max-height: 244px;
+    max-width: 326px;
+}
+
+.card-item-btn {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card-item-btn-in {
+    width: 100%;
+    height: 100%;
+    margin: 0 20px 0 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.btn-item {
+    width: 30%;
+    padding-right: 10px;
+}
+
+.btn-item-in {
+    border: solid 1px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: rgba(235, 231, 213, 0.764);
+    color: #000000;
+    padding: 7px;
+}
+
+.card-item-name {
+    background-color: #ff916f;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_item {
+    color: #ffffff;
+    max-width: 366px;
+}
+
+.text-box {
+    margin-left: 20px;
+    margin-right: 20px;
+}
