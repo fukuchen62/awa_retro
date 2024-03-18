@@ -2,6 +2,7 @@
 
 /* 共通部分はCSS削除済み */
 
+
 /* ============================= */
 .detail_main {
     width: 100%;
@@ -555,3 +556,13 @@
     background-color: #FBD266;
     color: #181818;
 }
+
+/* 背景画像CSS */
+/* .single_spot_bg1 {
+    position: absolute;
+    z-index: -1;
+    left: 200px;
+    width: 450px;
+    object-fit: cover;
+    transform: rotate(-30deg);
+} */
