@@ -524,9 +524,20 @@
         transform: scale(0.9);
     }
 }
-<<<<<<< HEAD
-=======
 
+/* フード詳細ページのCSS -----------------------------*/
+.shop_detail_slider_box.food {
+    /* width: 80%;
+    max-width: 1420px;
+    height: fit-content;
+    margin: 0 auto; */
+    background-color: #fffdf0;
+    box-shadow: 30px 30px #F85525;
+    /* padding: 40px 10px 20px; */
+}
+
+
+<<<<<<< HEAD=======
 
 /* コラムカードリスト */
 /* 周辺のスポット ========================*/
@@ -660,4 +671,5 @@
     text-align: left;
     overflow-wrap: break-word
 }
->>>>>>> 376429f0c9a9c17d2e71da6adc00080f65260486
+
+>>>>>>>376429f0c9a9c17d2e71da6adc00080f65260486
