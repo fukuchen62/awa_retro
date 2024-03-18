@@ -1,3 +1,27 @@
+/* 周辺のスポット ========================*/
+.other_spot_container {
+    width: 100%;
+    margin: 100px auto 0;
+    padding-bottom: 150px;
+}
+
+.other_spot_title_container h2 {
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+.other_spot_box {
+    max-width: 1240px;
+    margin: 0 auto;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(auto-fit, 370px);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
 /* カード grid ~~~~~~~~~~~~*/
 .other_spot_card {
     width: 370px;
@@ -107,4 +131,16 @@
 .other_spot_contant_text p {
     text-align: left;
     overflow-wrap: break-word
+}
+
+
+@media screen and (max-width:400px) {
+    .other_spot_card {
+        transform: scale(0.85);
+        row-gap: 20px;
+    }
+
+    .other_spot_card:hover {
+        transform: scale(0.9);
+    }
 }
