@@ -56,8 +56,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    margin: 0;
-    padding-left: 0;
 }
 
 .nav_item {
