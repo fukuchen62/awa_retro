@@ -525,8 +525,7 @@
 }
 
 
-/* コラムカードリスト */
-/* 周辺のスポット ========================*/
+/* コラムカードリスト ========================*/
 .colamn_container {
     width: 100%;
     margin: 100px auto 0;
@@ -556,10 +555,9 @@
     width: 370px;
     height: fit-content;
     background-color: #ffffff;
-    border: 5px solid #F85525;
+    border: 5px solid #028391;
     position: relative;
     display: grid;
-    grid-template-rows: subgrid;
     grid-row: span 4;
     gap: 0;
     transition: 0.3s;
@@ -567,19 +565,19 @@
 
 .colamn_card>a {
     position: absolute;
-    width: 100%;
+    width: 90%;
     height: 100%;
 }
 
 .colamn_card:hover {
     transform: scale(1.1);
-    box-shadow: 0px 0px 20px 10px #FBD266;
+    box-shadow: 0px 0px 20px 10px #808cabc8;
     /* filter: sepia(20%); */
 }
 
 
 .colamn_card_inner {
-    border: 3px solid #F85525;
+    border: 3px solid #6fb5bd;
     position: absolute;
     z-index: 1;
     width: 95%;
@@ -616,7 +614,7 @@
 .colamn_contant_tag a {
     display: flex;
     align-items: center;
-    background-color: #181818;
+    background-color: #1a2b3c;
     color: #ffffff;
     width: fit-content;
     height: 3em;
