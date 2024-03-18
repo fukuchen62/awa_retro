@@ -147,6 +147,7 @@
 
 .shop_point_text_item h3 {
     text-align: center;
+    margin: 20px auto;
 }
 
 /* レスポンシブ改行用 */
@@ -303,7 +304,6 @@
 .detail_comment_table th {
     display: block;
     text-align: left;
-    /* margin-left: 10%; */
     font-family: "Zen Kaku Gothic New", sans-serif;
     font-size: 16px;
     padding: 10px 10px;
@@ -318,7 +318,6 @@
 
 .detail_comment_table td:first-of-type {
     text-align: left;
-    /* margin-left: 10%; */
 }
 
 /* 入力フォームの設定 */
@@ -332,10 +331,12 @@
 
 .detail_comment_table input[type="text"] {
     width: 80%;
+    background-color: #ffffff;
 }
 
 .detail_comment_table textarea {
     width: 100%;
+    background-color: #ffffff;
 }
 
 .detail_comment_table input[type="text"]:focus,
@@ -502,8 +503,8 @@
 /* カードのテキスト  ~~~~~~~~~~*/
 .other_spot_contant_text {
     width: 90%;
-    margin: 0 auto 3%;
-    padding: 0 8px;
+    margin: 3px auto 3%;
+    padding: 8px;
 
 }
 
@@ -523,6 +524,7 @@
         transform: scale(0.9);
     }
 }
+
 
 
 /* コラムカードリスト */
