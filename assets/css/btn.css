@@ -4,8 +4,8 @@
 display: block;
 background-color: #028391;
 border: 2px solid #f6dcac;
-width: 165px;
-height: 60px;
+width: 169px;
+height: 64px;
 border-radius: 10px;
 text-decoration: none;
 }
@@ -17,8 +17,8 @@ align-items: center;
 }
 
 .btn_inside{
-    width: 147px;
-    height: 42px;
+    width: 151px;
+    height: 46px;
     position: relative;
 }
 
