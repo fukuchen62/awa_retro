@@ -3,7 +3,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-family: "Zen Kaku Gothic New", sans-serif;
     /*
     img {
         width: 100%;
@@ -56,6 +56,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+    margin: 0;
+    padding-left: 0;
 }
 
 .nav_item {
@@ -100,7 +102,7 @@
 h2 {
     font-size: 42px;
     font-weight: bold;
-    font-family: 'Kaisei Opti', serif;
+    font-family: "Kaisei Opti", serif;
 }
 
 
@@ -154,16 +156,8 @@ p {
 
 .choice {
     background-color: #028391;
-
 }
 
 .choice p {
     color: #ffffff;
-}
-
-@media screen and (max-width:750px) {
-    .btn_item {
-        width: 20%;
-    }
-
 }
