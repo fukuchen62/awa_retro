@@ -515,7 +515,7 @@
 
 
 @media screen and (max-width:400px) {
-    .other_spot_card.colamn_card {
+    .other_spot_card {
         transform: scale(0.85);
         row-gap: 20px;
     }
@@ -527,17 +527,33 @@
 
 /* フード詳細ページのCSS -----------------------------*/
 .shop_detail_slider_box.food {
-    /* width: 80%;
-    max-width: 1420px;
-    height: fit-content;
-    margin: 0 auto; */
     background-color: #fffdf0;
     box-shadow: 30px 30px #F85525;
-    /* padding: 40px 10px 20px; */
+    border: 3px solid #01204E;
+}
+
+.other_spot_card.food {
+    border: 5px solid #028391;
+}
+
+.other_spot_card.food:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px 10px #5aff94;
+    /* filter: sepia(20%); */
+}
+
+.other_spot_card_inner {
+    border: 3px solid #028391;
+}
+
+.other_spot_contant_tag.food a:hover {
+    background-color: #FBD266;
+    color: #181818;
 }
 
 
-<<<<<<< HEAD=======
+
+
 
 /* コラムカードリスト */
 /* 周辺のスポット ========================*/
@@ -671,5 +687,3 @@
     text-align: left;
     overflow-wrap: break-word
 }
-
->>>>>>>376429f0c9a9c17d2e71da6adc00080f65260486
