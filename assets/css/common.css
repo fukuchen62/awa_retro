@@ -97,6 +97,36 @@
 /* フォント設定 */
 
 
+h2 {
+    font-size: 42px;
+    font-weight: bold;
+    font-family: "Kaisei Opti", serif;
+}
+
+
+h3 {
+    font-style: 32px;
+    font-weight: 500;
+}
+
+p {
+    font-size: 16px;
+}
+
+.small {
+    font-size: 13px;
+}
+
+.dotted {
+    border-bottom: 8px dotted orange;
+    width: fit-content
+}
+
+.title_box {
+    width: 100%;
+    margin: 5rem auto;
+    width: fit-content;
+}
 
 /* ボタンリスト */
 .btn_content {
