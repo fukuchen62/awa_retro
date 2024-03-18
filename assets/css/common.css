@@ -154,8 +154,16 @@ p {
 
 .choice {
     background-color: #028391;
+
 }
 
 .choice p {
     color: #ffffff;
+}
+
+@media screen and (max-width:750px) {
+    .btn_item {
+        width: 20%;
+    }
+
 }
