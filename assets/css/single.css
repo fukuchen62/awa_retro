@@ -388,6 +388,8 @@
     margin-bottom: 90px;
 }
 
+
+/* カード grid ~~~~~~~~~~~~*/
 .other_spot_box {
     max-width: 1240px;
     margin: 0 auto;
@@ -400,7 +402,6 @@
 }
 
 
-/* カード grid ~~~~~~~~~~~~*/
 .other_spot_card {
     width: 370px;
     height: fit-content;
