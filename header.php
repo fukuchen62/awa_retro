@@ -27,21 +27,21 @@
         <div class="header_nav">
             <div class="header_menu js-menu-icon"><span></span></div>
             <div class="gnav js-menu">
-                <!-- <ul class="">
+                <ul class="">
                     <li><a href="<?php echo home_url('/concept/'); ?>">コンセプト</a></li>
                     <li><a href="food.html">メニュー</a></li>
                     <li><a href="<?php echo home_url('/access/'); ?>">アクセス</a></li>
                     <li><a href="<?php echo home_url('/category/news/'); ?>">最新情報</a></li>
-                </ul> -->
+                </ul>
 
                 <?php
                 // カスタムメニューを読み込む
-                $args = [
-                    'menu' => 'global-navigation',
-                    'menu-class' => '',
-                    'container' => false,
-                ];
-                wp_nav_menu($args);
+                // $args = [
+                //     'menu' => 'global-navigation',
+                //     'menu-class' => '',
+                //     'container' => false,
+                // ];
+                // wp_nav_menu($args);
                 ?>
 
                 <div class="header_info">
