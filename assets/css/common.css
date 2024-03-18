@@ -4,6 +4,7 @@
     text-decoration: none;
     list-style: none;
     font-family: "Zen Kaku Gothic New", sans-serif;
+
     /*
     img {
         width: 100%;
@@ -144,7 +145,6 @@ p {
     padding: 0.8rem;
     border: 1px solid #028391;
     background-color: #ffffff;
-    ;
     text-align: center;
 }
 
