@@ -129,6 +129,7 @@
 
 .colamn_list_container {
     width: 80%;
+    padding: 5rem;
     background-color: #fff;
     margin: 10rem auto;
 }
