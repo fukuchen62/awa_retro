@@ -96,22 +96,16 @@
 
 /* フォント設定 */
 
-h1,
+
 h2 {
     font-size: 42px;
     font-weight: bold;
     font-family: "Kaisei Opti", serif;
 }
 
-h1 {
-    font-size: 42px;
-}
-
-h2 {
-    font-size: 32px;
-}
 
 h3 {
+    font-style: 32px;
     font-weight: 500;
 }
 
