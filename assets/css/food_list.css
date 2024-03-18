@@ -8,7 +8,9 @@
     background-color: #fdeccb;
     max-width: 1280px;
     width: 100%;
-    background-image: url(./img/back_img.png);
+    background-image: url(../images/food_list/back_img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
 }
 
