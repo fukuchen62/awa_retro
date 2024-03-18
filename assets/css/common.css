@@ -148,6 +148,10 @@ p {
     text-align: center;
 }
 
+.btn_item:hover {
+    background-color: #028391;
+}
+
 .choice {
     background-color: #028391;
 }
