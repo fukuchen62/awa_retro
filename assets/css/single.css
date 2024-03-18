@@ -526,7 +526,7 @@
 }
 
 /* フード詳細ページのCSS -----------------------------*/
-.shop_detail_slider_box.food {
+. .shop_detail_slider_box.food {
     background-color: #fffdf0;
     box-shadow: 30px 30px #F85525;
     border: 3px solid #01204E;
