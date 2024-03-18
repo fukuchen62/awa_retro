@@ -3,7 +3,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
     /*
     img {
         width: 100%;
@@ -100,12 +100,12 @@
 h2 {
     font-size: 42px;
     font-weight: bold;
-    font-family: "Kaisei Opti", serif;
+    font-family: 'Kaisei Opti', serif;
 }
 
 
 h3 {
-    font-style: 32px;
+    font-size: 32px;
     font-weight: 500;
 }
 
