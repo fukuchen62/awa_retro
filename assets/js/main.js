@@ -37,4 +37,17 @@ $(function () {
     });
 });
 
-
+$('#js-slick').slick({
+    arrows: true,
+    dots: true,
+    infinite: false,
+    slidesToShow: 3,
+    responsive: [
+        {
+            breakpoint: 720,
+            settings: {
+                slidesToShow: 2,
+            }
+        }
+    ]
+});
