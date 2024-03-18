@@ -3,7 +3,6 @@
 get_header();
 ?>
 
-
 <main>
     <section>
         <h2>インデックステンプレートファイルです。</h2>
