@@ -1,0 +1,574 @@
+@charset "utf-8";
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    background-color: #FFFDF0;
+}
+
+
+h2 {
+    font-size: 42px;
+    font-weight: bold;
+    font-family: "Kaisei Opti", serif;
+}
+
+
+h3 {
+    font-size: 32px;
+    font-weight: 500;
+    font-family: "Kaisei Opti", serif;
+}
+
+p {
+    font-size: 16px;
+}
+
+.small {
+    font-size: 13px;
+}
+
+.dotted {
+    border-bottom: 8px dotted orange;
+    width: fit-content
+}
+
+.title_box {
+    width: 100%;
+    margin: 5rem auto;
+    width: fit-content;
+}
+
+/* ============================= */
+.detail_main {
+    width: 100%;
+}
+
+.shop_detail_container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* タイトルエリア================== */
+.shop_detail_title_container {
+    width: 100%;
+    margin-top: 40px auto 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.detail_title {
+    width: fit-content;
+    height: fit-content;
+    margin: 20px auto;
+    padding: 20px 70px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #01204E;
+    box-shadow: 10px 10px #FBD266;
+}
+
+.detail_title_sub {
+    text-align: center;
+}
+
+.detail_title_sub a {
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+    margin: 5px 20px;
+    padding: 8px 30px;
+    font-size: 16px;
+    font-family: "Kaisei Opti", serif;
+    color: #01204E;
+    text-shadow: 1px 1px #ffffff;
+    border: 3px dotted #181818;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.detail_title_sub a:hover {
+    background-color: #fbd166bf;
+}
+
+.shop_detail_chatch p {
+    width: 70%;
+    height: fit-content;
+    margin: 30px auto 50px;
+    text-align: center;
+    font-size: 28px;
+    font-family: "Kaisei Opti", serif;
+    color: #01204E;
+    text-shadow: 3px 3px #ffffff;
+}
+
+
+/* スライダー ================== */
+.shop_detail_slider_container {
+    width: 100%;
+}
+
+.shop_detail_slider_box {
+    width: 80%;
+    max-width: 1420px;
+    height: fit-content;
+    margin: 0 auto;
+    background-color: #028391;
+    box-shadow: 30px 30px #F85525;
+    padding: 40px 10px 20px;
+}
+
+.shop_detail_slider {
+    width: 90%;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.shop_detail_slider img {
+    width: 100%;
+}
+
+.shop_detail_slider_nav {
+    width: 90%;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.shop_detail_slider_nav img {
+    width: 90%;
+    margin: 10px 10px;
+}
+
+/* ショップの紹介テキスト =============*/
+.shop_text_container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.shop_text_box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 90%;
+    max-width: 1240px;
+    height: fit-content;
+    margin: 200px auto 150px;
+    border: 5px dotted #181818;
+}
+
+.shop_point_content {
+    width: 40%;
+    margin: 5% 30px;
+}
+
+.shop_point_item img {
+    position: absolute;
+    z-index: 1;
+    top: -130px;
+    right: 15%;
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    box-shadow: 15px 15px 10px #18181878;
+}
+
+.shop_point_text_item {
+    margin-top: 150px;
+    border: 1px solid #181818;
+}
+
+.shop_point_text_item h3 {
+    text-align: center;
+}
+
+/* レスポンシブ改行用 */
+.shop_point_text_item h3 span {
+    display: inline-block;
+    font-family: "Kaisei Opti", serif;
+}
+
+.shop_point_text_item p {
+    margin: 5px 5% 50px;
+}
+
+.shop_text_content {
+    width: 40%;
+    margin: 5% 30px;
+}
+
+.shop_text_content p {
+    margin: 70px auto;
+}
+
+
+@media screen and (max-width:1280px) {
+    .shop_point_item img {
+        right: 10%;
+    }
+}
+
+@media screen and (max-width:1050px) {
+    .shop_text_box {
+        display: block;
+        margin: 300px auto 150px;
+    }
+
+    .shop_point_content,
+    .shop_text_content {
+        width: 90%;
+        margin: 5% auto;
+    }
+
+    .shop_point_item img {
+        width: 300px;
+        height: 300px;
+        top: -180px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .shop_point_item img {
+        width: 200px;
+        height: 200px;
+        top: -100px;
+    }
+}
+
+
+/* ショップの情報 =============*/
+.shop_info_container {
+    width: 100%;
+}
+
+.shop_info_box {
+    width: 90%;
+    max-width: 1240px;
+    margin: 0 auto 200px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.info_table_content {
+    width: 52%;
+    margin: 20px;
+    background-color: #ffffff;
+}
+
+.info_table_content table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    border: 1px solid #181818;
+}
+
+.info_table_content th {
+    width: 7em;
+    padding: 10px;
+    border: 1px solid #181818;
+    line-height: 2em;
+}
+
+.info_table_content td {
+    padding: 10px;
+    border: 1px solid #181818;
+    text-align: left;
+}
+
+.shop_info_map_content {
+    width: 45%;
+}
+
+.shop_info_map_content iframe {
+    width: 100%;
+    height: 450px;
+    margin: 20px;
+}
+
+@media screen and (max-width:850px) {
+    .shop_info_box {
+        display: block;
+    }
+
+    .info_table_content,
+    .shop_info_map_content {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .shop_info_map_content iframe {
+        margin: 20px auto;
+    }
+}
+
+
+/* コメント =============*/
+.detail_comment_container {
+    width: 100%;
+    padding-bottom: 30px;
+    background-color: #fbd166c9;
+}
+
+.detail_comment_box {
+    width: 70%;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.detail_comment_table {
+    width: 100%;
+    text-align: center;
+}
+
+.detail_comment_table caption {
+    width: 100%;
+    font-size: 42px;
+    font-family: "Kaisei Opti", serif;
+    font-weight: bold;
+    margin: 80px auto 50px;
+}
+
+
+.detail_comment_table th {
+    display: block;
+    text-align: left;
+    /* margin-left: 10%; */
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-size: 16px;
+    padding: 10px 10px;
+}
+
+.detail_comment_table td {
+    display: block;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-size: 16px;
+    padding: 10px 10px;
+}
+
+.detail_comment_table td:first-of-type {
+    text-align: left;
+    /* margin-left: 10%; */
+}
+
+/* 入力フォームの設定 */
+.detail_comment_table input[type="text"],
+.detail_comment_table textarea {
+    padding: 5px;
+    border: 1px solid #181818;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.detail_comment_table input[type="text"] {
+    width: 80%;
+}
+
+.detail_comment_table textarea {
+    width: 100%;
+}
+
+.detail_comment_table input[type="text"]:focus,
+.detail_comment_table textarea:focus {
+    background-color: #fbf6ead2;
+    outline: 1px solid #F85525;
+}
+
+/* エントリーボタンの基本設定 */
+.comment_btns {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.comment_btns input {
+    width: 100px;
+    margin: 0 20px 40px;
+    font-size: 1em;
+    border: 1px solid #181818;
+    border-radius: 10px;
+    background-color: #ededed;
+}
+
+/* 送信ボタンの設定 */
+.comment_btns input[type="submit"] {
+    background: #d4d4d4;
+}
+
+/* ボンタにマウスが乗った時 */
+.comment_btns input:hover {
+    border: 1px solid #F85525;
+    background-color: #fff0e7;
+}
+
+@media screen and (max-width:760px) {
+    .detail_comment_box {
+        width: 90%;
+    }
+}
+
+/* 周辺のスポット ========================*/
+.other_spot_container {
+    width: 100%;
+    margin: 100px auto 0;
+    padding-bottom: 150px;
+}
+
+.other_spot_title_container h2 {
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+.other_spot_box {
+    max-width: 1240px;
+    margin: 0 auto;
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(auto-fit, 370px);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/* カード grid ~~~~~~~~~~~~*/
+.other_spot_card {
+    width: 370px;
+    height: fit-content;
+    background-color: #ffffff;
+    border: 5px solid #F85525;
+    position: relative;
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 4;
+    gap: 0;
+    transition: 0.3s;
+}
+
+.other_spot_card>a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.other_spot_card:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px 10px #FBD266;
+    /* filter: sepia(20%); */
+}
+
+
+.other_spot_card_inner {
+    border: 3px solid #F85525;
+    position: absolute;
+    z-index: 1;
+    width: 95%;
+    height: 97%;
+    top: 1.5%;
+    left: 2.5%;
+    pointer-events: none;
+}
+
+/* カード画像  ~~~~~~~~~~*/
+.other_spot_contant_img {
+    width: 85%;
+    margin: 8% auto 5%;
+}
+
+.other_spot_contant_img img {
+    width: 100%;
+    aspect-ratio: 4/3;
+}
+
+
+/* カードタグ  ~~~~~~~~~~*/
+.other_spot_contant_tag {
+    width: 90%;
+    height: fit-content;
+    margin: 0 auto 5%;
+    display: flex;
+    flex-wrap: wrap;
+    color: #ffffff;
+    font-size: 13px;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    z-index: 1;
+    /* ルートスタッキングコンテキストで包まれている */
+}
+
+.other_spot_contant_tag a {
+    display: flex;
+    align-items: center;
+    background-color: #181818;
+    color: #ffffff;
+    font-size: 13px;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    width: fit-content;
+    height: 3em;
+    padding: 0 5%;
+    margin: 2%;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.other_spot_contant_tag a:hover {
+    background-color: #028391;
+}
+
+/* カードの名前  ~~~~~~~~~~*/
+.other_spot_content_name {
+    width: 100%;
+}
+
+.other_spot_content_name h3 {
+    background-color: #01204E;
+    color: #ffffff;
+    font-family: "Kaisei Opti", serif;
+    font-size: 24px;
+    margin: 0 auto;
+    padding: 5%;
+}
+
+
+/* カードのテキスト  ~~~~~~~~~~*/
+.other_spot_contant_text {
+    width: 90%;
+    margin: 0 auto 3%;
+    padding: 0 8px;
+
+}
+
+.other_spot_contant_text p {
+    text-align: left;
+    overflow-wrap: break-word
+}
+
+
+@media screen and (max-width:400px) {
+    .other_spot_card {
+        transform: scale(0.85);
+        row-gap: 20px;
+    }
+
+    .other_spot_card:hover {
+        transform: scale(0.9);
+    }
+}
