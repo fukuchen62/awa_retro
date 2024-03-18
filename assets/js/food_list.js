@@ -24,3 +24,9 @@ $('.slider').slick({
         }
     ]
 });
+
+
+var category_id = document.getElementsByClassName('category_item');
+$(category_id).on('click', function () {
+    alert("クリックされました");
+});
