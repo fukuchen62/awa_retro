@@ -12,9 +12,6 @@
     background-size: cover;
 }
 
-/* .contents_block {
-    border: solid 1px;
-} */
 
 .title_container {
     height: 100px;
@@ -29,8 +26,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: #fdeccb; */
-
 }
 
 
@@ -63,13 +58,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: #fdeccb; */
 }
 
 .category_item {
-    /* border: solid 1px; */
     width: 20%;
-    height: 50%;
+    height: 80%;
     margin-right: 40px;
     text-align: center;
     cursor: pointer;
@@ -92,122 +85,11 @@
 }
 
 .img_item {
-    /* border: solid 1px; */
     width: 100%;
     height: 100%;
-    /* background-color: #fdeccb; */
 }
 
-/* カード一覧ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
-.card_container {
-    /* border: solid 1px; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    max-width: 1280px;
 
-}
-
-.card_container_box {
-    /* border: solid 1px; */
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.card_box {
-    /* border: solid 1px; */
-    max-width: 386px;
-    height: 600px;
-    margin: 10px 10px 150px 10px;
-    background-color: rgb(2, 74, 115);
-}
-
-.card_box_item {
-    width: auto;
-    height: 585px;
-    margin: 10px 15px 5px 5px;
-    /* padding: 10px 20px 5px 5px; */
-    background-color: aliceblue;
-}
-
-.card_box_item_img {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.card_box_item_img_link {
-    /* border: solid 1px; */
-    margin: 20px 0 20px 0;
-    max-height: 244px;
-    max-width: 326px;
-    width: 100%;
-    display: block;
-}
-
-.card_box_item_img_data {
-    max-height: 244px;
-    max-width: 326px;
-    width: 100%;
-}
-
-.card_box_item_btn {
-    height: 80px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.card_box_item_btn_list {
-    width: 100%;
-    height: 100%;
-    margin: 0 20px 0 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.card_btn_list_item {
-    width: 30%;
-    padding: 0 10px 10px 0;
-}
-
-.card_list_item_data {
-    border: solid 1px;
-    border-radius: 20px;
-    text-align: center;
-    background-color: rgb(124, 124, 124);
-    color: #ffffff;
-}
-
-.card_box_item_title {
-    background-color: rgb(2, 74, 115);
-    height: 80px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.card_box_item_title_text {
-    color: #ffffff;
-    font-size: 32px;
-    max-width: 366px;
-}
-
-.card_box_item_introduction {
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.card_box_item_introduction_text {
-    color: rgba(255, 62, 62, 0.5);
-}
-
-/* カード一覧ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
 
 /*==================================================
 スライダーのためのcss
