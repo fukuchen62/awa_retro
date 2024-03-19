@@ -1,6 +1,14 @@
 /* ページ全体 */
-.wrap {
+
+body {
     background-image: url(../images/food_list/back_img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.wrap {
+    background-image: url(../images/texture01.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -15,10 +23,8 @@
 
 /* コンテンツの最大幅を決定 */
 .contents {
-    /* background-color: #fdeccb; */
     max-width: 1280px;
     width: 100%;
-    /* border: solid 1px black; */
 }
 
 /* タイトルーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
