@@ -1,3 +1,10 @@
+.wrap {
+    background-image: url(../images/food_list/back_img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 .contents_top {
     display: flex;
     justify-content: center;
@@ -5,13 +12,10 @@
 }
 
 .contents {
-    background-color: #fdeccb;
+    /* background-color: #fdeccb; */
     max-width: 1280px;
     width: 100%;
-    background-image: url(../images/food_list/back_img.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    border: solid 1px black;
 }
 
 
@@ -20,8 +24,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../images/food_list/fure-mu.png);
+    background-image: url(../images/food_list/fure-mu02.png);
     background-size: cover;
+}
+
+.title_box_img {
+    img {
+        margin-top: 20px;
+        max-width: 200px;
+        max-height: 80px;
+        transform: rotate(30deg);
+    }
 }
 
 .explanation_container {
@@ -38,19 +51,15 @@
     padding: 0;
 }
 
-.explanation_img_box {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    transform: rotate(30deg);
-    right: 0;
-
+.explanation_box {
     img {
         margin-top: 20px;
         max-width: 200px;
         max-height: 200px;
+        /* transform: rotate(30deg); */
     }
 }
+
 
 
 .screen_container {
