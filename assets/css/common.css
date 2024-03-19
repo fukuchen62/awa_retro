@@ -12,10 +12,13 @@
     } */
 }
 
+body {
+    background-color: #fffdf0;
+}
+
 .wrap {
     width: 100%;
     height: 100%;
-    background-color: #fffdf0;
 }
 
 .header_image {
