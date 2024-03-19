@@ -93,6 +93,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: bisque;
 }
 
 .category_item_text {
@@ -100,6 +101,10 @@
     font-weight: 400;
     font-style: normal;
     font-size: 32px;
+}
+
+.category_item_green {
+    background-color: rgb(91, 247, 91);
 }
 
 /* .category_bgi1 {
@@ -133,9 +138,4 @@
 .slider .slick-slide {
     margin: 0 10px;
     /*スライド左右の余白調整*/
-}
-
-
-.green {
-    background-color: rgb(91, 247, 91);
 }

@@ -68,6 +68,6 @@ $(function () {
 var category_id = document.getElementsByClassName('category_item');
 $(category_id).on('click', function () {
     // alert("クリックされました");
-    $('div').removeClass('green');
-    $(this).addClass('green');
+    $('div').removeClass('category_item_green');
+    $(this).addClass('category_item_green');
 });
