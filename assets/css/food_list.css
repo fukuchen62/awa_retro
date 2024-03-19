@@ -20,6 +20,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(../images/food_list/fure-mu.png);
+    background-size: cover;
 }
 
 .explanation_container {
@@ -72,17 +74,17 @@
 }
 
 .category_bgi1 {
-    background-image: url(../images/food_list/sample1.jpg);
+    background-image: url(../images/food_list/food_category01.jpg);
     background-size: cover;
 }
 
 .category_bgi2 {
-    background-image: url(../images/food_list/sample2.jpg);
+    background-image: url(../images/food_list/food_category02.jpeg);
     background-size: cover;
 }
 
 .category_bgi3 {
-    background-image: url(../images/food_list/sample3.jpg);
+    background-image: url(../images/food_list/food_category03.png);
     background-size: cover;
 }
 
