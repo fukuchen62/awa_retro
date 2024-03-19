@@ -1,3 +1,4 @@
+/* ページ全体 */
 .wrap {
     background-image: url(../images/food_list/back_img.jpg);
     background-repeat: no-repeat;
@@ -5,12 +6,14 @@
     background-size: cover;
 }
 
+/* コンテンツを中央配置 */
 .contents_top {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* コンテンツの最大幅を決定 */
 .contents {
     /* background-color: #fdeccb; */
     max-width: 1280px;
@@ -18,7 +21,7 @@
     border: solid 1px black;
 }
 
-
+/* タイトルーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
 .title_container {
     height: 100px;
     display: flex;
@@ -37,6 +40,9 @@
     }
 }
 
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーータイトル */
+
+/* ページ解説ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
 .explanation_container {
     height: 200px;
     width: 100%;
@@ -60,29 +66,48 @@
     }
 }
 
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーページ解説 */
 
-
+/* スクリーンのコンテナサイズ */
 .screen_container {
     height: 400px;
 }
 
+/* カテゴリーコンテナーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
 .category_container {
     height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
 }
 
 .category_item {
+    position: relative;
     width: 20%;
-    height: 80%;
+    height: 50%;
     margin-right: 40px;
-    text-align: center;
     cursor: pointer;
-
+    border: dashed 5px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
 }
 
-.category_bgi1 {
+.category_item_text {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+}
+
+.category_item_green {
+    background-color: rgb(91, 247, 91);
+}
+
+/* .category_bgi1 {
     background-image: url(../images/food_list/food_category01.jpg);
     background-size: cover;
 }
@@ -95,14 +120,9 @@
 .category_bgi3 {
     background-image: url(../images/food_list/food_category03.png);
     background-size: cover;
-}
+} */
 
-.img_item {
-    width: 100%;
-    height: 100%;
-}
-
-
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーカテゴリーコンテナ */
 
 /*==================================================
 スライダーのためのcss
