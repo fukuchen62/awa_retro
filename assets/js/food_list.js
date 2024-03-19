@@ -67,5 +67,7 @@ $(function () {
 
 var category_id = document.getElementsByClassName('category_item');
 $(category_id).on('click', function () {
-    alert("クリックされました");
+    // alert("クリックされました");
+    $('div').removeClass('green');
+    $(this).addClass('green');
 });
