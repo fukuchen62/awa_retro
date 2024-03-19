@@ -1,4 +1,4 @@
-.worp {
+.wrap {
     background-image: url(../images/food_list/back_img.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -24,7 +24,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../images/food_list/fure-mu.png);
+    background-image: url(../images/food_list/fure-mu02.png);
     background-size: cover;
 }
 
@@ -32,7 +32,7 @@
     img {
         margin-top: 20px;
         max-width: 200px;
-        max-height: 100px;
+        max-height: 80px;
         transform: rotate(30deg);
     }
 }
