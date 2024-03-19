@@ -43,6 +43,6 @@ $(function () {
     $(".gallery_img a").colorbox({
         width: "60%",
         // innerWidth:"90%",
-        innerHeight: "80%",
+        innerHeight: "120%",
     });
 });
