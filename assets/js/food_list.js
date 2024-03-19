@@ -70,4 +70,5 @@ $(category_id).on('click', function () {
     // alert("クリックされました");
     $('div').removeClass('category_item_green');
     $(this).addClass('category_item_green');
+    $('.bg').remove();
 });

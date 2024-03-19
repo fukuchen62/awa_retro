@@ -21,6 +21,7 @@ body {
     height: 100%;
     background-image: url(../images/texture01.png);
     background-repeat: repeat-y;
+    background-repeat: repeat-x;
 }
 
 .header_image {
@@ -113,6 +114,7 @@ h2 {
 h3 {
     font-size: 32px;
     font-weight: 500;
+    font-family: "Kaisei Opti", serif;
 }
 
 p {
