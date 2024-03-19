@@ -120,8 +120,6 @@
 }
 
 .colamn_content_name h3 {
-    /* background-color: #01204E;
-    color: #ffffff; */
     font-family: "Kaisei Opti", serif;
     font-size: 24px;
     margin: 0 auto;
@@ -129,31 +127,9 @@
 }
 
 
-/* カードのテキスト  ~~~~~~~~~~*/
-.colamn_contant_text {
-    width: 90%;
-    margin: 0 auto 3%;
-    padding: 0 8px;
-
-}
-
-.colamn_contant_text p {
-    text-align: left;
-    overflow-wrap: break-word
-}
-
-.slide>span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 150px;
-    background: #fff;
-    color: #3498db;
-    font-size: 36px;
-    font-weight: bold;
-    margin: 0 10px;
-}
-
-.slick-list {
-    overflow: visible;
+.colamn_list_container {
+    width: 80%;
+    padding: 5rem;
+    background-color: #fff;
+    margin: 10rem auto;
 }
