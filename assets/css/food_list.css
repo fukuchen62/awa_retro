@@ -72,17 +72,17 @@
 }
 
 .category_bgi1 {
-    background-image: url(../images/food_list/food_category_01.jpg);
+    background-image: url(../images/food_list/sample1.jpg);
     background-size: cover;
 }
 
 .category_bgi2 {
-    background-image: url(../images/food_list/food_category_02.jpeg);
+    background-image: url(../images/food_list/sample2.jpg);
     background-size: cover;
 }
 
 .category_bgi3 {
-    background-image: url(../images/food_list/food_category_03.png);
+    background-image: url(../images/food_list/sample3.jpg);
     background-size: cover;
 }
 
