@@ -45,24 +45,23 @@
 
 /* 立ち寄ったスポット */
 .model_spot_contanier {
-    margin: 0 auto;
+    max-width: 100%;
     width: 90%;
+    padding: 2rem;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    gap: 40px 40px;
 }
 
 .model_spot_box {
     border: 2px solid black;
-    width: 40%;
-    display: flex;
     padding: 0.8rem;
     background-color: #fff;
-
+    display: flex;
+    width: 50%;
 }
 
 .model_spot_titile {
-    margin: 2rem 0 3rem 3rem;
     border-bottom: 0.5rem dotted black;
     width: fit-content
 }
