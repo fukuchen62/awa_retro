@@ -46,3 +46,19 @@ $(function () {
         innerHeight: "120%",
     });
 });
+
+
+$(function () {
+    // マウスオーバーした時の動作
+    $(".nav_item").hover(
+        function () {
+            // 下にスライドして表示
+            // :not(:animated)をすることで連続してマウスオーバーしても連続して動作しなくなる
+            $(".drop_menu:not(:animated)", this).slideDown();
+        },
+        // マウスオーバーを外したら上にスライドして非表示になる
+        function () {
+            $(".drop_menu", this).slideUp();
+        }
+    );
+});
