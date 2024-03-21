@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+.model {
+    color: orange;
+}
+
+.model_title {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.model_box {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.tag {
+    margin-right: 3rem;
+}
+
+.model_inner {
+    width: 50%;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.model_inner_time {
+    width: 30%;
+    padding: 0.8rem 1.5rem 0.8rem 0.8rem;
+    background-color: gray;
+    box-shadow: 8px 10px 13px 0px rgba(0, 0, 0, 0.25);
+}
+
+.model_inner_body {
+    background-color: #fff;
+    padding: 0.8rem 2rem 0.8rem 2rem;
+    box-shadow: 8px 10px 13px 0px rgba(0, 0, 0, 0.25);
+}
+
+.model_body {
+    width: 60%;
+    right: 4rem;
+    margin: 5rem auto;
+}
