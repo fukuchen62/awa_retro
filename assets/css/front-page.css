@@ -12,9 +12,19 @@
     max-width: 1280px;
     width: 100%;
     height: 100%;
-    background-color: #ffd771;
 }
 
+.bgc_secthion_y{
+    background-color: #ffd771;
+}
+.bgc_secthion_w{
+    background-color: #ffffff;
+    width: 100%;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .b_s {
     border: solid 1px black;
 }
@@ -58,6 +68,72 @@
     font-weight: 500;
     font-family: "Kaisei Opti", serif;
     color: black;
+}
 
+.top_colam_box {
+    background-color: #ffff;
+    margin: 40px 20px 20px 20px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
 
+.top_colam_box_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top_colam_box_list{
+    margin: 20px 20% 20px 10%;
+}
+
+.colam_box_list_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px 10px 10px;
+
+}
+
+.colam_box_list_item_genre{
+    background-color: #028391;
+    color: #ffff;
+    width: 20%;
+    text-align: center;
+    padding: 5px 0 5px 0;
+    margin-right: 20px;
+}
+
+.colam_box_list_item_border{
+    width: 80%;
+    height: 100%;
+    border-bottom: 2px solid black;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.colam_box_list_item_article{
+    height: 100%;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+.top_look_box{
+    width: 100;
+    height: 300px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.top_look_box_aitem{
+    height: 100px;
+    width: 200px;
+}
+
+.contents2 {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
 }

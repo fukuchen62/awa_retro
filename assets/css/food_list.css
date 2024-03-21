@@ -103,8 +103,6 @@ body {
 }
 
 .category_item_text {
-    position: relative;
-    z-index: 100;
     font-family: "Kaisei Opti", serif;
     font-weight: 400;
     font-style: normal;
