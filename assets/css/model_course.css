@@ -42,3 +42,27 @@
     right: 4rem;
     margin: 5rem auto;
 }
+
+/* 立ち寄ったスポット */
+.model_spot_contanier {
+    margin: 1rem auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.model_spot_box {
+    border: 2px solid black;
+    width: 40%;
+    display: flex;
+    padding: 0.8rem;
+}
+
+.model_spot_body {
+    margin-top: 1rem;
+}
+
+.model_spot_body div {
+    padding: 0.5rem;
+}
