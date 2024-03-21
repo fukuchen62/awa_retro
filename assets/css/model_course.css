@@ -14,6 +14,10 @@
     margin: 0 auto;
 }
 
+.tag {
+    margin-right: 3rem;
+}
+
 .model_inner {
     width: 50%;
     display: inline-block;
