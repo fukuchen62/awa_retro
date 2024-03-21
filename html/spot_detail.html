@@ -29,7 +29,7 @@
 </head>
 
 <body>
-    <div class="wrap">
+    <div class="wrap detail">
         <header>
 
         </header>
@@ -40,19 +40,20 @@
             <!-- お店の詳細エリア ========================-->
             <section id="shop_detail_container">
 
-                <!-- 背景画像1 -->
-                <!-- <div class="single_spot_bg1">
-                    <img src="../uploads/spot_bg1.jpg" alt="背景">
-                </div> -->
-
                 <!-- お店のタイトルエリア ======-->
                 <div class="shop_detail_title_container">
+
+                    <!-- ※背景画像1 ※CSSまだ-->
+                    <!-- <div class="detail_spot_bg1">
+                        <img src="../assets/images/spot_detail_bg1.PNG" alt="背景画像1">
+                    </div> -->
 
                     <h2 class="detail_title">お店の名前</h2>
 
                     <div class="detail_title_sub">
-                        <a>種別 建物街並み</a>
-                        <a>目的別 家族でも・・</a>
+                        <a>種別</a>
+                        <a>目的別</a>
+                        <a>エリア</a>
                     </div>
 
                     <div class="shop_detail_chatch">
@@ -69,7 +70,7 @@
                 <!-- スライダー ======-->
                 <div class="shop_detail_slider_container">
 
-                    <div class="shop_detail_slider_box">
+                    <div class="shop_detail_slider_box detail_filter">
 
                         <div class="shop_detail_slider">
                             <div><img src="../uploads/dummy1.jpg" alt="お店の写真1"></div>
@@ -94,6 +95,8 @@
                 <!-- ショップの紹介テキスト ======-->
                 <div class="shop_text_container">
 
+
+                    <!-- ショップの紹介テキストの枠 -->
                     <div class="shop_text_box">
 
                         <!-- img & おすすめテキスト -->
@@ -104,10 +107,8 @@
                             </div>
 
                             <div class="shop_point_text_item">
-                                <h3><span>オススメ</span><span>ポイント</span></h3>
+                                <h3><span>イチオシ・</span><span>こだわり</span></h3>
                                 <p>
-                                    ここにはお店の説明文が入ります。
-                                    ここにはお店の説明文が入ります。
                                     ここにはお店の説明文が入ります。
                                     ここにはお店の説明文が入ります。
                                     ここにはお店の説明文が入ります。
@@ -115,9 +116,19 @@
                             </div>
                         </div>
 
-                        <!-- お店の紹介テキスト -->
+                        <!-- 雰囲気・歴史・その他 テキスト -->
                         <div class="shop_text_content">
+                            <h3>雰囲気</h3>
                             <p>
+                                ここにはお店の説明文が入ります。
+                                ここにはお店の説明文が入ります。
+                                ここにはお店の説明文が入ります。
+                            </p>
+
+                            <h3>歴史</h3>
+                            <p>
+                                ここにはお店の説明文が入ります。
+                                ここにはお店の説明文が入ります。
                                 ここにはお店の説明文が入ります。
                                 ここにはお店の説明文が入ります。
                                 ここにはお店の説明文が入ります。
@@ -126,15 +137,63 @@
                                 ここにはお店の説明文が入ります。
                             </p>
 
+                            <h3>その他</h3>
                             <p>
-                                ここにはお店の説明文が入ります。
-                                ここにはお店の説明文が入ります。
-                                ここにはお店の説明文が入ります。
                                 ここにはお店の説明文が入ります。
                                 ここにはお店の説明文が入ります。
                                 ここにはお店の説明文が入ります。
                             </p>
                         </div>
+
+                    </div>
+
+                    <!-- 人気・オススメ商品 -->
+                    <div class="detail_price_container">
+
+                        <!-- ※背景画像2 ※CSSまだ-->
+                        <!-- <div class="detail_spot_bg2">
+                            <img src="../assets/images/spot_detail_bg2.PNG" alt="背景画像2">
+                        </div> -->
+
+                        <!-- 人気オススメ商品タイトル -->
+                        <div class="detail_price_title">
+                            <h3>
+                                <img src="../assets/images/detail_icon.png" alt="タイトルアイコン">
+                                <span>人気・オススメ</span><span>商品</span>
+                            </h3>
+                        </div>
+
+                        <!-- 価格テーブル -->
+                        <div class="detail_price_box">
+                            <table>
+                                <tr>
+                                    <th>商品</th>
+                                    <th>価格</th>
+                                    <th>コメント</th>
+                                </tr>
+                                <tr>
+                                    <td>バナナマフィンバナナマフィン</td>
+                                    <td>650円</td>
+                                    <td>
+                                        商品のコメントが入ります。
+                                        商品のコメントが入ります。
+                                        商品のコメントが入ります。
+                                        商品のコメントが入ります。
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>バナナマフィン2</td>
+                                    <td>1700円</td>
+                                    <td>昭和の懐かしの味を再現した特別なスイーツ</td>
+                                </tr>
+                                <tr>
+                                    <td>チョコマフィン</td>
+                                    <td>300円</td>
+                                    <td>チョコチップの歯応えが美味しさを引き立てます</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!-- 終・価格テーブル -->
 
                     </div>
                 </div>
@@ -208,8 +267,14 @@
 
 
             <!-- コメント欄 ==========================-->
-            <div id="detail_comment_container" class="detail_comment_container">
+            <div class="detail_comment_container detail_filter">
 
+                <!-- ※背景画像3 ※CSSまだ-->
+                <!-- <div class="detail_spot_bg3">
+                    <img src="../assets/images/spot_detail_bg3.PNG" alt="背景画像3">
+                </div> -->
+
+                <!-- コメント投稿欄 -->
                 <div class="detail_comment_box">
 
                     <form class="detail_comment_content" action="#" method="post">
