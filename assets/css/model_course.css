@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+.model {
+    color: orange;
+}
+
+.model_title {
+    width: 100%;
+    margin: 3rem auto;
+}
+
+.model_box {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.model_inner {
+    margin: 2rem;
+
+}
+
+.model_inner_time {
+    width: 30%;
+    padding: 0.8rem 3rem 0.8rem 0.8rem;
+    background-color: gray;
+    box-shadow: 8px 10px 13px 0px rgba(0, 0, 0, 0.25);
+}
+
+.model_inner_body {
+    background-color: #fff;
+    padding: 0.8rem 5rem 0.8rem 4rem;
+    box-shadow: 8px 10px 13px 0px rgba(0, 0, 0, 0.25);
+}
