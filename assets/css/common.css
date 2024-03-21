@@ -91,17 +91,20 @@ body {
 
 
 .drop_menu {
-    display: none;
+    /* display: none; */
     position: absolute;
     top: 100%;
     width: 100%;
     display: flex;
     justify-content: space-between;
+
 }
 
 .drop_menu_item {
     width: 100%;
-
+    display: flex;
+    max-width: initial;
+    width: 100%;
 }
 
 .drop_menu_item a {
@@ -116,6 +119,13 @@ body {
 
 .drop_menu_item a:hover {
     opacity: 0.5;
+}
+
+.drop_menu_img {
+    display: block;
+    max-width: 80px;
+    width: 100%;
+    text-align: center;
 }
 
 .nav_icon img {
