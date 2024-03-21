@@ -12,24 +12,23 @@ $(function () {
         asNavFor: '.shop_detail_slider_nav'
     });
     $('.shop_detail_slider_nav').slick({
-        slidesToShow: 3,
+        slidesToShow: 5,
         slidesToScroll: 1,
         asNavFor: '.shop_detail_slider',
         dots: true,
-        centerMode: true,
         focusOnSelect: true,
         responsive: [
             {
                 breakpoint: 850,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 4,
                     lslidesToScroll: 1,
                 }
             },
             {
                 breakpoint: 500,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 3,
                     slidesToScroll: 1,
                 }
             }
