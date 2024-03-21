@@ -778,10 +778,48 @@
 
 .detail_spot_bg3 img {
     position: absolute;
-    width: 1000px;
+    width: 800px;
     height: fit-content;
     object-fit: contain;
     transform: rotate(-20deg);
-    top: -200px;
-    right: 50%;
+    top: -250px;
+    right: 70%;
+}
+
+@media screen and (max-width:1290px) {
+    .detail_spot_bg3 img {
+        width: 700px;
+        /* top: -180px; */
+        right: 65%;
+    }
+}
+
+@media screen and (max-width:1050px) {
+    .detail_spot_bg3 img {
+        width: 600px;
+        right: 65%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .detail_spot_bg3 img {
+        width: 400px;
+        top: -150px;
+        right: 60%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .detail_spot_bg3 img {
+        width: 400px;
+        top: -150px;
+        right: 50%;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .detail_spot_bg3 img {
+        top: -180px;
+        right: 40%;
+    }
 }
