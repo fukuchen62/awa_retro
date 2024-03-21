@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+.model {
+    color: orange;
+}
+
+.model_title {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.model_box {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.tag {
+    margin-right: 3rem;
+}
+
+.model_inner {
+    width: 50%;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.model_inner_time {
+    width: 30%;
+    padding: 0.8rem 1.5rem 0.8rem 0.8rem;
+    background-color: gray;
+    box-shadow: 8px 10px 13px 0px rgba(0, 0, 0, 0.25);
+}
+
+.model_inner_body {
+    background-color: #fff;
+    padding: 0.8rem 2rem 0.8rem 2rem;
+    box-shadow: 8px 10px 13px 0px rgba(0, 0, 0, 0.25);
+}
+
+.model_body {
+    width: 60%;
+    right: 4rem;
+    margin: 5rem auto;
+}
+
+/* 立ち寄ったスポット */
+.model_spot_contanier {
+    max-width: 100%;
+    width: 90%;
+    padding: 2rem;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.model_spot_box {
+    border: 2px solid black;
+    padding: 0.8rem;
+    background-color: #fff;
+    display: flex;
+    width: 50%;
+}
+
+.model_spot_titile {
+    border-bottom: 0.5rem dotted black;
+    width: fit-content
+}
+
+.model_spot_body {
+    margin-top: 1rem;
+}
+
+.model_spot_body div {
+    padding: 0.5rem;
+}
