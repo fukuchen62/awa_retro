@@ -37,6 +37,7 @@ $(function () {
     });
 });
 
+
 // ギャラリーページのポップアップ (color_box)
 
 $(function () {
