@@ -1,3 +1,4 @@
+/* テンプレート */
 .main_conteiner {
     width: 100%;
     height: 100%;
@@ -17,7 +18,7 @@
 .container {
     width: 100%;
     height: 100%;
-    background-color: #ffd771;
+    background-color: #ffe49f;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -146,7 +147,7 @@
     width: 200px;
 }
 
-/* セクション２ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+/* お食事処・レトロスポットーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
 
 .template_section_title {
     display: flex;
@@ -225,4 +226,70 @@
 .template_look_box_aitem {
     height: 100px;
     width: 200px;
+}
+
+/* 地図----------------------------------------------------------- */
+.map_box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map_box_data {
+    margin-top: 50px;
+    width: 1000px;
+    height: 700px;
+}
+
+
+/* モデルコースーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+.model_box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.model_box_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.model_box_list_item {
+    border: dashed 2px;
+    padding: 20px 40px 20px 40px;
+    width: 30%;
+    margin-right: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #ffe3b5;
+}
+
+/* ギャラリーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+.gallery_box{
+    margin-top: 40px;
+}
+
+/*==================================================
+スライダーのためのcss
+===================================*/
+.slider img {
+    height: 400px;
+    max-width: 426px;
+    /*スライダー内の画像を横幅100%に*/
+}
+
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+
+.slider .slick-slide {
+    margin: 0 10px;
+    /*スライド左右の余白調整*/
 }
