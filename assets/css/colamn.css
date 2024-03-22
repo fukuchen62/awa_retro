@@ -2,9 +2,13 @@
 
 
 @media screen and (max-width:400px) {
+    .colamn_box {
+        gap: 40px;
+        grid-template-columns: repeat(auto-fit, 300px);
+    }
+
     .colamn_card {
-        transform: scale(0.85);
-        row-gap: 20px;
+        width: 300px;
     }
 }
 
@@ -173,7 +177,13 @@
 }
 
 .pagination a:hover:not(.active) {
+<<<<<<< HEAD
+    background-color: #ddd;
+    border-radius: 5px;
+}
+=======
     background-color: #b3b3b3;
     color: #fff;
     border-radius: 10px;
 }
+>>>>>>> 76102278584b2faab5704ad8405acf2f9d7d2e7c
