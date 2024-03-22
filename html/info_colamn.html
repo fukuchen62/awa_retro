@@ -21,9 +21,9 @@
 <body>
     <div class="wrap">
         <header>
-            <div class="header_image">
+            <!-- <div class="header_image">
                 <img src="../assets/images/header01.png" alt="header画像">
-            </div>
+            </div> -->
 
             <div class="gnav">
                 <div class="logo_box">
@@ -83,22 +83,30 @@
                 </div>
             </section>
 
-            <div>
-                <div class="btn_content">
-                    <div class="btn_item"><a href="">
-                            <p>インタビュー</p>
-                        </a></div>
-                    <div class="btn_item"><a href="">
-                            <p>豆知識</p>
-                        </a></div>
-                    <div class="btn_item"><a href="">
-                            <p>体験</p>
-                        </a></div>
-                    <div class="btn_item"><a href="">
-                            <p>コラム</p>
-                        </a></div>
+            <div class="btn_container">
+                <div class="btn_item">
+                    <img src="../uploads/gallery_bg2.png" alt="" class="bg">
+                    <a href="#">
+                        <p class="btn_item_text">インタビュー</p>
+                    </a>
+                </div>
+                <div class="btn_item">
+                    <a href="#">
+                        <p class="btn_item_text">豆知識</p>
+                    </a>
+                </div>
+                <div class="btn_item">
+                    <a href="#">
+                        <p class="btn_item_text">体験</p>
+                    </a>
+                </div>
+                <div class="btn_item">
+                    <a href="#">
+                        <p class="btn_item_text">コラム</p>
+                    </a>
                 </div>
             </div>
+
 
             <section id="colamn_container" class="colamn_container">
 
@@ -333,14 +341,29 @@
                     </div>
                 </div>
 
+
+
             </section>
-
-
+            <div>
+                <div class="pagination">
+                    <a href="#">&laquo;</a>
+                    <a href="#">1</a>
+                    <a href="#" class="active">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">&raquo;</a>
+                </div>
+            </div>
         </main>
 
         <footer></footer>
     </div>
-
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- 自作 -->
+    <script src="../assets/js/common.js"></script>
 </body>
 
 </html>

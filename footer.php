@@ -29,24 +29,27 @@
             </nav>
             <nav>
                 <p class="footer__title">
-                    <a href="<?php echo home_url(); ?>" class="footer__link">モデルコース</a>
+                    <a href="<?php echo home_url('/course'); ?>" class="footer__link">モデルコース</a>
                 </p>
                 <p class="footer__title">
-                    <a href="<?php echo home_url(); ?>" class="footer__link">詳細検索</a>
+                    <a href="<?php echo home_url('/'); ?>?s=" class="footer__link">詳細検索</a>
                 </p>
                 <p class="footer__title">
-                    <a href="<?php echo home_url(); ?>" class="footer__link">コラム・情報</a>
+                    <a href="<?php echo home_url('/special'); ?>" class="footer__link">コラム・情報</a>
                 </p>
             </nav>
             <nav>
                 <p class="footer__title">
-                    <a href="<?php echo home_url(); ?>" class="footer__link">このサイトについて</a>
+                    <a href="<?php echo home_url('/about'); ?>" class="footer__link">このサイトについて</a>
                 </p>
                 <p class="footer__title">
-                    <a href="<?php echo home_url(); ?>" class="footer__link">お問い合わせ</a>
+                    <a href="<?php echo home_url('/contact'); ?>" class="footer__link">お問い合わせ</a>
                 </p>
                 <p class="footer__title">
-                    <a href="<?php echo home_url(); ?>" class="footer__link">サイトマップ</a>
+                    <a href="<?php echo home_url('/mypage'); ?>" class="footer__link">お気に入り</a>
+                </p>
+                <p class="footer__title">
+                    <a href="<?php echo home_url('/sitemap'); ?>" class="footer__link">サイトマップ</a>
                 </p>
             </nav>
         </div>
