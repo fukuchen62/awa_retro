@@ -201,9 +201,9 @@ p {
 
 .btn_item {
     position: relative;
-    width: 35%;
+    width: 45%;
     height: 30%;
-    margin: 1rem;
+    margin: 0.8rem;
     cursor: pointer;
     border: 2px solid;
     border-radius: 30px;
@@ -211,11 +211,12 @@ p {
     justify-content: center;
     align-items: center;
     background-color: #fff;
+    white-space: nowrap;
 }
 
 .btn_item_text {
     font-family: "Kaisei Opti", serif;
-    font-size: 32px;
+    font-size: 24px;
     text-shadow: 1px 1px 1px #ffff;
 }
 
@@ -263,7 +264,7 @@ p {
     .btn_item {
         width: 90%;
         margin: 1rem;
-        white-space: nowrap
+        white-space: nowrap;
     }
 
     .bg {
