@@ -10,11 +10,6 @@
 }
 
 /* ============================= */
-.wrap.detail {
-    position: relative;
-    z-index: 2;
-}
-
 .detail_main {
     width: 100%;
 }
@@ -924,12 +919,6 @@
     }
 }
 
-@media screen and (max-width:1290px) {
-    .detail_food_bg3 img {
-        /* width: 700px; */
-        /* right: 65%; */
-    }
-}
 
 @media screen and (max-width:1050px) {
     .detail_food_bg3 img {

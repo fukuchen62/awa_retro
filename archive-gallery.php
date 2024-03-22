@@ -13,6 +13,14 @@ get_header();
         <h2>ギャラリー</h2>
 
         <div class="gallery_box">
+            <?php
+      $menu_terms = get_terms(['taxonomy' => 'menu']);
+      if (!empty($menu_terms)) :
+        // $args=['taxonomy' => 'menu',]  この2行、上と同じ効果
+        // $menu_terms = get_terms($args)
+        //'order' => 'DESC',
+      ?>
+
 
             <!-- WordPress ループの開始 -->
 
@@ -20,9 +28,21 @@ get_header();
                 <?php while (have_posts()) : ?>
                     <?php the_post(); ?>
 
+                    <!-- 写真15枚表示 -->
+                        <a class="gallery_item" href="<?php echo get_the_term_link($gallery_img); ?>" rel="group01"
+                        title="<?php echo get_the_term_link($gallery_text); ?>">
+                            <img src="<?php echo get_the_term_link($gallery_img); ?>">
+                        </a>
+                    </div>
+
+<?php
+    $gallery = get_field('gallrey');
+    $gallery_url = $gallery['sizes']['medium'];
+?>
+
                     <?php
                     $gallery = [
-                        'post_type' => 'special', // 投稿タイプ
+                        'post_type' => 'gallery', // 投稿タイプ
                         'posts_per_page' => 15, // 15件を取得
                         'post__not_in' => array(get_the_ID()), // 現在表示している記事のID
                         'orderby' => 'rand' // ランダムに
@@ -32,102 +52,10 @@ get_header();
                     ?>
 
 
-                    <!-- 写真15枚表示 -->
-                    <div class="gallery_img">
-                        <a class="gallery_item" href="../uploads/dummy.jpg" rel="group01" title="ここに説明文を記載するここに説明文を記載するここに説明文を記載するここに説明文を記載するここに説明文を記載するここに説明文を記載するここに説明文を記載するここに説明文を記載する">
-                            <img src="../uploads/dummy.jpg" alt="ギャラリー写真1">
-                        </a>
-                    </div>
-
                     <!-- WordPress ループの終了 -->
                 <?php endwhile; ?>
             <?php endif; ?>
 
-
-
-            <div class="gallery_img">
-                <a class="gallery_item" href="../uploads/dummy1.jpg" rel="group01">
-                    <img src="../uploads/dummy1.jpg" alt="ギャラリー写真2">
-                </a>
-            </div>
-
-            <div class="gallery_img">
-                <a class="gallery_item" href="../uploads/dummy2.png" rel="group01">
-                    <img src="../uploads/dummy2.png" alt="ギャラリー写真3">
-                </a>
-            </div>
-
-            <div class="gallery_img">
-                <a class="gallery_item" href="../uploads/dummy3.jpg" rel="group01">
-                    <img src="../uploads/dummy3.jpg" alt="ギャラリー写真4">
-                </a>
-            </div>
-
-            <div class="gallery_img">
-                <a class="gallery_item" href="../uploads/dummy4.jpg" rel="group01">
-                    <img src="../uploads/dummy4.jpg" alt="ギャラリー写真5">
-                </a>
-            </div>
-
-            <div class="gallery_img">
-                <a class="gallery_item" href="../uploads/dummy5.jpg" rel="group01">
-                    <img src="../uploads/dummy5.jpg" alt="ギャラリー写真5">
-                </a>
-            </div>
-
-            <div class="gallery_img">
-                <a class="gallery_item" href="../uploads/dummy6.jpg" rel="group01">
-                    <img src="../uploads/dummy6.jpg" alt="ギャラリー写真5">
-                </a>
-            </div>
-
-            <div class="gallery_img">
-                <a class="gallery_item" href="../uploads/dummy.jpg" rel="group01" title="ここに説明文を記載する">
-                    <img src="../uploads/dummy.jpg" alt="ギャラリー写真1">
-                </a>
-            </div>
-
-            <div class="gallery_img">
-                <a class="gallery_item" href="../uploads/dummy1.jpg" rel="group01">
-                    <img src="../uploads/dummy1.jpg" alt="ギャラリー写真2">
-                </a>
-            </div>
-
-            <div class="gallery_img">
-                <a class="gallery_item" href="../uploads/dummy2.png" rel="group01">
-                    <img src="../uploads/dummy2.png" alt="ギャラリー写真3">
-                </a>
-            </div>
-
-            <div class="gallery_img">
-                <a class="gallery_item" href="../uploads/dummy3.jpg" rel="group01">
-                    <img src="../uploads/dummy3.jpg" alt="ギャラリー写真4">
-                </a>
-            </div>
-
-            <div class="gallery_img">
-                <a class="gallery_item" href="../uploads/dummy4.jpg" rel="group01">
-                    <img src="../uploads/dummy4.jpg" alt="ギャラリー写真5">
-                </a>
-            </div>
-
-            <div class="gallery_img">
-                <a class="gallery_item" href="../uploads/dummy5.jpg" rel="group01">
-                    <img src="../uploads/dummy5.jpg" alt="ギャラリー写真5">
-                </a>
-            </div>
-
-            <div class="gallery_img">
-                <a class="gallery_item" href="../uploads/dummy6.jpg" rel="group01">
-                    <img src="../uploads/dummy6.jpg" alt="ギャラリー写真5">
-                </a>
-            </div>
-
-            <div class="gallery_img">
-                <a class="gallery_item" href="../uploads/dummy.jpg" rel="group01" title="ここに説明文を記載する">
-                    <img src="../uploads/dummy.jpg" alt="ギャラリー写真1">
-                </a>
-            </div>
 
 
             <!-- 背景のイラスト -->

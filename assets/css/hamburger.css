@@ -32,7 +32,7 @@ a {
   font-weight: 700;
 }
 .openbtn1 {
-  position: relative; /*ボタン内側の基点となるためrelativeを指定*/
+  /* position: relative; ボタン内側の基点となるためrelativeを指定 */
   background: #ffffff;
   cursor: pointer;
   width: 50px;
