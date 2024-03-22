@@ -148,26 +148,26 @@
 
 /* ページネーション */
 .pagination_box {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
+    padding: 3em;
 }
 
 .pagination {
-    display: inline-block;
-    margin: 0 0 3rem 2rem;
+    display: flex;
+    justify-content: center;
 }
 
 .pagination a {
     color: black;
     font-weight: 800;
     font-size: 16px;
-    /* float: left; */
-    padding: 0.8rem 1rem;
+    padding: 0.5rem 0.8rem;
     margin: 1rem;
 }
 
 .pagination a.active {
-    background-color: #1a2b3c;
+    background-color: #1A2B3C;
     color: white;
     border-radius: 20%;
 }
