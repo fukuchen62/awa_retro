@@ -171,38 +171,69 @@ p {
 }
 
 .title_box {
-    width: 100%;
+    width: 80%;
     margin: 5rem auto;
     width: fit-content;
 }
 
 /* ボタンリスト */
+.btn_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.btn_item {
+    position: relative;
+    width: 20%;
+    height: 50%;
+    margin-right: 40px;
+    cursor: pointer;
+    border: dashed 5px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.btn_item_text {
+    font-family: "Kaisei Opti", serif;
+    font-size: 32px;
+    text-shadow: 1px 1px 1px #ffff;
+}
+
+.category_item_green {
+    background-color: #028391;
+}
+
+
+.bg {
+    width: 30%;
+    position: relative;
+    bottom: 56px;
+    z-index: 10;
+}
+
 .btn_content {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 3rem;
 
     display: flex;
     justify-content: space-between;
 }
 
-.btn_item {
+/* .btn_item {
     width: 50%;
     margin: 20px;
     padding: 0.8rem;
     border: 1px solid #028391;
     background-color: #ffffff;
     text-align: center;
-}
+} */
 
 .btn_item:hover {
     background-color: #028391;
-}
-
-.choice {
-    background-color: #028391;
-}
-
-.choice p {
-    color: #ffffff;
 }
