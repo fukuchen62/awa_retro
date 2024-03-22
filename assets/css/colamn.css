@@ -146,6 +146,12 @@
     left: 70%;
 }
 
+/* ページネーション */
+.pagination_box {
+    width: 80%;
+    margin: 0 auto;
+}
+
 .pagination {
     display: inline-block;
     margin: 0 0 3rem 2rem;
@@ -153,18 +159,21 @@
 
 .pagination a {
     color: black;
-    float: left;
-    padding: 8px 16px;
-    text-decoration: none;
+    font-weight: 800;
+    font-size: 16px;
+    /* float: left; */
+    padding: 0.8rem 1rem;
+    margin: 1rem;
 }
 
 .pagination a.active {
-    background-color: #4CAF50;
+    background-color: #1a2b3c;
     color: white;
-    border-radius: 5px;
+    border-radius: 20%;
 }
 
 .pagination a:hover:not(.active) {
-    background-color: #ddd;
-    border-radius: 5px;
+    background-color: #b3b3b3;
+    color: #fff;
+    border-radius: 10px;
 }
