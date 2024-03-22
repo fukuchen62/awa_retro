@@ -72,8 +72,6 @@ $(category_id).on('click', function () {
     $(this).addClass('category_item_green');
     const data_h = $(this).offset().top;
     const data_w = $(this).offset().left;
-    console.log(data_h)
-    console.log(data_w)
     $('.bg').css('top', data_h - 40);
     $('.bg').css('left', data_w);
     $('.bg').css('display', 'block');
