@@ -1,3 +1,10 @@
+@charset "utf-8";
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
 /* テンプレート */
 .main_conteiner {
     width: 100%;
@@ -35,16 +42,40 @@
     opacity: 0.7;
 }
 
+.container3 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.7;
+}
+
+/* 背景橙付与 */
 .bgc_secthion_y {
     background-color: #ffd771;
 }
 
+/* 背景白付与 */
 .bgc_secthion_w {
     background-color: #ffffff;
 }
 
+/* ボーダーライン付与 */
 .b_s {
     border: solid 1px black;
+}
+
+/* ホバー機能付与 */
+.hover_data:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+/* ホバー機能付与 */
+.hover_data2:hover {
+    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.2);
+    transform: scale(0.9);
 }
 
 /* セクション１－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－ */
@@ -175,9 +206,6 @@
 .template_section_box_text {
     padding-top: 10%;
     padding-left: 10%;
-    font-size: 42px;
-    font-weight: bold;
-    font-family: "Kaisei Opti", serif;
     color: #ffffff;
 }
 
@@ -274,8 +302,46 @@
 }
 
 /* ギャラリーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
-.gallery_box{
+.gallery_box {
     margin-top: 40px;
+}
+
+.gallery_box_film {
+    background-color: black;
+}
+
+.gallery_box_film_img {
+    height: 40px;
+    width: 100%;
+    background-image: url(../images/film_w.png);
+    background-repeat: repeat-x
+}
+
+/* インスタグラムーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+.insta_box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.insta_box_data {
+    max-width: 1000px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.insta_box_data_item {
+    max-width: 230px;
+    max-height: 230px;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
 }
 
 /*==================================================
