@@ -692,7 +692,7 @@
 
 /* 背景画像CSS =================================*/
 
-/* 背景1 スポットカセットテープ */
+/* スポット背景1 スポットカセットテープ */
 .detail_spot_bg1 {
     position: relative;
     z-index: -1;
@@ -726,7 +726,7 @@
     }
 }
 
-/* 背景2 レコード */
+/* スポット背景2 レコード */
 .detail_spot_bg2 {
     position: relative;
     z-index: 1;
@@ -765,7 +765,7 @@
     }
 }
 
-/* 背景3 車 */
+/* スポット背景3 車 */
 .detail_spot_bg3 {
     position: relative;
     z-index: 1;
@@ -821,5 +821,39 @@
     .detail_spot_bg3 img {
         top: -180px;
         right: 40%;
+    }
+}
+
+/* フード背景1 スポットカセットテープ */
+.detail_food_bg1 {
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    max-width: 1280px;
+    height: 0;
+    filter: drop-shadow(-10px 20px #1818184a);
+}
+
+.detail_food_bg1 img {
+    position: absolute;
+    width: 400px;
+    height: fit-content;
+    object-fit: contain;
+    transform: rotate(-20deg);
+    top: -60px;
+    right: 80%;
+}
+
+@media screen and (max-width:1280px) {
+    .detail_food_bg1 img {
+        width: 380px;
+        right: 70%;
+    }
+}
+
+@media screen and (max-width:760px) {
+    .detail_food_bg1 img {
+        width: 250px;
+        top: 0;
     }
 }
