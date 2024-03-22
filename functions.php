@@ -39,24 +39,40 @@ function awaretro_wp_enqueue_scripts()
     // スタイルファイルを読み込む
     wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css');
 
-    wp_enqueue_style('google-web-fonts', 'https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+    // googleフォント
+    wp_enqueue_style('google-googleapis', 'https://fonts.googleapis.com');
+    wp_enqueue_style('google-gstatic', 'https://fonts.gstatic.com');
+    wp_enqueue_style('google-kaisei', 'https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@700&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap');
 
     // リセットCSS
     wp_enqueue_style('awaretro-reset', get_template_directory_uri() . '/assets/css/reset.css');
 
     // 共通のスタイルシート
-    wp_enqueue_style('awaretro-app', get_template_directory_uri() . '/assets/css/app.css');
+    // wp_enqueue_style('awaretro-app', get_template_directory_uri() . '/assets/css/app.css');
+    wp_enqueue_style('awaretro-common', get_template_directory_uri() . '/assets/css/common.css');
+
+    // 自作のCSS
+    wp_enqueue_style('awaretro-footer', get_template_directory_uri() . '/assets/css/footer.css');
+
+    // slick CSS
+    wp_enqueue_style('awaretro-slick', get_template_directory_uri() . '/assets/css/slick.css');
+    wp_enqueue_style('awaretro-slick-theme', get_template_directory_uri() . '/assets/css/slick-theme.css');
+
+    // ハンバーガーCSS
+    wp_enqueue_style('awaretro-hamburger-css', get_template_directory_uri() . '/assets/css/hamburger.css');
 
     // jQueryを読み込む
     wp_enqueue_script('jquery');
 
-    // JSファイルを読み込む
+
+    // ハンバーガーJSファイルを読み込む
     wp_enqueue_script(
-        'awaretro-main',
-        get_template_directory_uri() . '/assets/js/main.js',
+        'awaretro-hamburger',
+        get_template_directory_uri() . '/assets/js/hamburger.js',
         '',
         '',
-        false  //フッターに読み込むように
+        true  //フッターに読み込むように
     );
 
     // それぞれのページに必要とするスタイルシート、JSファイルを読み込む
@@ -64,24 +80,24 @@ function awaretro_wp_enqueue_scripts()
     if (is_home()) {
         // トップページのKVのスライドショー
         // CSSファイルを読み込む
-        wp_enqueue_style('slick-carousel', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css');
+        // wp_enqueue_style('slick-carousel', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css');
 
         // JSファイルを読み込む
-        wp_enqueue_script(
-            'slick-carousel',
-            'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js',
-            '',
-            '',
-            true
-        );
+        // wp_enqueue_script(
+        //     'slick-carousel',
+        //     'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js',
+        //     '',
+        //     '',
+        //     true
+        // );
         // JSファイルを読み込む
-        wp_enqueue_script(
-            'awaretro-home',
-            get_template_directory_uri() . '/assets/js/home.js',
-            '',
-            '',
-            true
-        );
+        // wp_enqueue_script(
+        //     'awaretro-home',
+        //     get_template_directory_uri() . '/assets/js/home.js',
+        //     '',
+        //     '',
+        //     true
+        // );
     } else if (is_page()) {
         // 固定ページ
 
