@@ -12,6 +12,15 @@
     } */
 }
 
+
+@media screen and (max-width:400px) {
+    .colamn_card {
+        transform: scale(0.85);
+        row-gap: 20px;
+    }
+}
+
+
 body {
     background-color: #fffdf0;
 }
@@ -21,6 +30,8 @@ body {
     height: 100%;
     background-image: url(../images/texture01.png);
     background-repeat: repeat;
+    position: relative;
+    z-index: 5;
 }
 
 .header_image {
@@ -71,16 +82,18 @@ body {
     padding: 0.5rem;
     text-align: center;
     border-radius: 0 0 70px 70px;
+
 }
 
 .nav_item a {
     display: block;
     padding-bottom: 1rem;
-    font-size: 0.8rem;
     /* height: 100%; */
     /* padding: 1.8rem 1rem; */
     line-height: 1.33;
     text-align: center;
+    font-family: "Kaisei Opti", serif;
+    font-size: 16px;
 }
 
 .nav_icon {
@@ -143,7 +156,6 @@ body {
 
 /* フォント設定 */
 
-
 h2 {
     font-size: 42px;
     font-weight: bold;
@@ -171,38 +183,91 @@ p {
 }
 
 .title_box {
-    width: 100%;
+    width: 80%;
     margin: 5rem auto;
     width: fit-content;
 }
 
+
+
 /* ボタンリスト */
-.btn_content {
-    width: 70%;
+.btn_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
     margin: 0 auto;
-    padding: 2rem;
+}
+
+.btn_item {
+    position: relative;
+    width: 35%;
+    height: 30%;
+    margin: 1rem;
+    cursor: pointer;
+    border: 2px solid;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.btn_item_text {
+    font-family: "Kaisei Opti", serif;
+    font-size: 32px;
+    text-shadow: 1px 1px 1px #ffff;
+}
+
+.category_item_green {
+    background-color: #028391;
+}
+
+
+.bg {
+    width: 30%;
+    position: relative;
+    bottom: 3rem;
+    z-index: 10;
+}
+
+.btn_content {
+    width: 80%;
+    margin: 0 auto;
+    padding: 3rem;
 
     display: flex;
     justify-content: space-between;
 }
 
-.btn_item {
+/* .btn_item {
     width: 50%;
     margin: 20px;
     padding: 0.8rem;
     border: 1px solid #028391;
     background-color: #ffffff;
     text-align: center;
-}
+} */
 
 .btn_item:hover {
     background-color: #028391;
 }
 
-.choice {
-    background-color: #028391;
-}
+@media screen and (max-width:850px) {
+    .btn_container {
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 0 auto;
+    }
 
-.choice p {
-    color: #ffffff;
+    .btn_item {
+        width: 90%;
+        margin: 1rem;
+        white-space: nowrap
+    }
+
+    .bg {
+        bottom: 2rem;
+        width: 20%;
+    }
 }

@@ -4,9 +4,16 @@
 
 
 /* ============================= */
-.wrap.gallery {
+.gallery_main {
     background-color: #028391d8;
 }
+
+.gallery_filter {
+    width: 100%;
+    height: 100%;
+    background: url(../images/texture01.png);
+}
+
 
 .gallery_container {
     width: 100%;
@@ -131,17 +138,19 @@
         left: -5%;
         width: 150px;
     }
+
     .gallery_bgimg.g_bg4 {
         right: -5%;
         width: 150px;
     }
+
     .gallery_bgimg.g_bg5 {
         left: 25%;
-        
+
     }
 }
 
-@media screen and (max-width:760px){
+@media screen and (max-width:760px) {
     .gallery_bgimg.g_bg1 {
         width: 100px;
         top: -100px;
@@ -153,10 +162,12 @@
         right: 10%;
     }
 }
-@media screen and (max-width:450px){
+
+@media screen and (max-width:450px) {
     .gallery_img {
         width: 280px;
     }
+
     .gallery_box {
         width: 95%;
         grid-template-columns: repeat(auto-fit, 280px);
