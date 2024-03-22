@@ -70,6 +70,7 @@ img {
 .hover_data:hover {
     transform: translateY(-5px);
     cursor: pointer;
+    box-shadow: 5px 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* ホバー機能付与 */
