@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+.contact_main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contact_form_container {
+    width: 90%;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.contact_form_box {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contact_form_table {
+    margin: 0 auto;
+}
+
+.contact_form_table caption {
+    width: 100%;
+    height: fit-content;
+    margin: 100px auto 50px;
+    padding-bottom: 0.2em;
+    font-size: 42px;
+    font-weight: bold;
+    font-family: "Kaisei Opti", serif;
+    border-bottom: 8px dashed #181818;
+}
+
+.contact_form_table th {
+    width: 100%;
+    display: block;
+    text-align: left;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-size: 16px;
+    padding: 10px 10px;
+}
+
+.contact_form_table td {
+    width: 100%;
+    display: block;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-size: 16px;
+    padding: 10px 10px;
+}
+
+.contact_form_table td:first-of-type {
+    text-align: left;
+}
