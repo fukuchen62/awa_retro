@@ -31,8 +31,9 @@ a {
   font-size: 40px;
   font-weight: 700;
 }
+
 .openbtn1 {
-  position: relative; /*ボタン内側の基点となるためrelativeを指定*/
+  /* position: relative; ボタン内側の基点となるためrelativeを指定 */
   background: #ffffff;
   cursor: pointer;
   width: 50px;
@@ -41,6 +42,7 @@ a {
 }
 
 .hamburger .btn-gNav {
+
   position: fixed;
   top: 20px;
   right: 20px;
@@ -114,6 +116,7 @@ a {
   .nav_inner {
     display: none;
   }
+
   .btn-gNav {
     display: block;
   }

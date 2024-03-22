@@ -108,21 +108,6 @@
     width: 100%;
 }
 
-
-
-/* ページネーション */
-.gallery_page {
-    height: 280px;
-    padding-top: 50px;
-}
-
-.gallery_page p {
-    font-size: 28px;
-    text-align: center;
-}
-
-
-
 @media screen and (max-width:1050px) {
     .gallery_bgimg.g_bg1 {
         left: 5%;
@@ -172,4 +157,36 @@
         width: 95%;
         grid-template-columns: repeat(auto-fit, 280px);
     }
+}
+
+/* ページネーション  */
+.gallery_pagination_box {
+    width: 70%;
+    margin: 0 auto;
+    padding: 3em;
+}
+
+.gallery_pagination {
+    display: flex;
+    justify-content: center;
+}
+
+.gallery_pagination a {
+    color: black;
+    font-weight: 800;
+    font-size: 16px;
+    padding: 0.5rem 0.8rem;
+    margin: 1rem;
+}
+
+.gallery_pagination a.active {
+    background-color: #1A2B3C;
+    color: white;
+    border-radius: 20%;
+}
+
+.gallery_pagination a:hover:not(.active) {
+    background-color: #B3B3B3;
+    color: #fff;
+    border-radius: 10px;
 }
