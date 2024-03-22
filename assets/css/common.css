@@ -154,7 +154,6 @@ body {
 
 /* フォント設定 */
 
-
 h2 {
     font-size: 42px;
     font-weight: bold;
@@ -187,18 +186,21 @@ p {
     width: fit-content;
 }
 
+
+
 /* ボタンリスト */
 .btn_container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    width: 85%;
+    margin: 0 auto;
 }
 
 .btn_item {
     position: relative;
-    width: 20%;
-    height: 50%;
+    width: 35%;
+    height: 30%;
     margin: 1rem;
     cursor: pointer;
     border: 2px solid;
@@ -217,14 +219,13 @@ p {
 
 .category_item_green {
     background-color: #028391;
-
 }
 
 
 .bg {
     width: 30%;
     position: relative;
-    bottom: 56px;
+    bottom: 3rem;
     z-index: 10;
 }
 
@@ -248,5 +249,23 @@ p {
 
 .btn_item:hover {
     background-color: #028391;
-    color: #fff;
+}
+
+@media screen and (max-width:850px) {
+    .btn_container {
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .btn_item {
+        width: 90%;
+        margin: 1rem;
+        white-space: nowrap
+    }
+
+    .bg {
+        bottom: 2rem;
+        width: 20%;
+    }
 }
