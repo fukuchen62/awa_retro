@@ -72,4 +72,6 @@ $(category_id).on('click', function () {
     $(this).addClass('category_item_green');
     $('.bg').remove();
     $(this).prepend($('<img src="../uploads/gallery_bg2.png" alt="" class="bg">'));
+    const data = $(this).find('.category_item_text').text();
+    console.log(data)
 });
