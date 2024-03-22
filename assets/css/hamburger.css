@@ -21,7 +21,7 @@ a {
 
 .hamburger {
   margin: 20px auto 0;
-  width: 100%;
+  /* width: 100%; */
   max-width: 900px;
   display: flex;
   justify-content: space-between;
@@ -30,14 +30,6 @@ a {
 .logo {
   font-size: 40px;
   font-weight: 700;
-}
-.openbtn1 {
-  /* position: relative; ボタン内側の基点となるためrelativeを指定 */
-  background: #ffffff;
-  cursor: pointer;
-  width: 50px;
-  height: 50px;
-  border-radius: 5px;
 }
 
 .hamburger .btn-gNav {
@@ -150,5 +142,16 @@ a {
     width: 86%;
     padding: 15px;
     border-bottom: #525252 1px solid;
+  }
+  .openbtn1 {
+    /* position: relative; ボタン内側の基点となるためrelativeを指定 */
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    background: #ffffff;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
   }
 }
