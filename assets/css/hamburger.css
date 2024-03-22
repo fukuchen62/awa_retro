@@ -1,77 +1,157 @@
 @charset "utf-8";
-/*==================================================
-　5-2-1 3本線が×に
-===================================*/
-/*ボタン外側※レイアウトによってpositionや形状は適宜変更してください*/
+
+/* body {
+  color: #ffffff;
+  background-color: #525252;
+  no-repeat top #000000;
+} */
+
+ol,
+ul {
+  list-style: none;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+}
+
+.hamburger {
+  margin: 20px auto 0;
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: 700;
+}
+
 .openbtn1 {
-  position: relative; /*ボタン内側の基点となるためrelativeを指定*/
-  background: #57a2c7;
+  /* position: relative; ボタン内側の基点となるためrelativeを指定 */
+  background: #ffffff;
   cursor: pointer;
   width: 50px;
   height: 50px;
   border-radius: 5px;
 }
 
-/*ボタン内側*/
-.openbtn1 span {
-  display: inline-block;
-  transition: all 0.4s; /*アニメーションの設定*/
+.hamburger .btn-gNav {
+
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 24px;
+  z-index: 12;
+  box-sizing: border-box;
+  cursor: pointer;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+}
+
+.hamburger .btn-gNav span {
   position: absolute;
-  left: 14px;
-  height: 3px;
-  border-radius: 2px;
-  background: #fff;
-  width: 45%;
+  width: 100%;
+  height: 4px;
+  background: #028391;
+  border-radius: 10px;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
 }
 
-.openbtn1 span:nth-of-type(1) {
-  top: 15px;
+.hamburger .btn-gNav span:nth-child(1) {
+  top: 0;
 }
 
-.openbtn1 span:nth-of-type(2) {
-  top: 23px;
+.hamburger .btn-gNav span:nth-child(2) {
+  top: 10px;
 }
 
-.openbtn1 span:nth-of-type(3) {
-  top: 31px;
+.hamburger .btn-gNav span:nth-child(3) {
+  top: 20px;
 }
 
-/*activeクラスが付与されると線が回転して×に*/
-
-.openbtn1.active span:nth-of-type(1) {
-  top: 18px;
-  left: 18px;
-  transform: translateY(6px) rotate(-45deg);
-  width: 30%;
+.hamburger .btn-gNav.open span:nth-child(1) {
+  background: #ffffff;
+  top: 6px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
-.openbtn1.active span:nth-of-type(2) {
-  opacity: 0; /*真ん中の線は透過*/
+.hamburger .btn-gNav.open span:nth-child(2),
+.hamburger .btn-gNav.open span:nth-child(3) {
+  top: 6px;
+  background: #ffffff;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
-.openbtn1.active span:nth-of-type(3) {
-  top: 30px;
-  left: 18px;
-  transform: translateY(-6px) rotate(45deg);
-  width: 30%;
-}
-/*========= レイアウトのためのCSS ===============*/
-
-body {
-  background: #f3f3f3;
-  padding: 20px;
+.btn-gNav {
+  display: none;
 }
 
-a {
-  color: #333;
-  text-decoration: none;
+.gNav .gNav-menu {
+  display: none;
+  /* justify-content: space-between; */
 }
 
-.lead {
-  margin: 20px 0 0 0;
+.gNav .gNav-menu li {
+  margin: 0 auto;
+  padding: 0 5px;
 }
 
-.btn-block {
-  width: 200px;
-  padding: 30px;
+@media screen and (max-width: 760px) {
+  .logo_box {
+    display: none;
+  }
+
+  .nav_inner {
+    display: none;
+  }
+
+  .btn-gNav {
+    display: block;
+  }
+
+  .gNav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-size: 16px;
+    box-sizing: border-box;
+    z-index: 1;
+    padding-top: 50px;
+    transition: 0.3s;
+  }
+
+  .gNav.open {
+    right: 0;
+  }
+
+  .gNav .gNav-menu {
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    flex-direction: column;
+    text-align: center;
+    /*justify-content: center;*/
+  }
+
+  .gNav .gNav-menu li {
+    width: 86%;
+    padding: 15px;
+    border-bottom: #525252 1px solid;
+  }
 }

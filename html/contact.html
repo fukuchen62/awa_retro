@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>詳細ページ(レトロスポット)</title>
+
+    <!-- reset CSS -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/reset.css">
+
+    <!-- slick CSS -->
+    <link rel="stylesheet" type="text/css" href="../assets/css/slick.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/slick-theme.css">
+
+    <!-- colorbox CSS -->
+    <link rel="stylesheet" href="../assets/css/colorbox.css">
+
+    <!-- 共通のCSS -->
+    <link rel="stylesheet" href="../assets/css/common.css">
+
+    <!-- 自作のCSS -->
+    <link rel="stylesheet" href="../assets/css/detail.css">
+    <link rel="stylesheet" href="../assets/css/gallery.css">
+    <link rel="stylesheet" href="../assets/css/contact.css">
+
+    <!-- googleフォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@700&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrap detail">
+        <header>
+
+        </header>
+
+        <!-- メイン ================== -->
+        <main id="contact_main" class="contact_main">
+
+            <!-- お問い合わせフォーム -->
+            <div class="contact_form_container">
+
+                <form class="contact_form_box" action="#" method="post">
+
+                    <table class="contact_form_table">
+                        <caption>お問い合わせ</caption>
+
+                        <tr>
+                            <th>件名*</th>
+                            <td>
+                                <input type="text" name="name" required>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th>氏名*</th>
+                            <td>
+                                <input type="text" name="name" required placeholder="徳島 レトロ">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th>かな</th>
+                            <td>
+                                <input type="text" name="kana_name" required placeholder="とくしま れとろ">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th>TEL</th>
+                            <td>
+                                <input type="tel" name="tel">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th>E-mail*</th>
+                            <td>
+                                <input type="email" name="email" required placeholder="tokushima-1234@retroXXXX.com">
+                                <div><small>※半角で入力してください</small></div>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th>お問い合わせ内容*</th>
+                            <td>
+                                <textarea name="comment" cols="30" rows="5" required></textarea>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <div class="contact_form_btns">
+                        <input type="reset" value="クリア">
+                        <input type="button" value="入力内容を確認">
+                    </div>
+
+                </form>
+
+            </div>
+
+
+        </main>
+
+        <!-- フッター -->
+        <footer>
+
+        </footer>
+
+        <!-- jQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+        <!-- slick -->
+        <script src="../assets/js/slick.min.js"></script>
+
+        <!-- colorbox -->
+        <script src="../assets/js/jquery.colorbox-min.js"></script>
+
+        <!-- 自作 -->
+        <script src="../assets/js/main.js"></script>
+
+    </div>
+
+</body>
+</html>

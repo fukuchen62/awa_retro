@@ -1,3 +1,4 @@
+@charset "utf-8";
 /* ページ全体 */
 
 body {
@@ -115,10 +116,12 @@ body {
 }
 
 .bg {
-    width: 50%;
-    position: relative;
+    width: 100px;
+    height: auto;
+    position: absolute;
     bottom: 70px;
     z-index: 10;
+    display: none;
 }
 
 /* .category_bgi1 {

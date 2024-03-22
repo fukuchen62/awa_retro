@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+.contact_main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contact_form_container {
+    width: 90%;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.contact_form_box {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.contact_form_table {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contact_form_table caption {
+    width: 100%;
+    height: fit-content;
+    margin: 100px auto 50px;
+    padding-bottom: 0.2em;
+    font-size: 42px;
+    font-weight: bold;
+    font-family: "Kaisei Opti", serif;
+    border-bottom: 8px dashed #181818;
+}
+
+.contact_form_table tr {
+    width: 100%;
+}
+
+.contact_form_table th {
+    width: 100%;
+    padding: 0 10px;
+    margin-top: 1em;
+    display: block;
+    text-align: left;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.contact_form_table td {
+    width: 100%;
+    display: block;
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+.contact_form_table td:first-of-type {
+    text-align: left;
+}
+
+/* 入力フォームの設定 */
+.contact_form_table input[type="text"],
+.contact_form_table input[type="tel"],
+.contact_form_table input[type="email"],
+.contact_form_table textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #181818;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #ffffff;
+}
+
+
+.contact_form_table input[type="text"]:focus,
+.contact_form_table input[type="tel"]:focus,
+.contact_form_table input[type="email"]:focus,
+.contact_form_table textarea:focus {
+    background-color: #fbf6ead2;
+    outline: 1px solid #F85525;
+}
