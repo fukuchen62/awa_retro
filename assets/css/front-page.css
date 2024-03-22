@@ -1,3 +1,10 @@
+@charset "utf-8";
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
 /* テンプレート */
 .main_conteiner {
     width: 100%;
@@ -35,16 +42,24 @@
     opacity: 0.7;
 }
 
+/* 背景橙付与 */
 .bgc_secthion_y {
     background-color: #ffd771;
 }
 
+/* 背景白付与 */
 .bgc_secthion_w {
     background-color: #ffffff;
 }
 
+/* ボーダーライン付与 */
 .b_s {
     border: solid 1px black;
+}
+
+/* ホバー機能付与 */
+.hover_data:hover {
+    transform: translateY(-5px);
 }
 
 /* セクション１－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－ */
@@ -274,8 +289,46 @@
 }
 
 /* ギャラリーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
-.gallery_box{
+.gallery_box {
     margin-top: 40px;
+}
+
+.gallery_box_film {
+    background-color: black;
+}
+
+.gallery_box_film_img {
+    height: 40px;
+    width: 100%;
+    background-image: url(../images/film_w.png);
+    background-repeat: repeat-x
+}
+
+/* インスタグラムーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
+.insta_box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.insta_box_data {
+    max-width: 1000px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.insta_box_data_item {
+    max-width: 230px;
+    max-height: 230px;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
 }
 
 /*==================================================
