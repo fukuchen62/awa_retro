@@ -128,6 +128,7 @@
 }
 
 
+/* コラム詳細 */
 .colamn_list_container {
     position: relative;
     width: 80%;
@@ -147,6 +148,22 @@
     height: 150px;
     top: -8rem;
     left: 70%;
+}
+
+@media screen and (max-width:850px) {
+    .colamn_list_container {
+        padding: 0.2rem;
+    }
+
+    .colamn_body {
+        width: 90%;
+    }
+
+    .pigimg {
+        width: 20%;
+        height: 70px;
+        top: -3.5rem
+    }
 }
 
 /* ページネーション */
