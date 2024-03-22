@@ -1,3 +1,5 @@
+"use strict";
+
 // スライドショー
 $('.slider').slick({
     arrows: false,//左右の矢印はなし
