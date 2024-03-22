@@ -10,7 +10,7 @@ get_header();
 
         <main>
             <section class="section is-black">
-                <h2>お気に入り</h2>
+                <h2>TOPページ</h2>
             </section>
         </main>
 
