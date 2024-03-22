@@ -2,9 +2,13 @@
 
 
 @media screen and (max-width:400px) {
+    .colamn_box {
+        gap: 40px;
+        grid-template-columns: repeat(auto-fit, 300px);
+    }
+
     .colamn_card {
-        transform: scale(0.85);
-        row-gap: 20px;
+        width: 300px;
     }
 }
 
