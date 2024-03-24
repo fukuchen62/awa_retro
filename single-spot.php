@@ -10,7 +10,7 @@ get_header();
 
         <main>
             <section class="section is-black">
-                <h2>お気に入り</h2>
+                <h2>レトロスポット（詳細）</h2>
             </section>
         </main>
 

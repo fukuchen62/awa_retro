@@ -37,11 +37,11 @@ get_header();
 
 <?php
     $gallery = get_field('gallrey');
-    $gallery_url = $gallery['sizes']['medium'];
+    $gallery_url = $gallery_img['sizes']['medium'];
 ?>
 
                     <?php
-                    $gallery = [
+                    $gallery_img = [
                         'post_type' => 'gallery', // 投稿タイプ
                         'posts_per_page' => 15, // 15件を取得
                         'post__not_in' => array(get_the_ID()), // 現在表示している記事のID
@@ -59,19 +59,27 @@ get_header();
 
 
             <!-- 背景のイラスト -->
-            <div class="gallery_bgimg g_bg1"><img src="../uploads/gallery_bg1.png" alt="ギャラリーの背景画像1"></div>
-            <div class="gallery_bgimg g_bg2"><img src="../uploads/gallery_bg2.png" alt="ギャラリーの背景画像2"></div>
-            <div class="gallery_bgimg g_bg3"><img src="../uploads/gallery_bg3.png" alt="ギャラリーの背景画像3"></div>
-            <div class="gallery_bgimg g_bg4"><img src="../uploads/gallery_bg4.png" alt="ギャラリーの背景画像4"></div>
-            <div class="gallery_bgimg g_bg5"><img src="../uploads/gallery_bg2.png" alt="ギャラリーの背景画像5"></div>
+            <div class="gallery_bgimg g_bg1"><img src="<?php echo get_template_directory_uri(  ); ?>../uploads/gallery_bg1.png" alt="ギャラリーの背景画像1"></div>
+            <div class="gallery_bgimg g_bg2"><img src="<?php echo get_template_directory_uri(  ); ?>../uploads/gallery_bg2.png" alt="ギャラリーの背景画像2"></div>
+            <div class="gallery_bgimg g_bg3"><img src="<?php echo get_template_directory_uri(  ); ?>../uploads/gallery_bg3.png" alt="ギャラリーの背景画像3"></div>
+            <div class="gallery_bgimg g_bg4"><img src="<?php echo get_template_directory_uri(  ); ?>../uploads/gallery_bg4.png" alt="ギャラリーの背景画像4"></div>
+            <div class="gallery_bgimg g_bg5"><img src="<?php echo get_template_directory_uri(  ); ?>../uploads/gallery_bg2.png" alt="ギャラリーの背景画像5"></div>
 
         </div>
 
 
         <!-- ページネーション -->
+        <?php
+            if(function_exists('wp_pagenavi')):
+        ?>
         <div class="gallery_page">
-            <p>＜ 1234......＞</p>
+            <?php
+                wp_pagenavi();
+            ?>
         </div>
+        <?php
+            endif;
+        ?>
 
 
     </section>
