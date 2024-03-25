@@ -45,6 +45,15 @@ img {
     align-items: center;
 }
 
+.template_title_box2 {
+    width: 100%;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .search_box {
     display: flex;
     justify-content: center;
@@ -55,7 +64,7 @@ img {
 .search_box_inner {
     width: 100%;
     height: 100%;
-    margin:40px 60px 60px 20px; 
+    margin:40px 60px 60px 60px; 
     font-size: 20px;
 }
 
@@ -73,6 +82,9 @@ img {
     background-color: aliceblue;
 }
 
+.search_category_title{
+    margin-bottom: 20px;
+}
 .search_form_title{
     margin-bottom: 10px;
 }
@@ -90,4 +102,31 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.section_text_green{
+    background-color: #166f4b;
+    padding: 0 50px 0 50px;
+}
+
+.section_text_green_h2{
+    background-color: #ffffff;
+
+}
+
+.search_count_box{
+    display: flex;
+    margin-bottom: 60px;
+}
+.search_count_box_text{
+    margin-left: 80px;
+    font-size: 32px;
+}
+
+.pagination_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    margin-bottom: 120px;
 }
