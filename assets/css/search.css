@@ -5,6 +5,10 @@ img {
     height: 100%;
 }
 
+.bs {
+    border: solid 1px black;
+}
+
 /* テンプレート */
 .main_conteiner {
     width: 100%;
@@ -25,338 +29,65 @@ img {
 .container {
     width: 100%;
     height: 100%;
-    background-color: #ffe49f;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0.7;
-}
-
-.container2 {
-    width: 100%;
-    height: 100%;
     background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
     opacity: 0.7;
 }
-
-.container3 {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0.7;
-}
-
-/* 背景橙付与 */
-.bgc_secthion_y {
-    background-color: #ffd771;
-}
-
-/* 背景白付与 */
-.bgc_secthion_w {
-    background-color: #ffffff;
-}
-
-/* ボーダーライン付与 */
-.b_s {
-    border: solid 1px black;
-}
-
-/* ホバー機能付与 */
-.hover_data:hover {
-    transform: translateY(-5px);
-    cursor: pointer;
-    box-shadow: 5px 5px 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-/* ホバー機能付与 */
-.hover_data2:hover {
-    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.2);
-    transform: scale(0.9);
-}
-
-/* セクション１－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－ */
-.top_title_box {
-    width: 100%;
-    margin-top: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.top_text_box {
-    width: 100%;
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.top_text_box_inner {
-    max-width: 1000px;
-    width: 100%;
-}
-
-.top_link_box {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-
-.top_link_box_data a {
-    border-bottom: dashed 5px;
-    font-weight: 500;
-    font-family: "Kaisei Opti", serif;
-    color: black;
-}
-
-.top_colam_box {
-    background-color: #ffff;
-    margin: 40px 20px 20px 20px;
-    padding-top: 20px;
-    padding-bottom: 40px;
-}
-
-.top_colam_box_title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.top_colam_box_list {
-    margin: 20px 20% 20px 10%;
-}
-
-.colam_box_list_item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 10px 10px 10px;
-
-}
-
-.colam_box_list_item_genre {
-    background-color: #028391;
-    color: #ffff;
-    width: 20%;
-    text-align: center;
-    padding: 5px 0 5px 0;
-    margin-right: 20px;
-}
-
-.colam_box_list_item_border {
-    width: 80%;
-    height: 100%;
-    border-bottom: 2px solid black;
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-}
-
-.colam_box_list_item_article {
-    height: 100%;
-    margin-left: 50px;
-    margin-bottom: 10px;
-}
-
-.top_look_box {
-    width: 100;
-    height: 300px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.top_look_box_aitem {
-    height: 100px;
-    width: 200px;
-}
-
-/* お食事処・レトロスポットーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
-
-.template_section_title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 100px;
-    margin-top: 20px;
-}
-
-.template_section_box {
-    width: 600px;
-    height: 200px;
-}
-
-.food_section {
-    background-image: url(../images/title-flag01.png);
-    background-size: 100% 100%;
-}
-
-.spot_section {
-    background-image: url(../images/title-flag02.png);
-    background-size: 100% 100%;
-}
-
-.template_section_box_text {
-    padding-top: 10%;
-    padding-left: 10%;
-    color: #ffffff;
-}
-
-
-.template_image_box {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 50px 0 50px 0;
-}
-
-.template_image_box_data {
-    width: 320px;
-    height: 240px;
-}
-
 
 .template_title_box {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 60px;
+    margin-bottom: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.template_text_box {
-    width: 100%;
-    margin-top: 50px;
+.search_box {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(255, 206, 146);
 }
 
-.template_text_box_inner {
-    max-width: 800px;
-    width: 100%;
-}
-
-.template_look_box {
-    width: 100;
-    height: 300px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.template_look_box_aitem {
-    height: 100px;
-    width: 200px;
-}
-
-/* 地図----------------------------------------------------------- */
-.map_box {
+.search_box_inner {
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin:40px 60px 60px 20px; 
+    font-size: 20px;
 }
 
-.map_box_data {
-    margin-top: 50px;
-    width: 1000px;
-    height: 700px;
+.search_word_title{
+    margin-bottom: 20px;
 }
 
-
-/* モデルコースーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
-.model_box {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.model_box_list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 40px;
+.search_word_input{
     margin-bottom: 40px;
 }
 
-.model_box_list_item {
-    border: dashed 2px;
-    padding: 20px 40px 20px 40px;
+.search_word_input_data{
     width: 30%;
-    margin-right: 40px;
-    margin-top: 20px;
+    border: solid 1px black;
+    background-color: aliceblue;
+}
+
+.search_form_title{
+    margin-bottom: 10px;
+}
+.search_form_input{
     margin-bottom: 20px;
-    text-align: center;
-    background-color: #ffe3b5;
 }
 
-/* ギャラリーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
-.gallery_box {
-    margin-top: 40px;
+.search_form_label{
+    margin-right: 60px;
+    font-weight:500;
 }
 
-.gallery_box_film {
-    background-color: black;
-}
-
-.gallery_box_film_img {
-    height: 40px;
+.search_form_post{
     width: 100%;
-    background-image: url(../images/film_w.png);
-    background-repeat: repeat-x
-}
-
-/* インスタグラムーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
-.insta_box {
-    width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.insta_box_data {
-    max-width: 1000px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 10px;
-}
-
-.insta_box_data_item {
-    max-width: 230px;
-    max-height: 230px;
-    width: 100%;
-    height: 100%;
-    margin-top: 20px;
-}
-
-/*==================================================
-スライダーのためのcss
-===================================*/
-.slider img {
-    height: 400px;
-    max-width: 426px;
-    /*スライダー内の画像を横幅100%に*/
-}
-
-/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
-
-.slider .slick-slide {
-    margin: 0 10px;
-    /*スライド左右の余白調整*/
 }
