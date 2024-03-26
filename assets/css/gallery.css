@@ -44,12 +44,13 @@
 
 .gallery_img {
     width: 350px;
-    aspect-ratio: 4/3;
+    height: 262.5px;
+    object-fit: cover;
 }
 
 .gallery_img img {
     width: 100%;
-    aspect-ratio: 4/3;
+    height: 100%;
     filter: grayscale(80%);
     transition: 0.3s;
 }
@@ -152,6 +153,7 @@
 @media screen and (max-width:450px) {
     .gallery_img {
         width: 280px;
+        height: 210px;
     }
 
     .gallery_box {
