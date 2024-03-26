@@ -124,12 +124,14 @@
     color: #ccc;
 }
 
-#cboxCurrent {
+
+/* 【1 of ○ images】の表示CSS↓ */
+/* #cboxCurrent {
     position: absolute;
     top: -20px;
     right: 0px;
     color: #ccc;
-}
+} */
 
 #cboxLoadingGraphic {
     background: url(colorbox_images/loading.gif) no-repeat center center;
