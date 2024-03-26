@@ -22,7 +22,7 @@
 }
 
 .contact_form_table caption {
-    width: 100%;
+    width: 70%;
     height: fit-content;
     margin: 100px auto 50px;
     padding-bottom: 0.2em;
@@ -79,4 +79,184 @@
 .contact_form_table textarea:focus {
     background-color: #fbf6ead2;
     outline: 1px solid #F85525;
+}
+
+/* 個人情報の取り扱いについて確認 */
+.parsonal_imfomation_check {
+    width: 80%;
+    height: fit-content;
+    margin: 2em auto;
+    padding: 0.3em;
+    background-color: #ffffff;
+    box-shadow: 5px 5px #00000046;
+    border-radius: 50px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.parsonal_imfomation_check a {
+    text-decoration: none;
+    color: #000000;
+
+}
+
+.parsonal_imfomation_check:hover {
+    transform: translate(5px, 5px);
+    box-shadow: 0 0 #00000046;
+}
+
+/* 同意するボタン */
+.parsonal_imfomation_checkbox {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+/* クリア・入力内容確認ボタン ~~~~~~~~~~~~~~~*/
+.contact_form_btns {
+    text-align: center;
+}
+
+.contact_form_btns input {
+    width: 150px;
+    height: 40px;
+
+    box-shadow: 5px 5px #00000046;
+    transition: 0.3s;
+}
+
+/* クリアボタンの設定 */
+.contact_form_btns input[type="reset"] {
+    background-color: #D9D9D9;
+    margin: 2em 30px 4em;
+}
+
+/* 入力内容確認ボタンの設定 */
+.contact_form_btns input[type="button"] {
+    background: #FBD266;
+    margin: 2em 30px 4em;
+}
+
+/* ボンタにマウスが乗った時 */
+.contact_form_btns input:hover {
+    transform: translate(5px, 5px);
+    box-shadow: 0 0 #00000046;
+    border: 3px dashed #00000046;
+}
+
+
+@media screen and (max-width:780px) {
+    .contact_form_box {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .contact_form_btns input[type="reset"] {
+        margin-bottom: 0;
+    }
+
+    .contact_form_table caption {
+        font-size: 32px;
+    }
+}
+
+
+/* お問い合わせ送信確認ページ contact_result~~~~~~~~~~~~~~~~~~~*/
+.contact_result_main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contact_result_text {
+    text-align: center;
+    margin: 2em auto;
+}
+
+.contact_result_btns {
+    text-align: center;
+}
+
+.contact_result_btns input {
+    width: 150px;
+    height: 40px;
+    box-shadow: 5px 5px #00000046;
+    transition: 0.3s;
+}
+
+/* 入力フォームに戻るボタンの設定 */
+.contact_result_btns input[type="button"] {
+    background-color: #D9D9D9;
+    margin: 2em 30px 4em;
+}
+
+/* 送信ボタンの設定 */
+.contact_result_btns input[type="submit"] {
+    background: #FBD266;
+    margin: 2em 30px 4em;
+}
+
+/* ボンタにマウスが乗った時 */
+.contact_result_btns input:hover {
+    transform: translate(5px, 5px);
+    box-shadow: 0 0 #00000046;
+    border: 3px dashed #00000046;
+}
+
+@media screen and (max-width:480px) {
+    .contact_result_btns input[type="reset"] {
+        margin-bottom: 0;
+    }
+}
+
+/* 送信完了ページ contact_complete~~~~~~~~~~~~~~~~~~~*/
+.contact_complete_main {
+    width: 100%;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.contact_complete_container {
+    width: 90%;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.contact_complete_box {
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 100px auto;
+}
+
+.contact_complete_box h2 {
+    width: 70%;
+    margin: 0 auto 50px;
+    padding-bottom: 0.2em;
+    font-size: 42px;
+    font-weight: bold;
+    font-family: "Kaisei Opti", serif;
+    border-bottom: 8px dashed #181818;
+}
+
+.contact_complete_content {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact_complete_text1 {
+    margin-bottom: 1em;
+}
+
+.contact_complete_text2 {
+    margin-bottom: 10em;
+}
+
+.contact_complete_container a {
+    text-decoration: none;
+    padding-bottom: 5em;
+}
+
+.contact_complete_container a:hover {
+    color: red;
 }
