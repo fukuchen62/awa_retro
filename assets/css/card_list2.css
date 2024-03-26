@@ -137,6 +137,10 @@
 
 
 @media screen and (max-width:400px) {
+    .card_list_box {
+        grid-template-columns: repeat(auto-fit, 300px);
+    }
+
     .card_list_content {
         gap: 40px;
         grid-template-columns: repeat(auto-fit, 300px);
