@@ -55,7 +55,38 @@
                         <!-- <a>種別</a>
                         <a>目的別</a>
                         <a>エリア</a> -->
-                        <?php get_template_part('template-parts/tax_name'); ?>
+                        <!-- タクソノミーを取得する -->
+                        <?php
+                        $food_type = get_post_type(get_the_ID());
+                        $taxonomies = get_object_taxonomies($post_type);
+
+
+                        $taxonomy_names = wp_get_object_terms(
+                            get_the_ID(),
+                            $taxonomies,
+                            array(
+                                "fields" => "all",
+                                "orderby" => "taxonomy",
+                                "order" => "asc"
+                            )
+                        );
+
+                        // print_r($taxonomy_names);
+                        ?>
+                        <!-- タクソノミーを出力 -->
+
+                        <?php
+                        if (!empty($taxonomy_names)) :
+                            foreach ($taxonomy_names as $tax_name) : ?>
+
+                                <?php
+                                // print_r($tax_name);
+                                $link = get_term_link($tax_name->term_id, $tax_name->taxonomy);
+                                ?>
+                                <a href="<?php echo $link; ?>"><?php echo $tax_name->name; ?></a>
+                            <?php endforeach; ?>
+                        <?php else :  ?>
+                        <?php endif;  ?>
                     </div>
 
                     <div class="shop_detail_chatch">
@@ -316,7 +347,7 @@
 
                 <!-- ※背景画像3 -->
                 <div class="detail_spot_bg3">
-                    <img src="../assets/images/detail/spot_detail_bg3.PNG" alt="背景画像3">
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/detail/spot_detail_bg3.PNG" alt="背景画像3">
                 </div>
 
                 <!-- コメント投稿欄 -->
@@ -422,6 +453,8 @@
                             <a href="#">ナポリタン</a>
                             <a href="#">クリームソーダ</a>
                             <a href="#">食べる</a> -->
+
+                                    <!-- タクソノミーを出力 -->
                                     <?php
                                     if (!empty($taxonomy_names)) :
                                         foreach ($taxonomy_names as $tax_name) : ?>
