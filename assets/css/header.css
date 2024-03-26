@@ -448,8 +448,8 @@ img {
 
 .menu__item {
   margin: 5px;
-  text-decoration: none;
-  list-style: none;
+  /* text-decoration: none;
+  list-style: none; */
   text-align: center;
   font-size: 1rem;
   height: 30px;
@@ -607,6 +607,7 @@ img {
 
 /* 1023px以下なら消す */
 .gnav__title:last-child,
+.gnav__icon,
 .menu__item dd {
   display: none;
 }
