@@ -188,6 +188,10 @@ img {
   }
 }
 
+.gnav__title {
+  display: none;
+}
+
 .gnav__menu__content.is-active {
   z-index: 80;
   left: 0;
