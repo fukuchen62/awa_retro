@@ -124,20 +124,6 @@ body {
     display: none;
 }
 
-/* .category_bgi1 {
-    background-image: url(../images/food_list/food_category01.jpg);
-    background-size: cover;
-}
-
-.category_bgi2 {
-    background-image: url(../images/food_list/food_category02.jpeg);
-    background-size: cover;
-}
-
-.category_bgi3 {
-    background-image: url(../images/food_list/food_category03.png);
-    background-size: cover;
-} */
 
 /* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーカテゴリーコンテナ */
 
@@ -156,3 +142,9 @@ body {
     margin: 0 10px;
     /*スライド左右の余白調整*/
 }
+
+
+/* レスポンシブ */
+@media screen and (max-width: 850px) {}
+
+@media screen and (max-width: 760px) {}
