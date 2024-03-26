@@ -1,6 +1,6 @@
 @charset "utf-8";
 a {
-  font-family: "Kaisei Opti";
+  font-family: "Kaisei Opti", serif;
 }
 
 /* ヘッダー */
@@ -142,7 +142,7 @@ img {
   top: 0;
   /*leftの値を変更してメニューを画面外へ*/
   left: 100%;
-  background-color: #f6dcac;
+  background-color: #028391;
   z-index: -50;
   visibility: hidden;
   /* `アニメーション */
@@ -303,13 +303,13 @@ img {
 }
 
 .gnav__title {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-weight: bold;
   max-width: 600px;
   width: 95%;
   margin: -40px 10px;
   position: absolute;
-  color: #000;
+  color: #ffffff;
   text-decoration: none;
   border-bottom: dashed 1px #000;
   left: 48%;
@@ -320,52 +320,15 @@ img {
 .gnav__search__sp__title {
   max-width: 600px;
   width: 95%;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-weight: bold;
   margin: -40px 10px;
   position: absolute;
-  color: #000;
+  color: #ffffff;
   text-decoration: none;
   border-bottom: dashed 1px #000;
   left: 48%;
   transform: translate(-50%);
-}
-
-/* 虫眼鏡のgavi */
-.gnav__search__sp {
-  padding: 10px;
-  margin: 10px 0 10px 20px;
-  max-width: 60px;
-  height: 60px;
-  width: 100%;
-  border-radius: 5px;
-  background-color: #4f4f4f;
-}
-
-/* 輪っか部分 */
-.gnav__search__sp span:nth-child(1) {
-  display: block;
-  position: absolute;
-  border: 4px solid #d9d9d9;
-  border-radius: 12px;
-  padding: 5px;
-  width: 23px;
-  height: 23px;
-}
-
-/* 柄部分 */
-.gnav__search__sp span:nth-child(2) {
-  display: block;
-  position: relative;
-  border: solid 2px #d9d9d9;
-  background-color: #d9d9d9;
-  border-radius: 5px;
-  max-width: 20px;
-  width: 100%;
-  height: 3px;
-  top: 24px;
-  left: 16px;
-  transform: rotate(45deg);
 }
 
 /* sp用検索 */
@@ -485,8 +448,8 @@ img {
 
 .menu__item {
   margin: 5px;
-  text-decoration: none;
-  list-style: none;
+  /* text-decoration: none;
+  list-style: none; */
   text-align: center;
   font-size: 1rem;
   height: 30px;
@@ -644,6 +607,7 @@ img {
 
 /* 1023px以下なら消す */
 .gnav__title:last-child,
+.gnav__icon,
 .menu__item dd {
   display: none;
 }
