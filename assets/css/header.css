@@ -448,8 +448,8 @@ img {
 
 .menu__item {
   margin: 5px;
-  /* text-decoration: none;
-  list-style: none; */
+  text-decoration: none;
+  list-style: none;
   text-align: center;
   font-size: 1rem;
   height: 30px;
