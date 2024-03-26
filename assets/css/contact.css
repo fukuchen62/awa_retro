@@ -16,6 +16,12 @@
     margin: 0 auto;
 }
 
+.contact_form_box p:first-child {
+    padding-top: 2em;
+    font-weight: bold;
+    font-size: 13px;
+}
+
 .contact_form_table {
     width: 100%;
     margin: 0 auto;
@@ -24,7 +30,7 @@
 .contact_form_table caption {
     width: 70%;
     height: fit-content;
-    margin: 100px auto 50px;
+    margin: 50px auto 50px;
     padding-bottom: 0.2em;
     font-size: 42px;
     font-weight: bold;
@@ -114,6 +120,10 @@
 /* クリア・入力内容確認ボタン ~~~~~~~~~~~~~~~*/
 .contact_form_btns {
     text-align: center;
+}
+
+.contact_form_btns_sbmit {
+    pointer-events: none;
 }
 
 .contact_form_btns input {
