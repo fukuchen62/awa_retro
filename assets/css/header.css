@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 a {
   font-family: "Kaisei Opti", serif;
 }
@@ -6,6 +7,10 @@ a {
 /* ヘッダー */
 body.is-active {
   overflow: hidden;
+}
+
+.color1 {
+  background-color: #000;
 }
 
 header {
@@ -19,7 +24,7 @@ header {
 }
 
 .wrapper {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   position: relative;
   display: flex;
   margin: 0 auto;
@@ -153,12 +158,13 @@ img {
   .gnav__menu__content {
     display: none;
   }
+
 }
 
 /* PCnav */
 @media screen and (min-width: 1023px) {
   .gnav__menu__content {
-    max-width: 1200px;
+    /* max-width: 1200px; */
     width: 100%;
     height: 100px;
     display: flex;
@@ -260,7 +266,7 @@ img {
   font-weight: bold;
   max-width: 600px;
   width: 100%;
-  margin: -50px 10px;
+  margin: -40px 10px;
   position: absolute;
   color: #ffffff;
   text-decoration: none;
@@ -301,6 +307,7 @@ img {
   text-align: center;
   padding: 19px 0;
 }
+
 .menu__item__search__sp div {
   font-size: 1.6rem;
   font-weight: 900;
@@ -346,6 +353,7 @@ img {
   text-align: left;
   font-size: 1.6rem;
 }
+
 .menu__item__home {
   position: relative;
   text-decoration: none;
@@ -354,10 +362,12 @@ img {
   text-align: center;
   padding: 19px 0;
 }
+
 .menu__item__home div {
   font-size: 1.6rem;
   font-weight: 900;
 }
+
 .menu__item__home span,
 .menu__item__home span::before {
   width: 100%;
@@ -370,12 +380,14 @@ img {
   width: 15px;
   bottom: 35px;
 }
+
 .menu__item__home span {
   transform: rotate(45deg);
   position: absolute;
   left: 82%;
   top: 42%;
 }
+
 .menu__item__home span::before {
   top: 7px;
   left: 7px;
@@ -407,10 +419,12 @@ img {
   font-size: 1rem;
   height: 30px;
 }
+
 .menu__item dt {
   font-weight: 900;
   font-size: 1.6rem;
 }
+
 .menu__item dl {
   position: relative;
   top: -15px;
@@ -457,7 +471,7 @@ img {
 @media screen and (min-width: 1023px) {
   .menu__wrap {
     max-width: 1200px;
-    width: 12%;
+    width: 20%;
     margin: 0;
     display: flex;
     height: auto;
@@ -512,6 +526,7 @@ img {
 
 /* 1023px以上なら表示 */
 @media screen and (min-width: 1023px) {
+
   /* PCnavの見出し */
   .gnav {
     border: 0px;
@@ -520,7 +535,7 @@ img {
     margin: 0 auto;
     padding-top: 35px;
     text-align: center;
-    background-color: #028391;
+    /* background-color: #028391; */
     border-radius: 0 0 70px 70px;
   }
 
@@ -569,6 +584,7 @@ img {
 
 /* 1023以上なら消す */
 @media screen and (min-width: 1023px) {
+
   .hamburger__menu__btn,
   .gnav__search__sp__title,
   .gnav__search__sp,
