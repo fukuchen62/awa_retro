@@ -720,7 +720,6 @@
 .other_spot_card.food:hover {
     transform: scale(1.1);
     box-shadow: 0px 0px 20px 10px #5aff94;
-    /* filter: sepia(20%); */
 }
 
 .other_spot_card_inner.food {
