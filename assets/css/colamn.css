@@ -129,6 +129,7 @@
 
 
 /* コラム詳細 */
+
 .colamn_list_container {
     position: relative;
     width: 80%;
@@ -160,6 +161,10 @@
         width: 90%;
     }
 
+    .colamn_titile {
+        font-size: 20px;
+    }
+
     /* .pigimg {
         width: 200px;
         height: 150;
@@ -167,13 +172,11 @@
     } */
 }
 
-@media screen and (max-width:550px) {
-    .pigimg {
-        width: 80px;
-        height: 65px;
-        top: -2rem
+/* @media screen and (max-width:550px) {
+    .colamn_titile {
+        font-size: 16px;
     }
-}
+} */
 
 /* ページネーション */
 .pagination_box {
