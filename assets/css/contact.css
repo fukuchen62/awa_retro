@@ -122,10 +122,6 @@
     text-align: center;
 }
 
-.contact_form_btns_sbmit {
-    pointer-events: none;
-}
-
 .contact_form_btns input {
     width: 150px;
     height: 40px;
@@ -142,8 +138,14 @@
 
 /* 入力内容確認ボタンの設定 */
 .contact_form_btns input[type="button"] {
-    background: #FBD266;
+    /* background: #FBD266; */
     margin: 2em 30px 4em;
+}
+
+/* 入力確認ボタン自体へのクラス名とクリック無効化 */
+.contact_form_btns_sbmit {
+    pointer-events: none;
+    background: #D9D9D9;
 }
 
 /* ボンタにマウスが乗った時 */

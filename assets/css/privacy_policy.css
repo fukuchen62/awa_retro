@@ -46,5 +46,19 @@ img {
 
 .policy_box {
     background-color: #ffffff;
-    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
 }
+
+.policy_box_data {
+    width: 100%;
+    height: 100%;
+}
+
+.policy_box_data_h {
+    margin: 40px 0 40px 0;
+}
+
+.policy_box_data_text {}
