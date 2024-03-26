@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+.site_about {
+    width: 50%;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+}
+
+.dashed {
+    border-bottom: 6px dashed #000000;
+}
+
+
+@media screen and (max-width:850px) {
+    .site_about {
+        width: 80%;
+    }
+
+    .dashed {
+        font-size: 25px;
+    }
+}
