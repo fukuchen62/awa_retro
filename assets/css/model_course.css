@@ -33,10 +33,11 @@ a {
     white-space: nowrap;
 }
 
+
 .model_inner_time {
-    width: 30%;
     padding: 0.8rem 1.5rem 0.8rem 0.8rem;
     background-color: gray;
+    color: #fff;
     box-shadow: 8px 10px 13px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -50,6 +51,26 @@ a {
     width: 60%;
     right: 4rem;
     margin: 5rem auto;
+}
+
+
+@media screen and (max-width:750px) {
+    .model_box {
+        max-width: 80%;
+    }
+
+    .model_inner {
+        width: 90%;
+        white-space: normal;
+    }
+
+    .model_inner span {
+        display: inline-block;
+    }
+
+    .model_body {
+        width: 80%;
+    }
 }
 
 /* 立ち寄ったスポット */
@@ -148,14 +169,5 @@ a {
     .course_title {
         font-size: 20px;
         margin: 5px;
-    }
-
-    .model_inner {
-        width: 50%;
-        display: inline-block;
-    }
-
-    .model_body {
-        width: 80%;
     }
 }
