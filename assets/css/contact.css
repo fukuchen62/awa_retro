@@ -116,6 +116,10 @@
     text-align: center;
 }
 
+.contact_form_btns_sbmit {
+    pointer-events: none;
+}
+
 .contact_form_btns input {
     width: 150px;
     height: 40px;
