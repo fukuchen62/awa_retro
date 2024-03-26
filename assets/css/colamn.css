@@ -142,13 +142,9 @@
     margin: 3rem;
 }
 
-.pigimg {
-    position: absolute;
-    z-index: 2;
-    width: 150x;
-    height: 100px;
-    top: -8rem;
-    left: 70%;
+.colamn_commnt {
+    width: 80%;
+    margin: 0 auto;
 }
 
 @media screen and (max-width:850px) {
@@ -172,11 +168,6 @@
     } */
 }
 
-/* @media screen and (max-width:550px) {
-    .colamn_titile {
-        font-size: 16px;
-    }
-} */
 
 /* ページネーション */
 .pagination_box {

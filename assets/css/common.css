@@ -188,6 +188,9 @@ p {
     width: fit-content;
 }
 
+time {
+    margin: 2rem;
+}
 
 
 /* ボタンリスト */
