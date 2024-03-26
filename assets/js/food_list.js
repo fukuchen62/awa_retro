@@ -70,8 +70,23 @@ $(category_id).on('click', function () {
     // alert("クリックされました");
     $('div').removeClass('category_item_green');
     $(this).addClass('category_item_green');
-    $('.bg').remove();
-    $(this).prepend($('<img src="../uploads/gallery_bg2.png" alt="" class="bg">'));
-    const data = $(this).find('.category_item_text').text();
-    console.log(data)
+    const data_h = $(this).offset().top;
+    const data_w = $(this).offset().left;
+    $('.bg').css('top', data_h - 40);
+    $('.bg').css('left', data_w);
+    $('.bg').css('display', 'block');
 });
+
+
+
+
+
+// var category_id = document.getElementsByClassName('category_item');
+// $(category_id).on('click', function () {
+//     $('div').removeClass('category_item_green');
+//     $(this).addClass('category_item_green');
+//     $('.bg').remove();
+//     $(this).prepend($('<img src="../uploads/gallery_bg2.png" alt="" class="bg">'));
+//     const data = $(this).find('.category_item_text').text();
+//     console.log(data)
+// });
