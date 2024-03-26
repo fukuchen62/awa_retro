@@ -138,15 +138,11 @@
 
 @media screen and (max-width:400px) {
     .card_list_box {
-        grid-template-columns: repeat(auto-fit, 300px);
+        grid-template-columns: repeat(auto-fit, 280px);
     }
 
     .card_list_content {
-        gap: 40px;
-        grid-template-columns: repeat(auto-fit, 300px);
+        width: 280px;
     }
 
-    .card_list_content {
-        width: 300px;
-    }
 }
