@@ -54,6 +54,7 @@ img {
     align-items: center;
 }
 
+/* 検索ボックスの中央配置 */
 .search_box {
     display: flex;
     justify-content: center;
@@ -61,12 +62,14 @@ img {
     background-color: rgb(255, 206, 146);
 }
 
+/* formデータのmargin付与 */
 .search_box_inner {
     width: 100%;
     height: 100%;
     margin: 40px 60px 60px 60px;
     font-size: 20px;
 }
+
 
 .search_word_title {
     margin-bottom: 20px;
@@ -135,8 +138,6 @@ img {
 }
 
 /* レスポンシブ */
-@media screen and (max-width: 850px) {}
-
 @media screen and (max-width: 760px) {
     .search_word_input_data {
         width: 90%;
