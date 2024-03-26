@@ -144,4 +144,18 @@ a {
         width: 80%;
         margin: 0 auto;
     }
+
+    .course_title {
+        font-size: 20px;
+        margin: 5px;
+    }
+
+    .model_inner {
+        width: 50%;
+        display: inline-block;
+    }
+
+    .model_body {
+        width: 80%;
+    }
 }
