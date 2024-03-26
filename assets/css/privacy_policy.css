@@ -33,6 +33,7 @@ img {
     justify-content: center;
     align-items: center;
     opacity: 0.7;
+    background-color: #f6ebb6;
 }
 
 .template_title_box {
@@ -49,7 +50,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px;
+    padding: 40px 40px 40px 60px;
 }
 
 .policy_box_data {
@@ -58,7 +59,9 @@ img {
 }
 
 .policy_box_data_h {
-    margin: 40px 0 40px 0;
+    margin: 40px 0 20px 0;
 }
 
-.policy_box_data_text {}
+.policy_box_data_text {
+    margin-bottom: 40px;
+}
