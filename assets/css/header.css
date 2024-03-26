@@ -13,7 +13,7 @@ header {
   top: 0;
   width: 100%;
   height: 60px;
-  background-color: #fff;
+  /* background-color: #fff; */
   z-index: 10;
   /* font-family: "Zen Maru Gothic", sans-serif; */
 }
@@ -35,8 +35,8 @@ header {
 
 /* ヘッダー画像大きさ */
 .header__logo img {
-  width: 100px;
-  height: 50px;
+  width: 110px;
+  height: 55px;
   object-fit: cover;
 }
 
@@ -238,53 +238,6 @@ img {
   justify-content: center;
 }
 
-/* ワード検索の虫眼鏡アイコン */
-
-.lupe {
-  position: relative;
-  padding: 3px;
-  font-size: 15px;
-  color: #fff;
-  background-color: #000;
-  border-radius: 50%;
-}
-
-.fa__search {
-  position: relative;
-  left: 0;
-}
-
-/* 輪っか部分 */
-.lupe__sp span:nth-child(1) {
-  position: absolute;
-  border: 4px solid #d9d9d9;
-  border-radius: 12px;
-  width: 23px;
-  height: 23px;
-  top: -23px;
-  left: -52px;
-}
-
-/* 柄部分 */
-.lupe__sp span:nth-child(2) {
-  position: absolute;
-  border: solid 2px #d9d9d9;
-  background-color: #d9d9d9;
-  border-radius: 5px;
-  max-width: 20px;
-  width: 100%;
-  height: 15px;
-  transform: rotate(-45deg);
-  top: -7px;
-  left: -30px;
-}
-.house {
-  width: 100%;
-  height: auto;
-  font-size: 30px;
-  padding: 3px;
-}
-
 /* 通常gnavのアイコン */
 .gnav__icon {
   color: #d9d9d9;
@@ -303,11 +256,11 @@ img {
 }
 
 .gnav__title {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
   max-width: 600px;
-  width: 95%;
-  margin: -40px 10px;
+  width: 100%;
+  margin: -50px 10px;
   position: absolute;
   color: #ffffff;
   text-decoration: none;
@@ -319,8 +272,8 @@ img {
 /* sp用検索見出し */
 .gnav__search__sp__title {
   max-width: 600px;
-  width: 95%;
-  font-size: 1.2rem;
+  width: 100%;
+  font-size: 1rem;
   font-weight: bold;
   margin: -40px 10px;
   position: absolute;
