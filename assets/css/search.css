@@ -64,69 +64,86 @@ img {
 .search_box_inner {
     width: 100%;
     height: 100%;
-    margin:40px 60px 60px 60px; 
+    margin: 40px 60px 60px 60px;
     font-size: 20px;
 }
 
-.search_word_title{
+.search_word_title {
     margin-bottom: 20px;
 }
 
-.search_word_input{
+.search_word_input {
     margin-bottom: 40px;
 }
 
-.search_word_input_data{
+.search_word_input_data {
     width: 30%;
     border: solid 1px black;
     background-color: aliceblue;
 }
 
-.search_category_title{
+.search_category_title {
     margin-bottom: 20px;
 }
-.search_form_title{
+
+.search_form_title {
     margin-bottom: 10px;
 }
-.search_form_input{
+
+.search_form_input {
     margin-bottom: 20px;
 }
 
-.search_form_label{
+.search_form_label {
     margin-right: 60px;
-    font-weight:500;
+    font-weight: 500;
 }
 
-.search_form_post{
+.search_form_post {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.section_text_green{
+.section_text_green {
     background-color: #166f4b;
     padding: 0 50px 0 50px;
 }
 
-.section_text_green_h2{
+.section_text_green_h2 {
     background-color: #ffffff;
 
 }
 
-.search_count_box{
+.search_count_box {
     display: flex;
     margin-bottom: 60px;
 }
-.search_count_box_text{
+
+.search_count_box_text {
     margin-left: 80px;
     font-size: 32px;
 }
 
-.pagination_box{
+.pagination_box {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 32px;
     margin-bottom: 120px;
+}
+
+/* レスポンシブ */
+@media screen and (max-width: 850px) {}
+
+@media screen and (max-width: 760px) {
+    .search_word_input_data {
+        width: 90%;
+    }
+
+    .search_form_label {
+        display: block;
+        font-weight: 500;
+    }
 }
