@@ -193,3 +193,42 @@
     color: #fff;
     border-radius: 10px;
 }
+
+.gallery_pagination_box {
+    width: 70%;
+    margin: 0 auto;
+    padding: 3em;
+}
+
+
+/* プラグインに合わせてCSS作成 */
+.wp-pagenavi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wp-pagenavi .current {
+    padding: 0.5rem 0.8rem;
+    border-radius: 20%;
+}
+
+.wp-pagenavi a {
+    color: black;
+    font-weight: 800;
+    font-size: 16px;
+    padding: 0.5rem 0.8rem;
+    margin: 1rem;
+}
+
+.wp-pagenavi a.active {
+    background-color: #1A2B3C;
+    color: white;
+    border-radius: 20%;
+}
+
+.wp-pagenavi a:hover:not(.active) {
+    background-color: #B3B3B3;
+    color: #fff;
+    border-radius: 10px;
+}
