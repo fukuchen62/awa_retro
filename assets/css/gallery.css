@@ -90,15 +90,15 @@
 }
 
 .gallery_bgimg.g_bg4 {
-    top: 530px;
+    top: 30%;
     right: -50px;
     width: 200px;
     transform: rotate(20deg);
 }
 
 .gallery_bgimg.g_bg5 {
-    top: 850px;
-    left: 20%;
+    bottom: -12px;
+    left: 10%;
     width: 100px;
 }
 
