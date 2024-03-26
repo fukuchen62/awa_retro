@@ -139,8 +139,7 @@
 }
 
 .colamn_list {
-    margin: 3rem;
-    padding: 5rem;
+    padding-bottom: 5rem;
 }
 
 .colamn_commnt {
@@ -164,8 +163,11 @@
 }
 
 .detail_link {
+    width: 100%;
     font-size: 13px;
+    text-align: center;
 }
+
 
 @media screen and (max-width:850px) {
     .colamn_list_container {
