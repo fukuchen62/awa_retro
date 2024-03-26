@@ -63,8 +63,17 @@ function awaretro_wp_enqueue_scripts()
     wp_enqueue_style('awaretro-hamburger-css', get_template_directory_uri() . '/assets/css/hamburger.css');
 
     // jQueryを読み込む
-    wp_enqueue_script('jquery');
+    // wp_enqueue_script('jquery');
 
+    wp_deregister_script('jquery');
+
+    wp_enqueue_script(
+        'jquery-3.7.1',
+        'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js',
+        '',
+        '',
+        false  //フッターに読み込むように
+    );
 
     wp_enqueue_script(
         'awaretro-main',
@@ -120,12 +129,22 @@ function awaretro_wp_enqueue_scripts()
         // 固定ページ
 
     } else if (is_post_type_archive('gallery')) {
+
         wp_enqueue_style('awaretro-gallery', get_template_directory_uri() . '/assets/css/gallery.css');
+
+        wp_enqueue_style('awaretro-colorbox', get_template_directory_uri() . '/assets/css/colorbox.css');
 
         // JSファイルを読み込む
         wp_enqueue_script(
-            'awaretro-colorbox',
+            'awaretro-colorbox-min',
             get_template_directory_uri() . '/assets/js/jquery.colorbox-min.js',
+            '',
+            '',
+            true
+        );
+        wp_enqueue_script(
+            'awaretro-gallery',
+            get_template_directory_uri() . '/assets/js/gallery.js',
             '',
             '',
             true
@@ -197,6 +216,10 @@ function awaretro_pre_get_posts($query)
     } else if (is_search()) {
         //検索の場合は、投稿のみ対象とする
         // $query->set('post_type', 'post');
+    } else if (is_post_type_archive('gallery')) {
+        $query->set('posts_per_page', 9);       //9件だけ
+        //ギャラリーの場合は、並びはランダムとする
+        $query->set('orderby', 'rand');
     }
 
     //公開する投稿だけ
