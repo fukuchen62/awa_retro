@@ -24,7 +24,7 @@
     font-weight: bold;
 } */
 
-.spot_title_box h2 .right_space{
+.spot_title_box h2 .right_space {
     font-family: "Kaisei Opti", serif;
     font-weight: bold;
 }
@@ -41,7 +41,7 @@
     font-size: 16px;
 } */
 
-.spot_name{
+.spot_name {
     font-family: "Kaisei Opti", serif;
     font-weight: bold;
     font-size: 16px;
@@ -66,7 +66,7 @@
 /* フォントのcss終了 */
 
 /* タイトル */
-.spot_title_box{
+.spot_title_box {
     width: 460px;
     height: 263px;
     margin: 0 auto;
@@ -77,24 +77,25 @@
 }
 
 /* 左に余白を空ける */
-.right_space{
+.right_space {
     margin-right: 55px;
 }
 
 /* 470px以下のタイトル */
-@media screen and (max-width:470px){
-    .title_box{
-    width: 320px;
-    height: auto;
-    margin: 0 auto;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    text-align: center;
-    line-height: 1.5;
-}
-    .right_space{
-    margin-right: 0px;
-}
+@media screen and (max-width:470px) {
+    .title_box {
+        width: 320px;
+        height: auto;
+        margin: 0 auto;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    .right_space {
+        margin-right: 0px;
+    }
 
 }
 
@@ -109,7 +110,7 @@
     width: 67%;
     max-width: 1280px;
     /* height: 500px; */
-    margin:0 auto;
+    margin: 0 auto;
     background-color: #000;
     /* padding-bottom: 20px; */
 
@@ -151,7 +152,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    filter:sepia(0.5);
+    filter: sepia(0.5);
     opacity: 0;
     background-repeat: no-repeat;
     background-position: center center;
@@ -176,17 +177,18 @@
         transform: scale(1.18);
     }
 }
+
 /* スライドショー終了 */
 
 /* 見出し・文章css */
-.sub_section_box{
+.sub_section_box {
     width: 67%;
     margin: 0 auto;
     margin-bottom: 100px;
     margin-top: 100px;
 }
 
-.sub_title_box{
+.sub_title_box {
     width: auto;
     height: auto;
     letter-spacing: 3px;
@@ -194,7 +196,7 @@
     /* margin-left: 17%; */
 }
 
-.sub_text_box{
+.sub_text_box {
     width: auto;
     height: auto;
     /* margin: 100px auto 200px; */
@@ -204,12 +206,13 @@
     /* margin-right: 17%;  */
     /* font-size: 16px; */
 }
+
 /* 見出し・文章css終了 */
 
 /* ボタンcss */
 
 /* ベースのボタンの枠 */
-.spot_btn_box{
+.spot_btn_box {
     width: 1280px;
     height: auto;
     margin: 0 auto;
@@ -221,7 +224,7 @@
 }
 
 /* ボタンの枠 */
-.spot_btn{
+.spot_btn {
     /* display: block; */
     width: 206px;
     height: 72px;
@@ -241,7 +244,7 @@
 }
 
 /* マウスが乗ったとき */
-.spot_btn:hover{
+.spot_btn:hover {
     /* transition: 0.2s; */
     margin-top: 3px;
     box-shadow: 0px 3px 0 0 #000000;
@@ -255,7 +258,7 @@
 /* マウスが乗ったとき終了 */
 
 /* ボタンのaタグ */
-.btn_a{
+.btn_a {
     width: 100%;
     height: 100%;
     display: flex;
@@ -270,17 +273,18 @@
 
 
 /* 1280px以下、850px以上のボタン */
-@media screen and (min-width:850px) and (max-width:1280px){
-    .spot_btn_box{
-    width: 850px;
-    /* height: auto; */
-    /* margin: 0 auto; */
-    display: flex;
-    /* justify-content: space-around; */
-    flex-wrap: wrap;
-    /* margin-bottom: 100px */
-}
-    .spot_btn{
+@media screen and (min-width:850px) and (max-width:1280px) {
+    .spot_btn_box {
+        width: 850px;
+        /* height: auto; */
+        /* margin: 0 auto; */
+        display: flex;
+        /* justify-content: space-around; */
+        flex-wrap: wrap;
+        /* margin-bottom: 100px */
+    }
+
+    .spot_btn {
         /* display: block; */
         width: 146px;
         height: 68px;
@@ -289,72 +293,74 @@
         box-shadow: 0px 6px 0 0 #000000;
     }
 }
+
 /* 1280以下、850px以上のボタン終了 */
 
 /* 849px以下、760px以上のボタン */
-@media screen and (min-width:760px) and (max-width:849px){
-    .spot_btn_box{
+@media screen and (min-width:760px) and (max-width:849px) {
+    .spot_btn_box {
         width: 760px;
     }
-    .spot_btn{
+
+    .spot_btn {
         width: 128px;
         height: 60px;
-        box-shadow:0px 5px 0 0 #000000;
+        box-shadow: 0px 5px 0 0 #000000;
         margin-left: 12px;
         margin-right: 12px;
     }
 
     /* マウスが乗ったとき */
-    .spot_btn:hover{
-    margin-top: 3px;
-    box-shadow: 0px 2px 0 0 #000000;
-    margin-bottom: 47px;
-    /* background-color: #359ba6; */
+    .spot_btn:hover {
+        margin-top: 3px;
+        box-shadow: 0px 2px 0 0 #000000;
+        margin-bottom: 47px;
+        /* background-color: #359ba6; */
     }
 }
 
 /* 759px以下、432px以上のボタン */
-@media screen and (min-width:432px) and (max-width:759px){
-    .spot_btn_box{
+@media screen and (min-width:432px) and (max-width:759px) {
+    .spot_btn_box {
         width: 432px;
         /* display: flex; */
         /* flex-wrap: wrap; */
     }
 
-    .spot_btn{
+    .spot_btn {
         width: 128px;
         height: 60px;
-        box-shadow:0px 5px 0 0 #000000;
+        box-shadow: 0px 5px 0 0 #000000;
         margin-left: 12px;
         margin-right: 12px;
     }
 
-    .spot_btn:nth-of-type(1){
+    .spot_btn:nth-of-type(1) {
         margin-left: 0;
         margin-right: 12px;
         margin-bottom: 12px;
     }
 
-    .spot_btn:nth-of-type(2){
+    .spot_btn:nth-of-type(2) {
         margin-left: 12px;
         margin-right: 12px;
         margin-bottom: 12px;
     }
 
-    .spot_btn:nth-of-type(3){
+    .spot_btn:nth-of-type(3) {
         margin-left: 12px;
         margin-right: 0;
         margin-bottom: 12px;
     }
 
-    .spot_btn:nth-of-type(4){
+    .spot_btn:nth-of-type(4) {
         margin-top: 12px;
         margin-left: 76px;
         margin-right: 12px;
         margin-bottom: 50px;
     }
 
-    .spot_btn:nth-of-type(5){
+    .spot_btn:nth-of-type(5) {
         margin-top: 12px;
         margin-right: 76px;
         margin-left: 12px;
@@ -362,52 +368,55 @@
     }
 
     /* マウスが乗ったとき */
-    .spot_btn:hover:nth-of-type(1){
-    margin-top: 3px;
-    box-shadow: 0px 2px 0 0 #000000;
-    margin-bottom: 9px;
-    /* background-color: #359ba6; */
+    .spot_btn:hover:nth-of-type(1) {
+        margin-top: 3px;
+        box-shadow: 0px 2px 0 0 #000000;
+        margin-bottom: 9px;
+        /* background-color: #359ba6; */
     }
 
-    .spot_btn:hover:nth-of-type(2){
-    margin-top: 3px;
-    box-shadow: 0px 2px 0 0 #000000;
-    margin-bottom: 9px;
+    .spot_btn:hover:nth-of-type(2) {
+        margin-top: 3px;
+        box-shadow: 0px 2px 0 0 #000000;
+        margin-bottom: 9px;
     }
 
-    .spot_btn:hover:nth-of-type(3){
-    margin-top: 3px;
-    box-shadow: 0px 2px 0 0 #000000;
-    margin-bottom: 9px;
+    .spot_btn:hover:nth-of-type(3) {
+        margin-top: 3px;
+        box-shadow: 0px 2px 0 0 #000000;
+        margin-bottom: 9px;
     }
 
-    .spot_btn:hover:nth-of-type(4){
-    margin-top: 15px;
-    box-shadow: 0px 2px 0 0 #000000;
-    margin-bottom: 47px;
+    .spot_btn:hover:nth-of-type(4) {
+        margin-top: 15px;
+        box-shadow: 0px 2px 0 0 #000000;
+        margin-bottom: 47px;
     }
 
-    .spot_btn:hover:nth-of-type(5){
-    margin-top: 15px;
-    box-shadow: 0px 2px 0 0 #000000;
-    margin-bottom: 47px;
+    .spot_btn:hover:nth-of-type(5) {
+        margin-top: 15px;
+        box-shadow: 0px 2px 0 0 #000000;
+        margin-bottom: 47px;
     }
 }
+
 /* 432px以下のボタン */
-@media screen and (max-width:431px){
-    .spot_btn_box{
-    width: auto;
+@media screen and (max-width:431px) {
+    .spot_btn_box {
+        width: auto;
     }
-    .spot_btn{
+
+    .spot_btn {
         width: 128px;
         height: 60px;
-        box-shadow:0px 5px 0 0 #000000;
+        box-shadow: 0px 5px 0 0 #000000;
         margin-left: 12px;
         margin-right: 12px;
     }
 
 }
-.spot_name{
+
+.spot_name {
     color: #ffffff;
     letter-spacing: 0.5px;
 }
@@ -422,7 +431,7 @@
 /* ボタンcss終了 */
 
 /* カードの枠のcss */
-.spot_card_list_box{
+.spot_card_list_box {
     width: 100%;
     max-width: 1280px;
     height: auto;
@@ -432,11 +441,12 @@
     justify-content: space-around;
 
     /* align-items: center; */
-    background-color:#faa968;
+    background-color: #faa968;
     border-radius: 30px;
     border: solid 3px;
     margin: 0 auto;
 }
+
 /* カードの枠のcss終了 */
 
 /* カードのCSS */
@@ -457,15 +467,15 @@
     margin-top: 41px;
 }
 
-.card_list_content:nth-of-type(4){
+.card_list_content:nth-of-type(4) {
     margin-bottom: 41px;
 }
 
-.card_list_content:nth-of-type(5){
+.card_list_content:nth-of-type(5) {
     margin-bottom: 41px;
 }
 
-.card_list_content:nth-of-type(6){
+.card_list_content:nth-of-type(6) {
     margin-bottom: 41px;
 }
 
@@ -564,13 +574,12 @@
 }
 
 @media screen and (max-width:400px) {
-    .card_list_content {
-        gap: 40px;
-        grid-template-columns: repeat(auto-fit, 300px);
+    .card_list_box {
+        grid-template-columns: repeat(auto-fit, 280px);
     }
 
     .card_list_content {
-        width: 300px;
+        width: 280px;
     }
 }
 
@@ -598,8 +607,8 @@
     grid-row: span 4;
     gap: 0;
     transition: 0.3s; */
-    /* margin-left: 41px; */
-    /* margin-top: 41px;
+/* margin-left: 41px; */
+/* margin-top: 41px;
 } */
 
 /* .other_spot_card:nth-of-type(4){
@@ -623,7 +632,7 @@
 .other_spot_card:hover {
     transform: scale(1.1);
     box-shadow: 0px 0px 20px 10px #FBD266; */
-    /* filter: sepia(20%); */
+/* filter: sepia(20%); */
 /* } */
 
 
@@ -661,7 +670,7 @@
     font-size: 13px;
     font-family: "Zen Kaku Gothic New", sans-serif;
     z-index: 1; */
-    /* ルートスタッキングコンテキストで包まれている */
+/* ルートスタッキングコンテキストで包まれている */
 /* } */
 
 /* .other_spot_contant_tag a {
@@ -740,7 +749,7 @@
 /* .other_spot_card.food:hover {
     transform: scale(1.1);
     box-shadow: 0px 0px 20px 10px #5aff94; */
-    /* filter: sepia(20%); */
+/* filter: sepia(20%); */
 /* } */
 
 /* .other_spot_card_inner.food {
@@ -760,10 +769,12 @@
     margin: 0 auto;
     padding: 3em;
 }
+
 .spot_pagination {
     display: flex;
     justify-content: center;
 }
+
 .spot_pagination a {
     color: black;
     font-weight: 800;
@@ -771,11 +782,13 @@
     padding: 0.5rem 0.8rem;
     margin: 1rem;
 }
+
 .spot_pagination a.active {
     background-color: #1A2B3C;
     color: white;
     border-radius: 20%;
 }
+
 .spot_pagination a:hover:not(.active) {
     background-color: #B3B3B3;
     color: #fff;
