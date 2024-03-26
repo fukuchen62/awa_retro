@@ -374,8 +374,13 @@ img {
         font-size: 1.5rem;
     }
 
+    .template_section_title {
+        padding-left: 0px;
+        margin-right: 20px;
+    }
+
     .template_section_box_text {
-        padding-top: 25%;
+        padding-top: 23%;
     }
 
     .top_text_box_inner p {
