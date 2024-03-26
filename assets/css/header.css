@@ -467,7 +467,9 @@ img {
 }
 
 .menu__item img {
-  display: none;
+  /* display: none; */
+  width: 100%;
+  height: 100%;
 }
 
 .menu__item a {
