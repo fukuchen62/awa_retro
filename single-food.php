@@ -107,65 +107,31 @@
                     <div class="shop_detail_slider_box food detail_filter">
 
                         <div class="shop_detail_slider">
-                            <?php if (get_field('pic1')) : ?>
-                                <?php
-                                $pic1 = get_field('pic1');
-                                $pic_url1 = $pic1['sizes']['large']; //大サイズ画像
-                                ?>
-                                <div><img src="<?php echo $pic_url1; ?>" alt="お店の写真1"></div>
-                            <?php endif; ?>
-                            <?php if (get_field('pic2')) : ?>
-                                <?php
-                                $pic2 = get_field('pic2');
-                                $pic_url2 = $pic2['sizes']['large'];
-                                ?>
-                                <div><img src="<?php echo $pic_url2; ?>" alt="お店の写真2"></div>
-                            <?php endif; ?>
-                            <?php if (get_field('pic3')) : ?>
-                                <?php
-                                $pic3 = get_field('pic3');
-                                $pic_url3 = $pic3['sizes']['large'];
-                                ?>
-                                <div><img src="<?php echo $pic_url3; ?>" alt="お店の写真3"></div>
-                            <?php endif; ?>
-                            <?php if (get_field('pic4')) : ?>
-                                <?php
-                                $pic4 = get_field('pic4');
-                                $pic_url4 = $pic4['sizes']['large'];
-                                ?>
-                                <div><img src="<?php echo $pic_url4; ?>" alt="お店の写真4"></div>
-                            <?php endif; ?>
+
+                            <?php for ($i = 1; $i < 5; $i++) : ?>
+                                <?php if (get_field('pic' . $i)) : ?>
+                                    <?php
+                                    $pic = get_field('pic' . $i);
+
+                                    $pic_url = $pic['sizes']['large']; //大サイズ画像
+                                    ?>
+                                    <div><img src="<?php echo $pic_url; ?>" alt="お店の写真{$i}"></div>
+                                <?php endif; ?>
+                            <?php endfor; ?>
                         </div>
 
                         <div class="shop_detail_slider_nav">
-                            <?php if (get_field('pic1')) : ?>
-                                <?php
-                                $pic1 = get_field('pic1');
-                                $pic_url1 = $pic1['sizes']['medium']; //サイズ画像
-                                ?>
-                                <div><img src="<?php echo $pic_url1; ?>" alt="お店の写真1"></div>
-                            <?php endif; ?>
-                            <?php if (get_field('pic2')) : ?>
-                                <?php
-                                $pic2 = get_field('pic2');
-                                $pic_url2 = $pic2['sizes']['medium'];
-                                ?>
-                                <div><img src="<?php echo $pic_url2; ?>" alt="お店の写真2"></div>
-                            <?php endif; ?>
-                            <?php if (get_field('pic3')) : ?>
-                                <?php
-                                $pic3 = get_field('pic3');
-                                $pic_url3 = $pic3['sizes']['medium'];
-                                ?>
-                                <div><img src="<?php echo $pic_url3; ?>" alt="お店の写真3"></div>
-                            <?php endif; ?>
-                            <?php if (get_field('pic4')) : ?>
-                                <?php
-                                $pic4 = get_field('pic4');
-                                $pic_url4 = $pic4['sizes']['medium'];
-                                ?>
-                                <div><img src="<?php echo $pic_url4; ?>" alt="お店の写真4"></div>
-                            <?php endif; ?>
+
+                            <?php for ($i = 1; $i < 5; $i++) : ?>
+                                <?php if (get_field('pic' . $i)) : ?>
+                                    <?php
+                                    $pic = get_field('pic' . $i);
+                                    $pic_url = $pic['sizes']['medium']; //大サイズ画像
+                                    ?>
+                                    <div><img src="<?php echo $pic_url; ?>" alt="お店の写真{$i}"></div>
+                                <?php endif; ?>
+                            <?php endfor; ?>
+
                         </div>
 
                     </div>
