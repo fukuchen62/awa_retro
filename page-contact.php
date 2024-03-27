@@ -3,6 +3,21 @@
 get_header();
 ?>
 
+<!-- WordPress ループの開始 -->
+<?php if (have_posts()) : ?>
+    <?php while (have_posts()) : ?>
+        <?php the_post(); ?>
+
+        <main>
+            <section class="section is-black">
+                <h2>お問い合わせ</h2>
+            </section>
+        </main>
+
+        <!-- WordPress ループの終了 -->
+    <?php endwhile; ?>
+<?php endif; ?>
+
 <!-- メイン ================== -->
 <main id="contact_main" class="contact_main">
 
@@ -62,7 +77,7 @@ get_header();
 
             <!-- 個人情報の取り扱いについて -->
             <div class="parsonal_imfomation_check">
-                <a href="../html/privacy_policy.html" target="_blank">
+                <a href="<?php echo home_url('/policy'); ?>" target="_blank">
                     個人情報の取り扱いについて確認する
                 </a>
             </div>
@@ -83,22 +98,6 @@ get_header();
     </div>
 
 </main>
-
-
-<!-- WordPress ループの開始 -->
-<?php if (have_posts()) : ?>
-    <?php while (have_posts()) : ?>
-        <?php the_post(); ?>
-
-        <main>
-            <section class="section is-black">
-                <h2>お問い合わせ</h2>
-            </section>
-        </main>
-
-        <!-- WordPress ループの終了 -->
-    <?php endwhile; ?>
-<?php endif; ?>
 
 <!-- footer.phpを読み込む -->
 <?php
