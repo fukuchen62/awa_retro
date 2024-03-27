@@ -168,9 +168,18 @@ function awaretro_wp_enqueue_scripts()
     } else if (is_single()) {
         // 汎用のsingleページ
         wp_enqueue_style('awaretro-detail', get_template_directory_uri() . '/assets/css/detail.css');
+
+        wp_enqueue_script(
+            'awaretro-detail',
+            get_template_directory_uri() . '/assets/js/detail.js',
+            '',
+            '',
+            true
+        );
     } else if (is_singular('food')) {
         // 特定のfoodの詳細ページ
-
+        // 汎用のsingleページ
+        // wp_enqueue_style('awaretro-detail', get_template_directory_uri() . '/assets/css/detail.css');
     }
 }
 add_action('wp_enqueue_scripts', 'awaretro_wp_enqueue_scripts');

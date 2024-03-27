@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Top page</title>
 
-    <link rel="stylesheet" href="../assets/css/reset.css">
-    <link rel="stylesheet" href="../assets/css/common.css">
-    <link rel="stylesheet" href="../assets/css/colamn.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/reset.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/common.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/assets/css/colamn.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@700&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body <?php body_class(); ?>>
     <div class="wrap">
 
         <main>
@@ -59,7 +59,7 @@
                         <?php
                         // 検索条件を定義
                         $mypost = [
-                            'post_type' => 'food', // 投稿タイプ
+                            'post_type' => 'special', // 投稿タイプ
                             'posts_per_page' => '4', // 4件を取得
                             'post__not_in' => array(get_the_ID()), //現在表示している記事のID
                             'orderby' => 'rand' // ランダムに
@@ -96,7 +96,7 @@
                                     <!-- カードタグ -->
                                     <!-- タクソノミーを取得する -->
                                     <?php
-                                    $food_type = get_post_type(get_the_ID());
+                                    $post_type = get_post_type(get_the_ID());
                                     $taxonomies = get_object_taxonomies($post_type);
 
                                     // $taxonomy_names = wp_get_object_terms(get_the_ID(), $taxonomies,  array("fields" => "names", "orderby" => "count"));
@@ -138,7 +138,8 @@
                                     <!-- カードタイトル -->
                                     <div class="colamn_content_name">
                                         <!-- <h3>ギャラリー喫茶グレイス <br>昭和53年創業</h3> -->
-                                        
+                                        <?php the_field('restaurant_name'); ?>
+                                        <!-- フィールド待ち -->
                                     </div>
 
                                 </div>
@@ -147,58 +148,7 @@
                             <?php endwhile; ?>
                         <?php endif; ?>
                         <?php wp_reset_postdata(); ?>
-                        <div class="colamn_card">
 
-                            <!-- カード全体をhoverした時のリンク -->
-                            <a href="#" tabindex="-1"></a>
-
-                            <!-- 内側枠(飾り) -->
-                            <div class="colamn_card_inner"></div>
-
-                            <!-- カード画像 -->
-                            <div class="colamn_contant_img">
-                                <img src="../uploads/baic.jpg" alt="コラム写真">
-                            </div>
-
-                            <!-- カードタグ -->
-                            <div class="colamn_contant_tag">
-                                <a href="#">豆知識</a>
-                                <a href="#">体験</a>
-                                <a href="#">コラム</a>
-                            </div>
-
-
-                            <!-- カードタイトル -->
-                            <div class="colamn_content_name">
-                                <h3>ギャラリー喫茶グレイス <br>昭和53年創業</h3>
-                            </div>
-                        </div>
-                        <div class="colamn_card">
-
-                            <!-- カード全体をhoverした時のリンク -->
-                            <a href="#" tabindex="-1"></a>
-
-                            <!-- 内側枠(飾り) -->
-                            <div class="colamn_card_inner"></div>
-
-                            <!-- カード画像 -->
-                            <div class="colamn_contant_img">
-                                <img src="../uploads/baic.jpg" alt="コラム写真">
-                            </div>
-
-                            <!-- カードタグ -->
-                            <div class="colamn_contant_tag">
-                                <a href="#">豆知識</a>
-                                <a href="#">体験</a>
-                                <a href="#">コラム</a>
-                            </div>
-
-
-                            <!-- カードタイトル -->
-                            <div class="colamn_content_name">
-                                <h3>ギャラリー喫茶グレイス <br>昭和53年創業</h3>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
