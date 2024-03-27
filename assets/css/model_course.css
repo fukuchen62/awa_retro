@@ -14,8 +14,9 @@ a {
 }
 
 .model_body_textbox {
-    width: 70%;
+    width: 60%;
     margin: 0 auto;
+    text-align: center;
 }
 
 .model_box {
@@ -135,6 +136,13 @@ a {
     }
 }
 
+@media screen and (max-width:500px) {
+    .model_spot_contanier {
+        display: block;
+    }
+
+}
+
 
 hr {
     width: 80%;
@@ -179,31 +187,4 @@ hr {
 .other_model_spot_titile {
     margin: 1rem;
     font-size: 17px;
-}
-
-
-.example {
-    position: relative;
-}
-
-.example h3 {
-    position: absolute;
-    top: 85%;
-    /*画像の左上に配置*/
-    left: 15%;
-    margin: 0;
-    /*余計な隙間を除く*/
-    color: white;
-    /*文字を白に*/
-    background: rgb(47, 86, 101);
-    /*背景色*/
-    font-size: 15px;
-    line-height: 1;
-    /*行高は1に*/
-    padding: 1rem;
-    /*文字周りの余白*/
-}
-
-.example img {
-    width: 50%;
 }
