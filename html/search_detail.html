@@ -4,86 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>お食事処カテゴリー一覧</title>
+    <title>詳細検索</title>
+    <!-- リセットCSS -->
     <link rel="stylesheet" href="../assets/css/reset.css">
+    <!-- フォントリンク -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@700&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">
     <!-- slickスライダー -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-    <!-- スライドショーCSS -->
-    <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <!-- 共有CSS -->
     <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
     <link rel="stylesheet" href="../assets/css/card_list2.css">
-    <link rel="stylesheet" href="../assets/css/food_list.css">
-
+    <!-- 自作CSS -->
+    <link rel="stylesheet" href="../assets/css/search_detail.css">
 </head>
 
 <body>
     <div class="wrap">
-
-        <div class="contents_top">
-            <main class="contents">
-                <!-- ページタイトル -->
-                <section>
-                    <div class="title_container">
-                        <div>
-                            <h2>お食事 一覧</h2>
-                        </div>
-                        <div class="title_box_img"><img src="../assets/images/food_list/so-da.png" alt=""></div>
+        <header></header>
+        <main class="main_conteiner">
+            <div class="container">
+                <section class="contents">
+                    <div class="search_count_box">
+                        <div class="search_count_box_text">結果：「〇〇件」</div>
                     </div>
+
                 </section>
+            </div>
 
-                <!-- ページ解説 -->
-                <div class="explanation_container">
-                    <div class="explanation_text">
-                        <h3 class="explanation_text_h3">昭和を感じるレトロ</h3>
-                        <p>ああああああああああああああああああああああああああああああああああああああ</p>
-                        <p>いいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいい</p>
-                        <p>いいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいい</p>
-                    </div>
-                    <!-- <div class="explanation_box"><img src="../assets/images/food_list/cafe.png" alt=""></div> -->
-                </div>
-
-
-                <!-- スライドショー -->
-
-                <div class="screen_container ">
-                    <ul class="slider">
-                        <li><a href=""><img src="../uploads/food_list_screen01.jpg" alt=""></a></li>
-                        <li><a href=""><img src="../uploads/food_list_screen02.jpg" alt=""></a></li>
-                        <li><a href=""><img src="../uploads/food_list_screen03.jpg" alt=""></a></li>
-                        <li><a href=""><img src="../uploads/food_list_screen04.webp" alt=""></a></li>
-                        <li><a href=""><img src="../uploads/food_list_screen05.jpg" alt=""></a></li>
-                        <li><a href=""><img src="../uploads/food_list_screen06.jpg" alt=""></a></li>
-                        <!--/slider-->
-                    </ul>
-                </div>
-
-
-                <!-- カテゴリー -->
-
-                <div class="category_container ">
-                    <div class="category_item 1">
-                        <div class="category_item_text">純喫茶</div>
-                    </div>
-                    <div class="category_item 2">
-                        <div class="category_item_text">和食</div>
-                    </div>
-                    <div class="category_item 3">
-                        <div class="category_item_text">洋食</div>
-                    </div>
-                    <img src="../assets/images/gallery/gallery_bg2.png" alt="" class="bg">
-                </div>
-
+            <div class="container">
                 <!-- 周辺のスポット ========================== -->
                 <section id="card_list_container" class="card_list_container">
-
-                    <div class="card_list_title_container">
-                        <h2>カードリスト</h2>
-                    </div>
-
                     <div class="card_list_box">
 
                         <!-- カード ============ -->
@@ -97,7 +50,7 @@
 
                             <!-- カード画像 -->
                             <div class="card_list_contant_img">
-                                <img src="../uploads/dummy.jpg" alt="周辺スポットの写真">
+                                <img src="../uploads/test_img1.png" alt="周辺スポットの写真">
                             </div>
 
                             <!-- カードタグ -->
@@ -118,10 +71,10 @@
                             <!-- カードテキスト -->
                             <div class="card_list_contant_text">
                                 <p>
-                                                ここにはお店の説明文が入ります。
-                                                ここにはお店の説明文が入ります。
-                                                ここにはお店の説明文が入ります。
-                                            </p>
+                                        ここにはお店の説明文が入ります。
+                                        ここにはお店の説明文が入ります。
+                                        ここにはお店の説明文が入ります。
+                                    </p>
                             </div>
 
                         </div>
@@ -158,11 +111,11 @@
                             <!-- カードテキスト -->
                             <div class="card_list_contant_text">
                                 <p>
-                                                ここにはお店の説明文が入ります。
-                                                ここにはお店の説明文が入ります。
-                                                ここにはお店の説明文が入ります。
-                                                ここにはお店の説明文が入ります。
-                                            </p>
+                                        ここにはお店の説明文が入ります。
+                                        ここにはお店の説明文が入ります。
+                                        ここにはお店の説明文が入ります。
+                                        ここにはお店の説明文が入ります。
+                                    </p>
                             </div>
 
                         </div>
@@ -199,32 +152,35 @@
                             <!-- カードテキスト -->
                             <div class="card_list_contant_text">
                                 <p>
-                                                ここにはお店の説明文が入ります。
-                                                ここにはお店の説明文が入ります。
-                                                ここにはお店の説明文が入ります。
-                                                ここにはお店の説明文が入ります。
-                                                ここにはお店の説明文が入ります。
-                                            </p>
+                                        ここにはお店の説明文が入ります。
+                                        ここにはお店の説明文が入ります。
+                                        ここにはお店の説明文が入ります。
+                                        ここにはお店の説明文が入ります。
+                                        ここにはお店の説明文が入ります。
+                                    </p>
                             </div>
                         </div>
 
                     </div>
+                    <div class="pagination_box">
+                        <div>1/3 次へ→</div>
+                    </div>
 
                 </section>
-            </main>
-        </div>
+            </div>
+
+        </main>
     </div>
 
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <!-- スライドショー -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- slick -->
+    <script src="../assets/js/slick.min.js"></script>
+
     <!-- 自作 -->
     <script src="../assets/js/main.js"></script>
-    <script src="../assets/js/food_list.js"></script>
-
+    <script src="../assets/js/search_cetail.js"></script>
 </body>
 
 </html>

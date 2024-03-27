@@ -2,12 +2,128 @@
 
 .page404_main {
     width: 100%;
+    height: 100%;
     margin: 0 auto;
 }
 
 .page404_container {
-    width: 90%;
-    max-width: 1240px;
+    width: 100%;
+    max-width: 1290px;
     margin: 0 auto;
 
+}
+
+.page404_box {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-width: 700px;
+    /* ↑ 背景画像を広がりにくくする為 */
+
+}
+
+.page404_box h2 {
+    padding-top: 3em;
+    text-align: center;
+}
+
+/* レスポンシブ改行用 */
+.page404_box h2 span {
+    display: inline-block;
+    font-family: "Kaisei Opti", serif;
+    color: #676767;
+    text-shadow: 1px 1px #ffffff;
+}
+
+.page404_box p {
+    margin: 30px;
+    text-shadow: 1px 1px #ffffff;
+}
+
+.page404_box a {
+    padding-top: 200px;
+    padding-bottom: 100px;
+    text-shadow: 1px 1px #ffffff;
+}
+
+.page404_box a:hover {
+    color: red;
+}
+
+/* 背景画像  ~~~~~~~*/
+.p404_bg1,
+.p404_bg2 {
+    max-width: 1290px;
+}
+
+.p404_bg1 img {
+    position: absolute;
+    z-index: -1;
+    width: 280px;
+    height: fit-content;
+    top: 30%;
+    left: -10%;
+    opacity: 0.4;
+    transform: rotate(-25deg);
+}
+
+.p404_bg2 img {
+    position: absolute;
+    z-index: -1;
+    width: 200px;
+    height: fit-content;
+    top: 60%;
+    right: 5%;
+    opacity: 0.4;
+    transform: rotate(20deg);
+}
+
+@media screen and (max-width:850px) {
+    .p404_bg2 img {
+        right: -5%;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .p404_bg1 img {
+        width: 200px;
+        top: 40%;
+        left: 0;
+    }
+
+    .p404_bg2 img {
+        width: 150px;
+        top: 55%;
+        right: 0;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .p404_bg1 img {
+        width: 150px;
+        top: 45%;
+        left: 10%;
+    }
+
+    .p404_bg2 img {
+        width: 100px;
+        top: 60%;
+        right: 10%;
+    }
+}
+
+@media screen and (max-width:380px) {
+    .p404_bg1 img {
+        top: 50%;
+        left: -5%;
+    }
+
+    .p404_bg2 img {
+        top: 70%;
+        right: -5%;
+    }
 }
