@@ -126,8 +126,16 @@ function awaretro_wp_enqueue_scripts()
         //     true
         // );
     } else if (is_page()) {
-        // 固定ページ
 
+        wp_enqueue_style('awaretro-contact', get_template_directory_uri() . '/assets/css/contact.css');
+
+        wp_enqueue_script(
+            'awaretro-contact',
+            get_template_directory_uri() . '/assets/js/contact.js',
+            '',
+            '',
+            true
+        );
     } else if (is_post_type_archive('gallery')) {
 
         wp_enqueue_style('awaretro-gallery', get_template_directory_uri() . '/assets/css/gallery.css');
