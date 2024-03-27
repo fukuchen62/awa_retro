@@ -18,11 +18,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .page404_box h2 {
     padding-top: 3em;
+    text-align: center;
+}
+
+/* レスポンシブ改行用 */
+.page404_box h2 span {
+    display: inline-block;
+    font-family: "Kaisei Opti", serif;
     color: #676767;
 }
 

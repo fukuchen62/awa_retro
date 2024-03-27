@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.bs {
+    border: solid 1px black;
+}
+
+/* テンプレート */
+.main_conteiner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.contents {
+    max-width: 1280px;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.7;
+}
+
+.template_title_box {
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.template_title_box2 {
+    width: 100%;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.search_count_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+    background-color: rgb(255, 206, 146);
+    padding: 50px 0 50px 0;
+}
+
+.search_count_box_text {
+    margin-left: 80px;
+    font-size: 32px;
+}
+
+.pagination_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    margin-bottom: 120px;
+}
+
+/* レスポンシブ */
+@media screen and (max-width: 760px) {
+    .search_word_input_data {
+        width: 90%;
+    }
+
+    .search_form_label {
+        display: block;
+        font-weight: 500;
+    }
+}

@@ -71,6 +71,10 @@ a {
     .model_body {
         width: 80%;
     }
+
+    .tag {
+        margin: 0 auto;
+    }
 }
 
 /* 立ち寄ったスポット */
@@ -169,18 +173,18 @@ hr {
 /* その他モデルコース */
 .other_model_spot_contanier {
     max-width: 1240px;
-    margin: 0 auto;
+    margin: 2rem auto;
     padding-bottom: 100px;
     display: grid;
-    gap: 40px;
-    grid-template-columns: repeat(auto-fit, 370px);
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, 170px);
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
 .other_model_spot_box {
-    width: 370px;
+    width: 170px;
     height: fit-content;
     /* background-color: #ffffff; */
     border: 1px solid #181818;
@@ -190,5 +194,4 @@ hr {
     grid-row: span 4;
     gap: 0;
     transition: 0.3s;
-    display: flex;
 }
