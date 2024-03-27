@@ -82,9 +82,8 @@ a {
 
 
 .model_spot_titile {
-
     font-size: 20px;
-    border: 1px solid;
+    /* border: 1px solid; */
     background-color: #345268;
     color: #fff;
 }
@@ -95,6 +94,7 @@ a {
 
 .model_img img {
     height: 100%;
+    vertical-align: bottom;
 }
 
 .model_spot_img {
@@ -135,19 +135,6 @@ a {
     }
 }
 
-@media screen and (max-width:600px) {
-    .model_spot_contanier {
-        max-width: 400px;
-        grid-template-columns: repeat(auto-fit, 350px);
-    }
-
-    .model_spot_box {
-        width: 350px;
-        display: block;
-    }
-
-
-}
 
 hr {
     width: 80%;
