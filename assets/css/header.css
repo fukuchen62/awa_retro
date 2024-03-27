@@ -10,7 +10,10 @@ body.is-active {
 }
 
 .color1 {
-  background-color: #000;
+  background-color: #028391;
+}
+.color2 {
+  background-color: #ece4b7;
 }
 
 header {
@@ -158,7 +161,6 @@ img {
   .gnav__menu__content {
     display: none;
   }
-
 }
 
 /* PCnav */
@@ -184,6 +186,10 @@ img {
     margin-top: 26px;
     left: 76%;
   }
+}
+
+.gnav__title {
+  display: none;
 }
 
 .gnav__menu__content.is-active {
@@ -526,7 +532,6 @@ img {
 
 /* 1023px以上なら表示 */
 @media screen and (min-width: 1023px) {
-
   /* PCnavの見出し */
   .gnav {
     border: 0px;
@@ -568,7 +573,12 @@ img {
 
 .gnav__search__title:hover,
 .gnav:hover {
-  background-color: #f6dcac;
+  background-color: #f3e06e;
+}
+
+.gnav__title:hover {
+  color: #028391;
+  border-radius: 0 0 70px 70px;
 }
 
 .menu__item:hover {
@@ -584,7 +594,6 @@ img {
 
 /* 1023以上なら消す */
 @media screen and (min-width: 1023px) {
-
   .hamburger__menu__btn,
   .gnav__search__sp__title,
   .gnav__search__sp,
