@@ -15,13 +15,15 @@
 
 .page404_box {
     width: 80%;
-    max-width: 700px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
+    max-width: 700px;
+    /* ↑ 背景画像を広がりにくくする為 */
+
 }
 
 .page404_box h2 {
