@@ -6,8 +6,33 @@
 }
 
 .page404_container {
-    width: 90%;
+    width: 100%;
     max-width: 1240px;
     margin: 0 auto;
+}
 
+.page404_box {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.page404_box h2 {
+    text-align: center;
+    padding-top: 3em;
+    color: #4c4c4c;
+}
+
+.page404_box p {
+    width: 70%;
+    margin: 30px;
+}
+
+.page404_box a {
+    display: block;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.page404_box a:hover {
+    color: red;
 }
