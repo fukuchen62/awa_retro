@@ -43,7 +43,10 @@
                 <a href="<?php echo home_url('/about'); ?>" class="footer__link">このサイトについて</a>
             </p>
             <p class="footer__title">
-                <a href="<?php echo home_url('/contact'); ?>" class="footer__link">お問い合わせ</a>
+                <a href="<?php echo home_url('/contact'); ?>" class="footer__link">Q & A</a>
+            </p>
+            <p class="footer__title">
+                <a href="<?php echo home_url('/qa'); ?>" class="footer__link">お問い合わせ</a>
             </p>
             <p class="footer__title">
                 <a href="<?php echo home_url('/mypage'); ?>" class="footer__link">お気に入り</a>
