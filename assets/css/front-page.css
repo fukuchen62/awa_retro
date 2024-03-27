@@ -318,7 +318,7 @@ img {
 .gallery_box_film_img {
     height: 40px;
     width: 100%;
-    background-image: url(../images/film_w.png);
+    background-image: url(../images/front_page/film_w.png);
     background-repeat: repeat-x
 }
 
