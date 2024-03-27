@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="../assets/css/reset.css">
     <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/header.css" />
     <link rel="stylesheet" href="../assets/css/model_course.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,60 +19,127 @@
 </head>
 
 <body>
-    <div class="wrap">
-        <header>
+    <header>
+        <div class="header_image">
+            <img src="../assets/images/header01.png" alt="header画像" />
+        </div>
+        <div class="wrapper">
+            <div class="header__logo">
+                <h1 class="js__title__logo">
+                    <a href=""><img src="../assets/images/阿波レトロロゴ案１.png" alt="" /></a>
+                </h1>
+            </div>
+            <!-- headerナビゲーション -->
+            <btn class="hamburger__menu__btn"><span></span></btn>
+            <nav class="gnav__menu__content">
+                <div class="gnav__menu__content__inner"></div>
 
-            <div class="gnav">
-                <div class="logo_box">
-                    <a href="#">
-                        <img src="../uploads/阿波レトロロゴ案１.png" alt="ロゴ画像">
-                    </a>
-                </div>
-                <div class="nav_inner">
-                    <nav>
-                        <ul>
-                            <li class="nav_item color2">
-                            </li>
-                            <li class="nav_item color1">
-                            </li>
+                <ul class="menu__wrap">
+                    <a class="gnav__search__sp__title" href="">徳島昭和知識</a>
+                    <li class="gnav color1">
+                        <a class="gnav__title" href="">徳島昭和知識</a>
+                    </li>
+                </ul>
 
-                            <li class="nav_item color2">
-                                <a href=""><span class="nav_icon"><img src="../uploads/01415.png"
-                                            alt="徳島昭和知識マーク" /></span>徳島昭和知識</a>
+                <ul class="menu__wrap">
+                    <a class="gnav__search__sp__title" href="">お食事処</a>
+                    <li class="gnav color2">
+                        <a class="gnav__title" href="">お食事処</a>
+                        <ul class="menu__item__wrap stay__wrap">
+                            <li class="menu__item">
+                                <a href=""><img src="../assets/images/title_img1.png" alt="" />
+                                </a>
                             </li>
-                            <li class="nav_item color1">
-                                <a href=""><span class="nav_icon"><img src="../uploads/cofee_l.png"
-                                            alt="お食事処マーク" /></span>お食事処</a>
+                            <li class="menu__item">
+                                <a href=""><img src="../assets/images/title_img1.png" alt="" />
+                                </a>
                             </li>
-                            <li class="nav_item color2">
-                                <a href=""><span class="nav_icon"><img src="../uploads/00636.png"
-                                            alt="レトロスポットマーク" /></span>レトロスポット</a>
-                            </li>
-                            <li class="nav_item color1">
-                                <a href=""><span class="nav_icon"><img src="../uploads/00714.png"
-                                            alt="モデルコースマーク" /></span>モデルコース</a>
-                            </li>
-                            <li class="nav_item color2">
-                                <a href=""><span class="nav_icon"><img src="../uploads/00714.png"
-                                            alt="コラム・情報マーク" /></span>コラム・情報</a>
-                            </li>
-                            <li class="nav_item color1">
-                                <a href=""><span class="nav_icon"><img src="../uploads/00091.png"
-                                            alt="ギャラリーマーク" /></span>ギャラリー</a>
-                            </li>
-                            <li class="nav_item color2">
-                                <a href=""><span class="nav_icon"><img src="../uploads/00714.png"
-                                            alt="詳細検索マーク" /></span>詳細検索</a>
-                            </li>
-                            <li class="nav_item color1">
-                                <a href=""><span class="nav_icon"><img src="../uploads/00714.png"
-                                            alt="お気に入りマーク" /></span>お気に入り</a>
+                            <li class="menu__item">
+                                <a href=""><img src="../assets/images/title_img1.png" alt="" />
+                                </a>
                             </li>
                         </ul>
-                    </nav>
-                </div>
-            </div>
-        </header>
+                    </li>
+                </ul>
+                <ul class="menu__wrap">
+                    <a class="gnav__search__sp__title" href="">スポット</a>
+                    <li class="gnav color1">
+                        <a class="gnav__title" href="">スポット</a>
+
+                        <ul class="menu__item__wrap eat__wrap">
+                            <li class="menu__item">
+                                <a href=""><img src="../assets/images/title_img1.png" alt="" />
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href=""><img src="../assets/images/title_img1.png" alt="" />
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href=""><img src="../assets/images/title_img1.png" alt="" />
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href=""><img src="../assets/images/title_img1.png" alt="" />
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href=""><img src="../assets/images/title_img1.png" alt="" />
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="menu__wrap">
+                    <a class="gnav__search__sp__title" href="">モデルコース</a>
+                    <li class="gnav color2">
+                        <a class="gnav__title" href="">モデルコース</a>
+
+                        <ul class="menu__item__wrap model__course__wrap">
+                            <li class="menu__item">
+                                <a href=""><img src="../assets/images/title_img1.png" alt="" />
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href=""><img src="../assets/images/title_img1.png" alt="" />
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="menu__wrap">
+                    <a class="gnav__search__sp__title" href="">コラム・情報</a>
+                    <li class="gnav color1">
+                        <a class="gnav__title" href="">コラム・情報</a>
+                    </li>
+                </ul>
+                <ul class="menu__wrap">
+                    <a class="gnav__search__sp__title" href="">ギャラリー</a>
+                    <li class="gnav color2">
+                        <a class="gnav__title" href="">ギャラリー</a>
+                    </li>
+                </ul>
+                <ul class="menu__wrap">
+                    <a class="gnav__search__sp__title" href="">詳細検索</a>
+                    <li class="gnav color1">
+                        <a class="gnav__title" href="">詳細検索</a>
+                    </li>
+                </ul>
+                <ul class="menu__wrap">
+                    <a class="gnav__search__sp__title" href="">お気に入り</a>
+                    <li class="gnav color2">
+                        <a class="gnav__title" href="">お気に入り</a>
+                    </li>
+                </ul>
+
+                <ul class="menu__wrap done">
+                    <li class="gnav color1"></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="wrap">
+
 
         <main>
             <section class="title">
@@ -261,7 +329,8 @@
 
         </footer>
     </div>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="../assets/js/header.js"></script>
 
 </body>
 
