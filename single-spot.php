@@ -1,39 +1,4 @@
-<!DOCTYPE html>
-<html lang="ja">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>詳細ページ(レトロスポット)</title>
-
-    <!-- reset CSS -->
-    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/css/reset.css">
-
-    <!-- slick CSS -->
-    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/css/slick.css">
-    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/css/slick-theme.css">
-
-    <!-- colorbox CSS -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/colorbox.css">
-
-    <!-- 共通のCSS -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/common.css">
-
-    <!-- 自作のCSS -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/detail.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/gallery.css">
-
-    <!-- googleフォント -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@700&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">
-</head>
-
-<body <?php body_class(); ?>>
-    <div class="wrap">
-        <header>
-
-        </header>
+<?php get_header(); ?>
 
         <!-- メイン ================== -->
         <main id="detail_main" class="detail_main">
@@ -572,27 +537,4 @@
 
         </main>
 
-        <!-- フッター -->
-        <footer>
-
-        </footer>
-
-        <!-- jQuery -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
-        <!-- slick -->
-        <script src="<?php echo get_template_directory_uri(); ?>/assets/js/slick.min.js"></script>
-
-        <!-- colorbox -->
-        <script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.colorbox-min.js"></script>
-
-        <!-- 自作js -->
-        <script src="<?php echo get_template_directory_uri(); ?>/assets/js/detail.js"></script>
-        <script src="<?php echo get_template_directory_uri(); ?>/assets/js/gallery.js"></script>
-        <script src="<?php echo get_template_directory_uri(); ?>/assets/js/contact.js"></script>
-
-    </div>
-
-</body>
-
-</html>
+<?php get_footer(); ?>

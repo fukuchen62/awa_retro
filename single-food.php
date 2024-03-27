@@ -147,7 +147,7 @@
                         <!-- img & おすすめテキスト -->
                         <div class="shop_point_content">
                             <?php
-                            $shop = get_field('shop_pic1');
+                            $shop = get_field('menu_pic1');
                             $pic_url5 = $shop['sizes']['medium'];
                             ?>
                             <div class="shop_point_item">
