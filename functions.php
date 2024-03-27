@@ -125,8 +125,6 @@ function awaretro_wp_enqueue_scripts()
         //     '',
         //     true
         // );
-
-        // 固定ページ
     } else if (is_page()) {
 
         wp_enqueue_style('awaretro-contact', get_template_directory_uri() . '/assets/css/contact.css');

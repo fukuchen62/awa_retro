@@ -83,33 +83,30 @@
 }
 
 .gallery_bgimg.g_bg3 {
-    top: 30%;
-    left: -5%;
-    width: 200px;
+    top: 20%;
+    left: 25%;
+    width: 250px;
     transform: rotate(-20deg);
 }
 
 .gallery_bgimg.g_bg4 {
-    top: 80%;
-    right: -80px;
-    width: 150px;
+    top: 30%;
+    right: -50px;
+    width: 200px;
     transform: rotate(20deg);
 }
 
-/* .gallery_bgimg.g_bg5 {
+.gallery_bgimg.g_bg5 {
     bottom: -12px;
     left: 10%;
     width: 100px;
-} */
+}
 
 .gallery_bgimg.g_bg1 img,
 .gallery_bgimg.g_bg2 img,
 .gallery_bgimg.g_bg3 img,
-.gallery_bgimg.g_bg4 img
-
-/* ,
-.gallery_bgimg.g_bg5 img  */
-    {
+.gallery_bgimg.g_bg4 img,
+.gallery_bgimg.g_bg5 img {
     width: 100%;
 }
 
@@ -126,6 +123,7 @@
 @media screen and (max-width:882px) {
     .gallery_bgimg.g_bg3 {
         left: -5%;
+        width: 150px;
     }
 
     .gallery_bgimg.g_bg4 {
@@ -133,10 +131,10 @@
         width: 150px;
     }
 
-    /* .gallery_bgimg.g_bg5 {
+    .gallery_bgimg.g_bg5 {
         left: 25%;
 
-    } */
+    }
 }
 
 @media screen and (max-width:760px) {
@@ -152,17 +150,7 @@
     }
 }
 
-
 @media screen and (max-width:450px) {
-    .gallery_bgimg.g_bg3 {
-        width: 150px;
-    }
-
-    .gallery_bgimg.g_bg4 {
-        width: 100px;
-        right: -10%;
-    }
-
     .gallery_img {
         width: 280px;
         height: 210px;
@@ -175,7 +163,7 @@
 }
 
 /* ページネーション  */
-/* .gallery_pagination_box {
+.gallery_pagination_box {
     width: 70%;
     margin: 0 auto;
     padding: 3em;
@@ -210,7 +198,7 @@
     width: 70%;
     margin: 0 auto;
     padding: 3em;
-} */
+}
 
 
 /* プラグインに合わせてCSS作成 */

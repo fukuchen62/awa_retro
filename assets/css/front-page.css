@@ -13,6 +13,7 @@ img {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
 }
 
 .contents {
@@ -28,6 +29,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0.7;
 }
 
 .container2 {
@@ -37,6 +39,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0.7;
 }
 
 .container3 {
@@ -45,6 +48,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0.7;
 }
 
 /* 背景橙付与 */
@@ -95,9 +99,6 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    z-index: 10;
-    opacity: 0.8;
 }
 
 .top_text_box {
@@ -106,9 +107,6 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    z-index: 10;
-    opacity: 0.8;
 }
 
 .top_text_box_inner {
@@ -123,9 +121,6 @@ img {
     align-items: center;
     margin-top: 100px;
     margin-bottom: 100px;
-    position: relative;
-    z-index: 10;
-    opacity: 0.8;
 }
 
 .top_link_box_data a {
@@ -140,9 +135,6 @@ img {
     margin: 40px 20px 20px 20px;
     padding-top: 20px;
     padding-bottom: 40px;
-    position: relative;
-    z-index: 10;
-    opacity: 0.8;
 }
 
 .top_colam_box_title {
@@ -153,7 +145,6 @@ img {
 
 .top_colam_box_list {
     margin: 20px 20% 20px 10%;
-
 }
 
 .colam_box_list_item {
@@ -199,40 +190,6 @@ img {
 .top_look_box_aitem {
     height: 100px;
     width: 200px;
-}
-
-.deco_01 {
-    width: 150px;
-    height: 350px;
-    top: 350px;
-    left: -20px;
-    position: absolute;
-    z-index: 9;
-    transform: rotate(20deg);
-}
-
-.deco_02 {
-    width: 350px;
-    height: 250px;
-    top: 600px;
-    left: -20px;
-    position: absolute;
-    z-index: 8;
-    transform: rotate(-20deg);
-}
-
-.deco_03 {
-    width: 100px;
-    height: auto;
-    position: absolute;
-    z-index: 3;
-}
-
-.deco_04 {
-    width: 100px;
-    height: auto;
-    position: absolute;
-    z-index: 3;
 }
 
 /* お食事処・レトロスポットーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
@@ -361,7 +318,7 @@ img {
 .gallery_box_film_img {
     height: 40px;
     width: 100%;
-    background-image: url(../images/front_page/film_w.png);
+    background-image: url(../images/film_w.png);
     background-repeat: repeat-x
 }
 
