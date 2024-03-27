@@ -180,6 +180,30 @@
     margin: 10px auto 30px;
 }
 
+/* コラムページへのリンク */
+.detail_colamn_spot_link a {
+    width: 20%;
+    padding: 0.2em 2em;
+    border-radius: 50px;
+    border: 2px dotted #181818;
+    color: #181818;
+    box-shadow: 5px 5px #18181834;
+}
+
+.detail_colamn_spot_link a:hover {
+    background-color: #fbd166bf;
+}
+
+.detail_colamn_spot_link {
+    width: fit-content;
+    transition: 0.3s;
+}
+
+.detail_colamn_spot_link:hover {
+    transform: translate(5px, 5px);
+}
+
+
 
 @media screen and (max-width:1280px) {
     .shop_point_item img {
@@ -666,6 +690,29 @@
     border: 3px solid #01204E;
 }
 
+/* コラムページへのリンク */
+.detail_colamn_food_link a {
+    width: 20%;
+    padding: 0.2em 2em;
+    border-radius: 50px;
+    border: 2px dotted #181818;
+    color: #181818;
+    box-shadow: 5px 5px #18181834;
+}
+
+.detail_colamn_food_link a:hover {
+    background-color: #02839188;
+}
+
+.detail_colamn_food_link {
+    width: fit-content;
+    transition: 0.3s;
+}
+
+.detail_colamn_food_link:hover {
+    transform: translate(5px, 5px);
+}
+
 .other_spot_card.food {
     border: 5px solid #028391;
 }
@@ -673,7 +720,6 @@
 .other_spot_card.food:hover {
     transform: scale(1.1);
     box-shadow: 0px 0px 20px 10px #5aff94;
-    /* filter: sepia(20%); */
 }
 
 .other_spot_card_inner.food {
@@ -817,7 +863,7 @@
     }
 }
 
-/* フード背景1 スポットカセットテープ */
+/* フード背景1 コーヒー */
 .detail_food_bg1 {
     position: relative;
     z-index: -1;
@@ -851,7 +897,7 @@
     }
 }
 
-/* フード背景2 レコード */
+/* フード背景2 プリン */
 .detail_food_bg2 {
     position: relative;
     z-index: 1;
@@ -932,7 +978,6 @@
     .detail_food_bg3 img {
         width: 300px;
         top: -150px;
-        /* right: 60%; */
     }
 }
 

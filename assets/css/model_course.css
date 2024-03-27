@@ -1,5 +1,8 @@
 @charset "utf-8";
 
+a {
+    color: black;
+}
 
 .model {
     color: orange;
@@ -30,10 +33,11 @@
     white-space: nowrap;
 }
 
+
 .model_inner_time {
-    width: 30%;
     padding: 0.8rem 1.5rem 0.8rem 0.8rem;
     background-color: gray;
+    color: #fff;
     box-shadow: 8px 10px 13px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -49,33 +53,142 @@
     margin: 5rem auto;
 }
 
-/* 立ち寄ったスポット */
-.model_spot_contanier {
-    max-width: 100%;
-    width: 90%;
-    padding: 2rem;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
+
+@media screen and (max-width:750px) {
+    .model_box {
+        max-width: 80%;
+    }
+
+    .model_inner {
+        width: 90%;
+        white-space: normal;
+    }
+
+    .model_inner span {
+        display: inline-block;
+    }
+
+    .model_body {
+        width: 80%;
+    }
 }
 
-.model_spot_box {
-    border: 2px solid black;
-    padding: 0.8rem;
-    background-color: #fff;
-    display: flex;
-    width: 50%;
-}
+/* 立ち寄ったスポット */
 
 .model_spot_titile {
     border-bottom: 0.5rem dotted black;
-    width: fit-content
+    margin: 1rem 0;
 }
 
 .model_spot_body {
-    margin-top: 1rem;
+    margin-top: 2rem;
+    text-align: left;
+    overflow-wrap: break-word;
+    padding: 1rem;
+    width: 60%;
 }
 
-.model_spot_body div {
-    padding: 0.5rem;
+.body_detail {
+    margin-top: 1.5rem;
+}
+
+.card_list_container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.card_list_title_container h2 {
+    text-align: center;
+    margin-bottom: 90px;
+}
+
+
+/* カード grid ~~~~~~~~~~~~*/
+.model_spot_contanier {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(auto-fit, 550px);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.model_spot_box {
+    width: 550px;
+    height: fit-content;
+    background-color: #ffffff;
+    border: 1px solid #181818;
+    position: relative;
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 4;
+    gap: 0;
+    transition: 0.3s;
+    display: flex;
+}
+
+/* カード画像  ~~~~~~~~~~*/
+.model_spot_img {
+    width: 80%;
+    /* margin: 8% auto 5%; */
+}
+
+
+@media screen and (max-width:600px) {
+    .model_spot_contanier {
+        max-width: 400px;
+        grid-template-columns: repeat(auto-fit, 350px);
+    }
+
+    .model_spot_box {
+        width: 350px;
+        display: block;
+    }
+
+    .model_spot_body {
+        margin-top: 1rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .course_title {
+        font-size: 20px;
+        margin: 5px;
+    }
+}
+
+hr {
+    width: 80%;
+    margin: 0 auto;
+    border: 2px solid;
+}
+
+/* その他モデルコース */
+.other_model_spot_contanier {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(auto-fit, 370px);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.other_model_spot_box {
+    width: 370px;
+    height: fit-content;
+    /* background-color: #ffffff; */
+    border: 1px solid #181818;
+    position: relative;
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 4;
+    gap: 0;
+    transition: 0.3s;
+    display: flex;
 }

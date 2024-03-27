@@ -44,11 +44,13 @@
 
 .gallery_img {
     width: 350px;
+    height: 262.5px;
+    object-fit: cover;
 }
 
 .gallery_img img {
     width: 100%;
-    aspect-ratio: 4/3;
+    height: 100%;
     filter: grayscale(80%);
     transition: 0.3s;
 }
@@ -81,22 +83,22 @@
 }
 
 .gallery_bgimg.g_bg3 {
-    top: 280px;
+    top: 20%;
     left: 25%;
     width: 250px;
     transform: rotate(-20deg);
 }
 
 .gallery_bgimg.g_bg4 {
-    top: 530px;
+    top: 30%;
     right: -50px;
     width: 200px;
     transform: rotate(20deg);
 }
 
 .gallery_bgimg.g_bg5 {
-    top: 850px;
-    left: 20%;
+    bottom: -12px;
+    left: 10%;
     width: 100px;
 }
 
@@ -151,6 +153,7 @@
 @media screen and (max-width:450px) {
     .gallery_img {
         width: 280px;
+        height: 210px;
     }
 
     .gallery_box {
@@ -186,6 +189,45 @@
 }
 
 .gallery_pagination a:hover:not(.active) {
+    background-color: #B3B3B3;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.gallery_pagination_box {
+    width: 70%;
+    margin: 0 auto;
+    padding: 3em;
+}
+
+
+/* プラグインに合わせてCSS作成 */
+.wp-pagenavi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wp-pagenavi .current {
+    padding: 0.5rem 0.8rem;
+    border-radius: 20%;
+}
+
+.wp-pagenavi a {
+    color: black;
+    font-weight: 800;
+    font-size: 16px;
+    padding: 0.5rem 0.8rem;
+    margin: 1rem;
+}
+
+.wp-pagenavi a.active {
+    background-color: #1A2B3C;
+    color: white;
+    border-radius: 20%;
+}
+
+.wp-pagenavi a:hover:not(.active) {
     background-color: #B3B3B3;
     color: #fff;
     border-radius: 10px;

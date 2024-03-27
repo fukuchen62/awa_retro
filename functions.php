@@ -63,8 +63,25 @@ function awaretro_wp_enqueue_scripts()
     wp_enqueue_style('awaretro-hamburger-css', get_template_directory_uri() . '/assets/css/hamburger.css');
 
     // jQueryを読み込む
-    wp_enqueue_script('jquery');
+    // wp_enqueue_script('jquery');
 
+    wp_deregister_script('jquery');
+
+    wp_enqueue_script(
+        'jquery-3.7.1',
+        'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js',
+        '',
+        '',
+        false  //フッターに読み込むように
+    );
+
+    wp_enqueue_script(
+        'awaretro-main',
+        get_template_directory_uri() . '/assets/js/main.js',
+        '',
+        '',
+        true  //フッターに読み込むように
+    );
 
     // ハンバーガーJSファイルを読み込む
     wp_enqueue_script(
@@ -74,6 +91,16 @@ function awaretro_wp_enqueue_scripts()
         '',
         true  //フッターに読み込むように
     );
+
+    // ハンバーガーJSファイルを読み込む
+    wp_enqueue_script(
+        'awaretro-slick_min',
+        get_template_directory_uri() . '/assets/js/slick.min.js',
+        '',
+        '',
+        true  //フッターに読み込むように
+    );
+
 
     // それぞれのページに必要とするスタイルシート、JSファイルを読み込む
 
@@ -101,6 +128,27 @@ function awaretro_wp_enqueue_scripts()
     } else if (is_page()) {
         // 固定ページ
 
+    } else if (is_post_type_archive('gallery')) {
+
+        wp_enqueue_style('awaretro-gallery', get_template_directory_uri() . '/assets/css/gallery.css');
+
+        wp_enqueue_style('awaretro-colorbox', get_template_directory_uri() . '/assets/css/colorbox.css');
+
+        // JSファイルを読み込む
+        wp_enqueue_script(
+            'awaretro-colorbox-min',
+            get_template_directory_uri() . '/assets/js/jquery.colorbox-min.js',
+            '',
+            '',
+            true
+        );
+        wp_enqueue_script(
+            'awaretro-gallery',
+            get_template_directory_uri() . '/assets/js/gallery.js',
+            '',
+            '',
+            true
+        );
     } else if (is_category()) {
         // カテゴリーページ
 
@@ -109,7 +157,7 @@ function awaretro_wp_enqueue_scripts()
 
     } else if (is_single()) {
         // 汎用のsingleページ
-
+        wp_enqueue_style('awaretro-detail', get_template_directory_uri() . '/assets/css/detail.css');
     } else if (is_singular('food')) {
         // 特定のfoodの詳細ページ
 
@@ -168,6 +216,10 @@ function awaretro_pre_get_posts($query)
     } else if (is_search()) {
         //検索の場合は、投稿のみ対象とする
         // $query->set('post_type', 'post');
+    } else if (is_post_type_archive('gallery')) {
+        $query->set('posts_per_page', 9);       //9件だけ
+        //ギャラリーの場合は、並びはランダムとする
+        $query->set('orderby', 'rand');
     }
 
     //公開する投稿だけ
@@ -196,3 +248,15 @@ function fst_description()
     echo $description;
     return;
 }
+
+/*-----------------------------------------
+	ウィジェットの登録
+-------------------------------------------*/
+function theme_slug_widgets_init()
+{
+    register_sidebar(array(
+        'name' => 'サイドバー', //ウィジェットの名前を入力
+        'id' => 'sidebar', //ウィジェットに付けるid名を入力
+    ));
+}
+add_action('widgets_init', 'theme_slug_widgets_init');;
