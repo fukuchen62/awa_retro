@@ -201,6 +201,46 @@ img {
     width: 200px;
 }
 
+.deco_01 {
+    width: 150px;
+    height: 350px;
+    top: 350px;
+    left: -20px;
+    position: absolute;
+    z-index: 9;
+    transform: rotate(20deg);
+}
+
+.deco_02 {
+    width: 350px;
+    height: 250px;
+    top: 600px;
+    left: -20px;
+    position: absolute;
+    z-index: 8;
+    transform: rotate(-20deg);
+}
+
+.deco_03 {
+    width: 150px;
+    height: 350px;
+    top: 350px;
+    right: 20px;
+    position: absolute;
+    z-index: 9;
+    transform: rotate(-10deg);
+}
+
+.deco_04 {
+    width: 350px;
+    height: 250px;
+    top: 600px;
+    right: 20px;
+    position: absolute;
+    z-index: 8;
+    transform: rotate(20deg);
+}
+
 /* お食事処・レトロスポットーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
 
 .template_section_title {
