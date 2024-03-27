@@ -129,6 +129,12 @@
 
 
 /* コラム詳細 */
+.comments {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+}
 
 .colamn_list_container {
     position: relative;

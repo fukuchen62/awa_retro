@@ -108,37 +108,63 @@
 
                         <div class="shop_detail_slider">
                             <?php if (get_field('pic1')) : ?>
-                                <div><img src="<?php the_field('pic1'); ?>" alt="お店の写真1"></div>
+                                <?php
+                                $pic1 = get_field('pic1');
+                                $pic_url1 = $pic1['sizes']['large']; //大サイズ画像
+                                ?>
+                                <div><img src="<?php echo $pic_url1; ?>" alt="お店の写真1"></div>
                             <?php endif; ?>
                             <?php if (get_field('pic2')) : ?>
-                                <div><img src="<?php the_field('pic2'); ?>" alt="お店の写真2"></div>
+                                <?php
+                                $pic2 = get_field('pic2');
+                                $pic_url2 = $pic2['sizes']['large'];
+                                ?>
+                                <div><img src="<?php echo $pic_url2; ?>" alt="お店の写真2"></div>
                             <?php endif; ?>
                             <?php if (get_field('pic3')) : ?>
-                                <div><img src="<?php the_field('pic3'); ?>" alt="お店の写真3"></div>
+                                <?php
+                                $pic3 = get_field('pic3');
+                                $pic_url3 = $pic3['sizes']['large'];
+                                ?>
+                                <div><img src="<?php echo $pic_url3; ?>" alt="お店の写真3"></div>
                             <?php endif; ?>
                             <?php if (get_field('pic4')) : ?>
-                                <div><img src="<?php the_field('pic4'); ?>" alt="お店の写真4"></div>
-                            <?php endif; ?>
-                            <?php if (get_field('pic5')) : ?>
-                                <div><img src="<?php the_field('pic5'); ?>" alt="お店の写真5"></div>
+                                <?php
+                                $pic4 = get_field('pic4');
+                                $pic_url4 = $pic4['sizes']['large'];
+                                ?>
+                                <div><img src="<?php echo $pic_url4; ?>" alt="お店の写真4"></div>
                             <?php endif; ?>
                         </div>
 
                         <div class="shop_detail_slider_nav">
                             <?php if (get_field('pic1')) : ?>
-                                <div><img src="<?php the_field('pic1'); ?>" alt="お店の写真1"></div>
+                                <?php
+                                $pic1 = get_field('pic1');
+                                $pic_url1 = $pic1['sizes']['medium']; //サイズ画像
+                                ?>
+                                <div><img src="<?php echo $pic_url1; ?>" alt="お店の写真1"></div>
                             <?php endif; ?>
                             <?php if (get_field('pic2')) : ?>
-                                <div><img src="<?php the_field('pic2'); ?>" alt="お店の写真2"></div>
+                                <?php
+                                $pic2 = get_field('pic2');
+                                $pic_url2 = $pic2['sizes']['medium'];
+                                ?>
+                                <div><img src="<?php echo $pic_url2; ?>" alt="お店の写真2"></div>
                             <?php endif; ?>
                             <?php if (get_field('pic3')) : ?>
-                                <div><img src="<?php the_field('pic3'); ?>" alt="お店の写真3"></div>
+                                <?php
+                                $pic3 = get_field('pic3');
+                                $pic_url3 = $pic3['sizes']['medium'];
+                                ?>
+                                <div><img src="<?php echo $pic_url3; ?>" alt="お店の写真3"></div>
                             <?php endif; ?>
                             <?php if (get_field('pic4')) : ?>
-                                <div><img src="<?php the_field('pic4'); ?>" alt="お店の写真4"></div>
-                            <?php endif; ?>
-                            <?php if (get_field('pic5')) : ?>
-                                <div><img src="<?php the_field('pic5'); ?>" alt="お店の写真5"></div>
+                                <?php
+                                $pic4 = get_field('pic4');
+                                $pic_url4 = $pic4['sizes']['medium'];
+                                ?>
+                                <div><img src="<?php echo $pic_url4; ?>" alt="お店の写真4"></div>
                             <?php endif; ?>
                         </div>
 
@@ -155,9 +181,12 @@
 
                         <!-- img & おすすめテキスト -->
                         <div class="shop_point_content">
-
+                            <?php
+                            $shop = get_field('shop_pic1');
+                            $pic_url5 = $shop['sizes']['medium'];
+                            ?>
                             <div class="shop_point_item">
-                                <img src="<?php the_field('menu_pic1'); ?>" alt="おすすめ写真">
+                                <img src="<?php echo $pic_url5; ?>" alt="おすすめ写真">
                             </div>
 
                             <div class="shop_point_text_item">
@@ -199,7 +228,7 @@
                                 <!-- ここにはお店の説明文が入ります。
                                 ここにはお店の説明文が入ります。
                                 ここにはお店の説明文が入ります。 -->
-                                <?php the_field('spot_other'); ?>
+                                <?php the_field('memo'); ?>
                             </p>
 
                             <!-- コラムページへのリンク -->
@@ -454,7 +483,7 @@
                             <div class="other_spot_card food">
 
                                 <!-- カード全体をhoverした時のリンク -->
-                                <a href="#" tabindex="-1"></a>
+                                <a href="<?php the_permalink(); ?>" tabindex="-1"></a>
 
                                 <!-- 内側枠(飾り) -->
                                 <div class="other_spot_card_inner food"></div>
@@ -465,7 +494,7 @@
 
                                     <?php if (has_post_thumbnail()) : // アイキャッチ画像が設定されてれば表示
                                     ?>
-                                        <?php the_post_thumbnail(); ?>
+                                        <?php the_post_thumbnail('medium'); ?>
                                     <?php else : // なければnoimage画像をデフォルトで表示
                                     ?>
                                         <img src="<?php echo get_template_directory_uri() ?>/uploads/dummy6.jpg" alt="周辺スポットの写真">
@@ -475,7 +504,7 @@
                                 <!-- カードタグ -->
                                 <!-- タクソノミーを取得する -->
                                 <?php
-                                $food_type = get_post_type(get_the_ID());
+                                $post_type = get_post_type(get_the_ID());
                                 $taxonomies = get_object_taxonomies($post_type);
 
                                 // $taxonomy_names = wp_get_object_terms(get_the_ID(), $taxonomies,  array("fields" => "names", "orderby" => "count"));
