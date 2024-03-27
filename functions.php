@@ -55,6 +55,8 @@ function awaretro_wp_enqueue_scripts()
     // 自作のCSS
     wp_enqueue_style('awaretro-footer', get_template_directory_uri() . '/assets/css/footer.css');
 
+    // wp_enqueue_style('awaretro-header', get_template_directory_uri() . '/assets/css/header.css');
+
     // slick CSS
     wp_enqueue_style('awaretro-slick', get_template_directory_uri() . '/assets/css/slick.css');
     wp_enqueue_style('awaretro-slick-theme', get_template_directory_uri() . '/assets/css/slick-theme.css');
