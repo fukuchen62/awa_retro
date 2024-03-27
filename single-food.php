@@ -108,7 +108,7 @@
 
                         <div class="shop_detail_slider">
 
-                            <?php for ($i = 1; $i < 5; $i++) : ?>
+                            <?php for ($i = 1; $i < 15; $i++) : ?>
                                 <?php if (get_field('pic' . $i)) : ?>
                                     <?php
                                     $pic = get_field('pic' . $i);
