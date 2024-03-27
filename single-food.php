@@ -72,7 +72,10 @@
                     <div class="shop_detail_slider_box food detail_filter">
 
                         <div class="shop_detail_slider">
-                            <?php if (get_field('pic1')) : ?>
+                            <?php for ($i=0; $i <= 15; $i++) {
+
+                            } ?>
+                            <?php if (get_field('pic' . $i)) : ?>
                                 <?php
                                 $pic1 = get_field('pic1');
                                 $pic_url1 = $pic1['sizes']['large']; //大サイズ画像
@@ -86,21 +89,6 @@
                                 ?>
                                 <div><img src="<?php echo $pic_url2; ?>" alt="お店の写真2"></div>
                             <?php endif; ?>
-                            <?php if (get_field('pic3')) : ?>
-                                <?php
-                                $pic3 = get_field('pic3');
-                                $pic_url3 = $pic3['sizes']['large'];
-                                ?>
-                                <div><img src="<?php echo $pic_url3; ?>" alt="お店の写真3"></div>
-                            <?php endif; ?>
-                            <?php if (get_field('pic4')) : ?>
-                                <?php
-                                $pic4 = get_field('pic4');
-                                $pic_url4 = $pic4['sizes']['large'];
-                                ?>
-                                <div><img src="<?php echo $pic_url4; ?>" alt="お店の写真4"></div>
-                            <?php endif; ?>
-                        </div>
 
                         <div class="shop_detail_slider_nav">
                             <?php if (get_field('pic1')) : ?>

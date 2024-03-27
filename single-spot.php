@@ -69,6 +69,9 @@
                     <div class="shop_detail_slider_box detail_filter">
 
                         <div class="shop_detail_slider">
+                            <?php for ($i=0; $i <= 15; $i++) {
+                                
+                            } ?>
                             <?php if (get_field('pic1')) : ?>
                                 <?php
                                 $pic1 = get_field('pic1');
