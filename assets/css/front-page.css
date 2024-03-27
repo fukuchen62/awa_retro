@@ -79,6 +79,19 @@ img {
     transform: scale(0.9);
 }
 
+/* セクションフラッグ */
+.red_section {
+    background-image: url(../images/front_page/title-flag01.png);
+    background-size: 100% 100%;
+}
+
+.blue_section {
+    background-image: url(../images/front_page/title-flag02.png);
+    background-size: 100% 100%;
+}
+
+/* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーセクションフラッグ */
+
 /* セクション１－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－ */
 .top_title_box {
     width: 100%;
@@ -194,15 +207,6 @@ img {
     height: 200px;
 }
 
-.food_section {
-    background-image: url(../images/title-flag01.png);
-    background-size: 100% 100%;
-}
-
-.spot_section {
-    background-image: url(../images/title-flag02.png);
-    background-size: 100% 100%;
-}
 
 .template_section_box_text {
     padding-top: 10%;
