@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+.chishiki_container {
+  padding-top: 1rem;
+  margin: 0.7rem;
+  /* padding: 2rem; */
+  /* box-shadow: 0 0 0 10px #f6f3c0; */
+  border-left: 15px dashed;
+  border-right: 15px dashed;
+  /* background-color: #f6f3c0; */
+}
+
+.chishiki_titile {
+  text-align: center;
+}
+
+/* .chisiki00_text {
+  text-align: center;
+} */

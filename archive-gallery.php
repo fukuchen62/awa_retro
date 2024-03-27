@@ -45,7 +45,7 @@ get_header();
                 <div class="gallery_bgimg g_bg2"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/gallery/gallery_bg2.png" alt="ギャラリーの背景画像2"></div>
                 <div class="gallery_bgimg g_bg3"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/gallery/gallery_bg3.png" alt="ギャラリーの背景画像3"></div>
                 <div class="gallery_bgimg g_bg4"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/gallery/gallery_bg4.png" alt="ギャラリーの背景画像4"></div>
-                <div class="gallery_bgimg g_bg5"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/gallery/gallery_bg2.png" alt="ギャラリーの背景画像5"></div>
+
 
             </div>
 
