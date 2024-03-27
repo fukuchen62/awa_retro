@@ -140,6 +140,9 @@ function awaretro_wp_enqueue_scripts()
         );
 
         wp_enqueue_style('awaretro-colamn', get_template_directory_uri() . '/assets/css/site_about.css');
+    } else if (is_post_type_archive()) {
+
+        wp_enqueue_style('awaretro-contact', get_template_directory_uri() . '/assets/css/spot_list.css');
 
     } else if (is_post_type_archive('gallery')) {
 
@@ -172,6 +175,7 @@ function awaretro_wp_enqueue_scripts()
         // 汎用のsingleページ
         wp_enqueue_style('awaretro-detail', get_template_directory_uri() . '/assets/css/detail.css');
 
+        //シングルコラムcss
         wp_enqueue_style('awaretro-colamn', get_template_directory_uri() . '/assets/css/colamn.css');
 
         wp_enqueue_script(

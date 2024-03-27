@@ -378,7 +378,7 @@
                                 <?php the_post_thumbnail('medium'); ?>
                             <?php else : // なければnoimage画像をデフォルトで表示
                             ?>
-                                <img src="<?php echo get_template_directory_uri() ?>/uploads/dummy6.jpg" alt="周辺スポットの写真">
+                                <img src="<?php echo get_template_directory_uri() ?>/images/dummy6.jpg" alt="周辺スポットの写真">
                             <?php endif; ?>
                         </div>
 
