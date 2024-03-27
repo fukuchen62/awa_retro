@@ -6,8 +6,41 @@
 }
 
 .page404_container {
-    width: 90%;
+    width: 100%;
     max-width: 1240px;
     margin: 0 auto;
+}
 
+.page404_box {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page404_box h2 {
+    padding-top: 3em;
+    text-align: center;
+}
+
+/* レスポンシブ改行用 */
+.page404_box h2 span {
+    display: inline-block;
+    font-family: "Kaisei Opti", serif;
+    color: #676767;
+}
+
+.page404_box p {
+    margin: 30px;
+}
+
+.page404_box a {
+    padding-top: 200px;
+    padding-bottom: 100px;
+}
+
+.page404_box a:hover {
+    color: red;
 }
