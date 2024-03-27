@@ -18,14 +18,141 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <!-- 共有CSS -->
     <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/header.css" />
     <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/btn.css">
     <!-- 自作CSS -->
     <link rel="stylesheet" href="../assets/css/front-page.css">
 </head>
 
 <body>
     <div class="wrap">
-        <header></header>
+        <!-- header開始 -->
+        <header>
+            <div class="header_image">
+                <img src="../assets/images/header01.png" alt="header画像" />
+            </div>
+        </header>
+        <div class="wrapper">
+            <div class="header__logo">
+                <h1 class="js__title__logo">
+                      <a href=""
+                        ><img src="../assets/images/阿波レトロロゴ案１.png" alt=""
+                      /></a>
+                    </h1>
+            </div>
+            <!-- headerナビゲーション -->
+            <btn class="hamburger__menu__btn"><span></span></btn>
+            <nav class="gnav__menu__content">
+                <div class="gnav__menu__content__inner"></div>
+
+                <ul class="menu__wrap">
+                    <a class="gnav__search__sp__title" href="">徳島昭和知識</a>
+                    <li class="gnav color1">
+                        <a class="gnav__title" href="">徳島昭和知識</a>
+                    </li>
+                </ul>
+
+                <ul class="menu__wrap">
+                    <a class="gnav__search__sp__title" href="">お食事処</a>
+                    <li class="gnav color2">
+                        <a class="gnav__title" href="">お食事処</a>
+                        <ul class="menu__item__wrap stay__wrap">
+                            <li class="menu__item">
+                                <a href=""><img src="../assets/images/title_img1.png" alt="" />
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href=""><img src="../assets/images/title_img1.png" alt="" />
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href=""><img src="../assets/images/title_img1.png" alt="" />
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="menu__wrap">
+                    <a class="gnav__search__sp__title" href="">スポット</a>
+                    <li class="gnav color1">
+                        <a class="gnav__title" href="">スポット</a>
+
+                        <ul class="menu__item__wrap eat__wrap">
+                            <li class="menu__item">
+                                <a href=""><img src="../assets/images/title_img1.png" alt="" />
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href=""><img src="../assets/images/title_img1.png" alt="" />
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href=""><img src="../assets/images/title_img1.png" alt="" />
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href=""><img src="../assets/images/title_img1.png" alt="" />
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href=""><img src="../assets/images/title_img1.png" alt="" />
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="menu__wrap">
+                    <a class="gnav__search__sp__title" href="">モデルコース</a>
+                    <li class="gnav color2">
+                        <a class="gnav__title" href="">モデルコース</a>
+
+                        <ul class="menu__item__wrap model__course__wrap">
+                            <li class="menu__item">
+                                <a href=""><img src="../assets/images/title_img1.png" alt="" />
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href=""><img src="../assets/images/title_img1.png" alt="" />
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="menu__wrap">
+                    <a class="gnav__search__sp__title" href="">コラム・情報</a>
+                    <li class="gnav color1">
+                        <a class="gnav__title" href="">コラム・情報</a>
+                    </li>
+                </ul>
+                <ul class="menu__wrap">
+                    <a class="gnav__search__sp__title" href="">ギャラリー</a>
+                    <li class="gnav color2">
+                        <a class="gnav__title" href="">ギャラリー</a>
+                    </li>
+                </ul>
+                <ul class="menu__wrap">
+                    <a class="gnav__search__sp__title" href="">詳細検索</a>
+                    <li class="gnav color1">
+                        <a class="gnav__title" href="">詳細検索</a>
+                    </li>
+                </ul>
+                <ul class="menu__wrap">
+                    <a class="gnav__search__sp__title" href="">お気に入り</a>
+                    <li class="gnav color2">
+                        <a class="gnav__title" href="">お気に入り</a>
+                    </li>
+                </ul>
+
+                <ul class="menu__wrap done">
+                    <li class="gnav color1"></li>
+                </ul>
+            </nav>
+        </div>
+        <img src="../assets/images/front_page/sozai03.png" alt="" class="deco_01">
+        <img src="../assets/images/front_page/sozai04.png" alt="" class="deco_02">
+        <img src="../assets/images/front_page/sozai01.png" alt="" class="deco_03">
+        <img src="../assets/images/front_page/sozai02.png" alt="" class="deco_04">
         <main class="main_conteiner">
             <!-- セクション１ -->
             <div class="container">
@@ -49,7 +176,7 @@
 
                     <!-- リンクボックス -->
                     <div class="top_link_box">
-                        <div class="top_link_box_data hover_data"><a href="">徳島の昭和についてもっと詳しく</a></div>
+                        <div class="top_link_box_data"><a href="">徳島の昭和についてもっと詳しく</a></div>
                     </div>
 
                     <!-- コラム・情報ボックス -->
@@ -81,17 +208,22 @@
 
                     <!-- 詳細リンクボックス -->
                     <div class="top_look_box">
-                        <div class="top_look_box_aitem b_s">ボタン</div>
+                        <div class="top_look_box_aitem">
+                            <a href="#" class="btn btn_flex">
+                                <div class="btn btn_inside">
+                                    <span class="btn_font">もっと見る</span>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </section>
             </div>
-            <!-- --------------セクション１終了 -->
 
             <!--    セクション２開始 -->
             <div class="container2">
                 <section class="contents">
                     <div class="template_section_title">
-                        <div class="template_section_box food_section">
+                        <div class="template_section_box blue_section">
                             <div class="template_section_box_text">
                                 <h2>お食事処</h2>
                             </div>
@@ -121,17 +253,22 @@
                     </div>
 
                     <div class="template_look_box">
-                        <div class="template_look_box_aitem b_s">ボタン</div>
+                        <div class="template_look_box_aitem">
+                            <a href="#" class="btn btn_flex">
+                                <div class="btn btn_inside">
+                                    <span class="btn_font">もっと見る</span>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </section>
             </div>
-            <!-- --------------セクション2終了 -->
 
             <!--    セクション3開始 -->
             <div class="container">
                 <section class="contents">
                     <div class="template_section_title">
-                        <div class="template_section_box spot_section">
+                        <div class="template_section_box red_section">
                             <div class="template_section_box_text">
                                 <h2>スポット</h2>
                             </div>
@@ -161,17 +298,22 @@
                     </div>
 
                     <div class="template_look_box">
-                        <div class="template_look_box_aitem b_s">ボタン</div>
+                        <div class="template_look_box_aitem">
+                            <a href="#" class="btn btn_flex">
+                                <div class="btn btn_inside">
+                                    <span class="btn_font">もっと見る</span>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </section>
             </div>
-            <!-- --------------セクション3終了 -->
 
             <!--    セクション4開始 -->
             <div class="container2">
                 <section class="contents">
                     <div class="template_section_title">
-                        <div class="template_section_box food_section">
+                        <div class="template_section_box blue_section">
                             <div class="template_section_box_text">
                                 <h2>地図から探す</h2>
                             </div>
@@ -183,13 +325,12 @@
                     </div>
                 </section>
             </div>
-            <!-- --------------セクション4終了 -->
 
             <!--    セクション5開始 -->
             <div class="container">
                 <section class="contents">
                     <div class="template_section_title">
-                        <div class="template_section_box spot_section">
+                        <div class="template_section_box red_section">
                             <div class="template_section_box_text">
                                 <h2>モデルコース</h2>
                             </div>
@@ -207,13 +348,12 @@
                     </div>
                 </section>
             </div>
-            <!-- --------------セクション5終了 -->
 
             <!--    セクション6開始 -->
             <div class="container3">
                 <section class="contents">
                     <div class="template_section_title">
-                        <div class="template_section_box spot_section">
+                        <div class="template_section_box blue_section">
                             <div class="template_section_box_text">
                                 <h2>ギャラリー</h2>
                             </div>
@@ -239,17 +379,22 @@
 
                     <!-- 詳細リンクボックス -->
                     <div class="top_look_box">
-                        <div class="top_look_box_aitem b_s">ボタン</div>
+                        <div class="top_look_box_aitem">
+                            <a href="#" class="btn btn_flex">
+                                <div class="btn btn_inside">
+                                    <span class="btn_font">もっと見る</span>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </section>
             </div>
-            <!-- --------------セクション6終了 -->
 
             <!--    セクション7開始 -->
             <div class="container">
                 <section class="contents">
                     <div class="template_section_title">
-                        <div class="template_section_box food_section">
+                        <div class="template_section_box red_section">
                             <div class="template_section_box_text">
                                 <h2>インスタグラム</h2>
                             </div>
@@ -267,14 +412,20 @@
                             <div class="insta_box_data_item hover_data"><img src="../assets/images/dummy.jpg" alt=""></div>
                             <div class="insta_box_data_item hover_data"><img src="../assets/images/dummy.jpg" alt=""></div>
                         </div>
+
                     </div>
                     <!-- 詳細リンクボックス -->
                     <div class="top_look_box">
-                        <div class="top_look_box_aitem b_s">ボタン</div>
+                        <div class="top_look_box_aitem">
+                            <a href="#" class="btn btn_flex">
+                                <div class="btn btn_inside">
+                                    <span class="btn_font">もっと見る</span>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </section>
             </div>
-            <!-- --------------セクション7終了 -->
 
         </main>
         <footer class="footer">
@@ -282,10 +433,10 @@
             <div class="footer__container">
                 <div class="footer__head">
                     <a href="">
-                        <img src="../uploads/阿波レトロロゴ案１.png" alt="" />
+                        <img src="../uploads/阿波レトロロゴ案１.png" alt="ロゴ">
                     </a>
                     <p class="footer__caption">
-                        阿波レトロ発見伝<br />QLIPプログラミングスクール<br />Webプログラマー養成科16期生
+                        阿波レトロ発見伝<br>QLIPプログラミングスクール<br>Webプログラマー養成科16期生
                       </p>
                 </div>
                 <nav>

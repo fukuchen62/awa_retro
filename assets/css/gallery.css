@@ -44,11 +44,13 @@
 
 .gallery_img {
     width: 350px;
+    height: 262.5px;
+    object-fit: cover;
 }
 
 .gallery_img img {
     width: 100%;
-    aspect-ratio: 4/3;
+    height: 100%;
     filter: grayscale(80%);
     transition: 0.3s;
 }
@@ -81,30 +83,33 @@
 }
 
 .gallery_bgimg.g_bg3 {
-    top: 280px;
-    left: 25%;
-    width: 250px;
+    top: 30%;
+    left: -5%;
+    width: 200px;
     transform: rotate(-20deg);
 }
 
 .gallery_bgimg.g_bg4 {
-    top: 530px;
-    right: -50px;
-    width: 200px;
+    top: 80%;
+    right: -80px;
+    width: 150px;
     transform: rotate(20deg);
 }
 
-.gallery_bgimg.g_bg5 {
-    top: 850px;
-    left: 20%;
+/* .gallery_bgimg.g_bg5 {
+    bottom: -12px;
+    left: 10%;
     width: 100px;
-}
+} */
 
 .gallery_bgimg.g_bg1 img,
 .gallery_bgimg.g_bg2 img,
 .gallery_bgimg.g_bg3 img,
-.gallery_bgimg.g_bg4 img,
-.gallery_bgimg.g_bg5 img {
+.gallery_bgimg.g_bg4 img
+
+/* ,
+.gallery_bgimg.g_bg5 img  */
+    {
     width: 100%;
 }
 
@@ -121,7 +126,6 @@
 @media screen and (max-width:882px) {
     .gallery_bgimg.g_bg3 {
         left: -5%;
-        width: 150px;
     }
 
     .gallery_bgimg.g_bg4 {
@@ -129,10 +133,10 @@
         width: 150px;
     }
 
-    .gallery_bgimg.g_bg5 {
+    /* .gallery_bgimg.g_bg5 {
         left: 25%;
 
-    }
+    } */
 }
 
 @media screen and (max-width:760px) {
@@ -148,9 +152,20 @@
     }
 }
 
+
 @media screen and (max-width:450px) {
+    .gallery_bgimg.g_bg3 {
+        width: 150px;
+    }
+
+    .gallery_bgimg.g_bg4 {
+        width: 100px;
+        right: -10%;
+    }
+
     .gallery_img {
         width: 280px;
+        height: 210px;
     }
 
     .gallery_box {
@@ -160,7 +175,7 @@
 }
 
 /* ページネーション  */
-.gallery_pagination_box {
+/* .gallery_pagination_box {
     width: 70%;
     margin: 0 auto;
     padding: 3em;
@@ -186,6 +201,45 @@
 }
 
 .gallery_pagination a:hover:not(.active) {
+    background-color: #B3B3B3;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.gallery_pagination_box {
+    width: 70%;
+    margin: 0 auto;
+    padding: 3em;
+} */
+
+
+/* プラグインに合わせてCSS作成 */
+.wp-pagenavi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wp-pagenavi .current {
+    padding: 0.5rem 0.8rem;
+    border-radius: 20%;
+}
+
+.wp-pagenavi a {
+    color: black;
+    font-weight: 800;
+    font-size: 16px;
+    padding: 0.5rem 0.8rem;
+    margin: 1rem;
+}
+
+.wp-pagenavi a.active {
+    background-color: #1A2B3C;
+    color: white;
+    border-radius: 20%;
+}
+
+.wp-pagenavi a:hover:not(.active) {
     background-color: #B3B3B3;
     color: #fff;
     border-radius: 10px;

@@ -14,14 +14,140 @@
     <!-- スライドショーCSS -->
     <link rel="stylesheet" type="text/css" href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <!-- 共有CSS -->
     <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/header.css" />
+    <link rel="stylesheet" href="../assets/css/footer.css">
     <link rel="stylesheet" href="../assets/css/card_list2.css">
+    <!-- 自作CSS -->
     <link rel="stylesheet" href="../assets/css/food_list.css">
 
 </head>
 
 <body>
     <div class="wrap">
+        <!-- header開始 -->
+        <header>
+            <div class="header_image">
+                <img src="../assets/images/header01.png" alt="header画像" />
+            </div>
+        </header>
+        <div class="wrapper">
+            <div class="header__logo">
+                <h1 class="js__title__logo">
+                              <a href=""
+                                ><img src="../assets/images/阿波レトロロゴ案１.png" alt=""
+                              /></a>
+                            </h1>
+            </div>
+            <!-- headerナビゲーション -->
+            <btn class="hamburger__menu__btn"><span></span></btn>
+            <nav class="gnav__menu__content">
+                <div class="gnav__menu__content__inner"></div>
+
+                <ul class="menu__wrap">
+                    <a class="gnav__search__sp__title" href="">徳島昭和知識</a>
+                    <li class="gnav color1">
+                        <a class="gnav__title" href="">徳島昭和知識</a>
+                    </li>
+                </ul>
+
+                <ul class="menu__wrap">
+                    <a class="gnav__search__sp__title" href="">お食事処</a>
+                    <li class="gnav color2">
+                        <a class="gnav__title" href="">お食事処</a>
+                        <ul class="menu__item__wrap stay__wrap">
+                            <li class="menu__item">
+                                <a href=""><img src="../assets/images/title_img1.png" alt="" />
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href=""><img src="../assets/images/title_img1.png" alt="" />
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href=""><img src="../assets/images/title_img1.png" alt="" />
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="menu__wrap">
+                    <a class="gnav__search__sp__title" href="">スポット</a>
+                    <li class="gnav color1">
+                        <a class="gnav__title" href="">スポット</a>
+
+                        <ul class="menu__item__wrap eat__wrap">
+                            <li class="menu__item">
+                                <a href=""><img src="../assets/images/title_img1.png" alt="" />
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href=""><img src="../assets/images/title_img1.png" alt="" />
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href=""><img src="../assets/images/title_img1.png" alt="" />
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href=""><img src="../assets/images/title_img1.png" alt="" />
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href=""><img src="../assets/images/title_img1.png" alt="" />
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="menu__wrap">
+                    <a class="gnav__search__sp__title" href="">モデルコース</a>
+                    <li class="gnav color2">
+                        <a class="gnav__title" href="">モデルコース</a>
+
+                        <ul class="menu__item__wrap model__course__wrap">
+                            <li class="menu__item">
+                                <a href=""><img src="../assets/images/title_img1.png" alt="" />
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a href=""><img src="../assets/images/title_img1.png" alt="" />
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="menu__wrap">
+                    <a class="gnav__search__sp__title" href="">コラム・情報</a>
+                    <li class="gnav color1">
+                        <a class="gnav__title" href="">コラム・情報</a>
+                    </li>
+                </ul>
+                <ul class="menu__wrap">
+                    <a class="gnav__search__sp__title" href="">ギャラリー</a>
+                    <li class="gnav color2">
+                        <a class="gnav__title" href="">ギャラリー</a>
+                    </li>
+                </ul>
+                <ul class="menu__wrap">
+                    <a class="gnav__search__sp__title" href="">詳細検索</a>
+                    <li class="gnav color1">
+                        <a class="gnav__title" href="">詳細検索</a>
+                    </li>
+                </ul>
+                <ul class="menu__wrap">
+                    <a class="gnav__search__sp__title" href="">お気に入り</a>
+                    <li class="gnav color2">
+                        <a class="gnav__title" href="">お気に入り</a>
+                    </li>
+                </ul>
+
+                <ul class="menu__wrap done">
+                    <li class="gnav color1"></li>
+                </ul>
+            </nav>
+        </div>
 
         <div class="contents_top">
             <main class="contents">
@@ -43,7 +169,7 @@
                         <p>いいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいい</p>
                         <p>いいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいい</p>
                     </div>
-                    <div class="explanation_box"><img src="../assets/images/food_list/cafe.png" alt=""></div>
+                    <!-- <div class="explanation_box"><img src="../assets/images/food_list/cafe.png" alt=""></div> -->
                 </div>
 
 
@@ -74,10 +200,10 @@
                     <div class="category_item 3">
                         <div class="category_item_text">洋食</div>
                     </div>
-                    <img src="../uploads/gallery_bg2.png" alt="" class="bg">
+                    <img src="../assets/images/gallery/gallery_bg2.png" alt="" class="bg">
                 </div>
 
-                <!-- 周辺のスポット ==========================--->
+                <!-- 周辺のスポット ========================== -->
                 <section id="card_list_container" class="card_list_container">
 
                     <div class="card_list_title_container">
@@ -213,6 +339,66 @@
                 </section>
             </main>
         </div>
+        <!-- footer開始 -->
+        <footer class="footer">
+            <div class="footer__container02"></div>
+            <div class="footer__container">
+                <div class="footer__head">
+                    <a href="#">
+                        <img src="../uploads/阿波レトロロゴ案１.png" alt="" />
+                    </a>
+                    <p class="footer__caption">
+                        阿波レトロ発見伝<br />QLIPプログラミングスクール<br />Webプログラマー養成科16期生
+                      </p>
+                </div>
+                <nav>
+                    <p class="footer__title">お食事処</p>
+                    <ul class="footer__list">
+                        <li><a href="#" class="footer__link">純喫茶</a></li>
+                        <li><a href="#" class="footer__link">和食</a></li>
+                        <li><a href="#" class="footer__link">洋食</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <p class="footer__title">スポット</p>
+                    <ul class="footer__list">
+                        <li><a href="#" class="footer__link">ゲームセンター</a></li>
+                        <li><a href="#" class="footer__link">自販機</a></li>
+                        <li><a href="#" class="footer__link">建物</a></li>
+                        <li><a href="#" class="footer__link">街並み</a></li>
+                        <li><a href="#" class="footer__link">お店</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <p class="footer__title">
+                        <a href="#" class="footer__link">モデルコース</a>
+                      </p>
+                    <p class="footer__title">
+                        <a href="#" class="footer__link">詳細検索</a>
+                      </p>
+                    <p class="footer__title">
+                        <a href="#" class="footer__link">コラム・情報</a>
+                      </p>
+                    <p class="footer__title">
+                        <a href="#" class="footer__link">お気に入り</a>
+                      </p>
+                </nav>
+                <nav>
+                    <p class="footer__title">
+                        <a href="#" class="footer__link">このサイトについて</a>
+                      </p>
+                    <p class="footer__title">
+                        <a href="#" class="footer__link">お問い合わせ</a>
+                      </p>
+                    <p class="footer__title">
+                        <a href="#" class="footer__link">サイトマップ</a>
+                      </p>
+                </nav>
+            </div>
+            <div class="copyright">
+                <small>copyright©阿波レトロ発見伝 All Rights Reserved.</small>
+            </div>
+        </footer>
     </div>
 
     <!-- jQuery -->

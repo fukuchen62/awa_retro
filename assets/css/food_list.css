@@ -36,6 +36,7 @@ body {
     align-items: center;
     background-image: url(../images/food_list/fure-mu02.png);
     background-size: cover;
+    background-position: center center;
 }
 
 .title_box_img {
@@ -78,6 +79,7 @@ body {
 /* スクリーンのコンテナサイズ */
 .screen_container {
     height: 400px;
+    margin-top: 20px;
 }
 
 /* カテゴリーコンテナーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
@@ -87,6 +89,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 50px;
+    width: 100%;
 }
 
 .category_item {
@@ -124,20 +127,6 @@ body {
     display: none;
 }
 
-/* .category_bgi1 {
-    background-image: url(../images/food_list/food_category01.jpg);
-    background-size: cover;
-}
-
-.category_bgi2 {
-    background-image: url(../images/food_list/food_category02.jpeg);
-    background-size: cover;
-}
-
-.category_bgi3 {
-    background-image: url(../images/food_list/food_category03.png);
-    background-size: cover;
-} */
 
 /* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーカテゴリーコンテナ */
 
@@ -155,4 +144,27 @@ body {
 .slider .slick-slide {
     margin: 0 10px;
     /*スライド左右の余白調整*/
+}
+
+
+/* レスポンシブ */
+@media screen and (max-width: 760px) {
+    .explanation_text p {
+        margin: 0 20px 0 20px;
+    }
+
+    .category_item {
+        margin-right: 10px;
+        width: 100%;
+    }
+
+    .screen_container {
+        height: 200px;
+    }
+
+    .slider img {
+        height: 200px;
+        width: 100%;
+        /*スライダー内の画像を横幅100%に*/
+    }
 }
