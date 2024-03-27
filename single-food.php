@@ -82,7 +82,7 @@
                         <?php endif; ?>
                     <?php endfor; ?>
                 </div>
-                <!-- ここの</div>がわからない -->
+
 
 
                 <div class="shop_detail_slider_nav">
@@ -90,7 +90,7 @@
                         <?php if (get_field('pic' . $i)) : ?>
                             <?php
                             $pic = get_field('pic' . $i);
-                            $pic_url = $pic['sizes']['large']; 
+                            $pic_url = $pic['sizes']['large'];
                             ?>
                             <div><img src="<?php echo $pic_url; ?>" alt="お店の写真<?php echo $i; ?>"></div>
                         <?php endif; ?>
