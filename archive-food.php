@@ -28,7 +28,15 @@
 
         <div class="screen_container ">
             <ul class="slider">
-                <li><a href=""><img src="../uploads/food_list_screen01.jpg" alt=""></a></li>
+                <?php for ($i = 1; $i <= 15; $i++) : ?>
+                    <?php if (get_field('pic' . $i)) : ?>
+                        <?php
+                        $pic = get_field('pic' . $i);
+                        $pic_url = $pic['sizes']['medium'];
+                        ?>
+                        <li><a href=""><img src="<?php echo $pic_url; ?>" alt="お店の写真<?php echo $i; ?>"></a></li>
+                    <?php endif; ?>
+                <?php endfor; ?>
 
                 <!-- <li><a href=""><img src="../uploads/food_list_screen06.jpg" alt=""></a></li> -->
                 <!--/slider-->
@@ -167,48 +175,6 @@
                     <?php endwhile; ?>
                 <?php endif; ?>
                 <?php wp_reset_postdata(); ?>
-
-                <!-- カード ============ -->
-                <div class="card_list_content">
-
-                    <!-- カード全体をhoverした時のリンク -->
-                    <a href="#" tabindex="-1"></a>
-
-                    <!-- 内側枠(飾り) -->
-                    <div class="card_list_content_inner"></div>
-
-                    <!-- カード画像 -->
-                    <div class="card_list_contant_img">
-                        <img src="../uploads/dummy.jpg" alt="周辺スポットの写真">
-                    </div>
-
-                    <!-- カードタグ -->
-                    <div class="card_list_contant_tag">
-                        <a href="#">喫茶店</a>
-                        <a href="#">洋食</a>
-                        <a href="#">ナポリタン</a>
-                        <a href="#">クリームソーダ</a>
-                        <a href="#">食べる</a>
-                    </div>
-
-
-                    <!-- カードタイトル -->
-                    <div class="card_list_content_name">
-                        <h3>ギャラリー喫茶グレイス</h3>
-                    </div>
-
-                    <!-- カードテキスト -->
-                    <div class="card_list_contant_text">
-                        <p>
-                            ここにはお店の説明文が入ります。
-                            ここにはお店の説明文が入ります。
-                            ここにはお店の説明文が入ります。
-                            ここにはお店の説明文が入ります。
-                        </p>
-                    </div>
-
-                </div>
-
 
             </div>
 

@@ -14,7 +14,7 @@
 }
 
 .right {
-  right: -20%;
+  right: -15%;
   width: 25%;
   position: absolute;
 }
@@ -37,6 +37,7 @@
 .right img {
   width: 200px;
   transform-origin: center bottom;
+  overflow: x hidden;
   /* animation: fuwafuwa 4s linear infinite; */
 }
 
@@ -78,6 +79,7 @@
 
 body {
   background-color: #fffdf0;
+
 }
 
 .wrap {

@@ -168,6 +168,9 @@ a {
         display: block;
     }
 
+    .model_img {
+        margin-top: 1rem;
+    }
 }
 
 
@@ -214,4 +217,28 @@ hr {
 .other_model_spot_titile {
     margin: 1rem;
     font-size: 17px;
+}
+
+@keyframes return {
+    50% {
+        left: 100%;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+.return {
+    width: 100px;
+    height: 100px;
+    background-color: Lavender;
+    position: relative;
+    left: 0px;
+    top: 0;
+
+    animation-name: return;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
 }
