@@ -55,7 +55,30 @@ function awaretro_wp_enqueue_scripts()
     // 自作のCSS
     wp_enqueue_style('awaretro-footer', get_template_directory_uri() . '/assets/css/footer.css');
 
-    // wp_enqueue_style('awaretro-header', get_template_directory_uri() . '/assets/css/header.css');
+    // Header用 CSS
+    wp_enqueue_style('awaretro-header', get_template_directory_uri() . '/assets/css/header.css');
+
+    // Header用 JS
+    // wp_enqueue_style(
+    //     'awaretro-header',
+    //     get_template_directory_uri() . '/assets/js/header.js',
+    //     '',
+    //     '',
+    //     true  //フッターに読み込むように
+    // );
+
+    // Header用 JQuery
+    // wp_deregister_script('jquery');
+
+    // wp_enqueue_script(
+    //     'jquery-3.7.0',
+    //     'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js',
+    //     '',
+    //     '',
+    //     false  //フッターに読み込むように
+    // );
+
+
 
     // slick CSS
     wp_enqueue_style('awaretro-slick', get_template_directory_uri() . '/assets/css/slick.css');
