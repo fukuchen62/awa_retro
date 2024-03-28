@@ -29,11 +29,8 @@
         <div class="screen_container ">
             <ul class="slider">
                 <li><a href=""><img src="../uploads/food_list_screen01.jpg" alt=""></a></li>
-                <li><a href=""><img src="../uploads/food_list_screen02.jpg" alt=""></a></li>
-                <li><a href=""><img src="../uploads/food_list_screen03.jpg" alt=""></a></li>
-                <li><a href=""><img src="../uploads/food_list_screen04.webp" alt=""></a></li>
-                <li><a href=""><img src="../uploads/food_list_screen05.jpg" alt=""></a></li>
-                <li><a href=""><img src="../uploads/food_list_screen06.jpg" alt=""></a></li>
+
+                <!-- <li><a href=""><img src="../uploads/food_list_screen06.jpg" alt=""></a></li> -->
                 <!--/slider-->
             </ul>
         </div>

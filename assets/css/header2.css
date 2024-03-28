@@ -39,7 +39,7 @@ header {
   margin: 0 auto;
   padding: 0px;
   z-index: 100;
-  width: 100%;
+  width: 94%;
 }
 
 .header__logo {
@@ -296,7 +296,8 @@ img {
   border-bottom: dashed 1px #000;
   left: 48%;
   transform: translate(-50%);
-  padding-left: 50px;
+  /* padding-left: 50px; */
+  text-align: center;
 }
 
 /* sp用検索 */
