@@ -42,11 +42,11 @@
                     <?php else :  ?>
                     <?php endif;  ?>
                 </div>
-                <h3 class="colamn_titile"><?php the_field('sp_title1'); ?></h3>
+                <h3 class="colamn_titile"><?php the_title(); ?></h3>
             </div>
             <div></div>
             <div class="colamn_contant_img"><a class="detail_link" href="spot_detail.html"><span>→詳細ページへ</span></a>
-                <img src="<?php echo get_template_directory_uri() ?>/uploads/baic.jpg" alt="インタビュー画像">
+                <?php the_content(); ?>
                 <p class="comments">注釈</p>
             </div>
             <div class="colamn_commnt">
