@@ -5,6 +5,10 @@ img {
     height: 100%;
 }
 
+body {
+    background-color: #ffe49f;
+}
+
 /* テンプレート */
 .main_conteiner {
     width: 100%;
@@ -114,10 +118,6 @@ img {
 .top_text_box_inner {
     max-width: 1000px;
     width: 100%;
-}
-
-.top_text_box_inner p {
-    margin: 0 20px 0 20px;
 }
 
 .top_link_box {

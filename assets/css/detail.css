@@ -99,17 +99,20 @@
 
 .shop_detail_slider img {
     width: 100%;
+    aspect-ratio: 4/3;
 }
 
 .shop_detail_slider_nav {
     width: 90%;
     max-width: 1240px;
     margin: 0 auto;
+
 }
 
 .shop_detail_slider_nav img {
     width: 90%;
     margin: 10px 10px;
+    aspect-ratio: 4/3;
 }
 
 /* ショップの紹介テキスト =============*/
@@ -597,6 +600,7 @@
 .other_spot_contant_img {
     width: 85%;
     margin: 8% auto 5%;
+    aspect-ratio: 4/3;
 }
 
 .other_spot_contant_img img {
