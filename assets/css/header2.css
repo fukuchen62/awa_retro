@@ -39,6 +39,7 @@ header {
   margin: 0 auto;
   padding: 0px;
   z-index: 100;
+  width: 94%;
 }
 
 .header__logo {
@@ -146,6 +147,11 @@ img {
   .gnav__menu__content {
     display: none;
   }
+
+  .test {
+    margin-top: 100px;
+    padding-top: 100px;
+  }
 }
 
 .gnav__menu__content {
@@ -181,7 +187,8 @@ img {
     background-color: rgba(235, 235, 235, 0);
     left: 28px;
     padding: 0;
-    padding-left: 100px;
+    /* padding-left: 100px; */
+    margin-left: 100px;
     text-align: center;
     visibility: visible;
     z-index: 100;
@@ -289,6 +296,8 @@ img {
   border-bottom: dashed 1px #000;
   left: 48%;
   transform: translate(-50%);
+  /* padding-left: 50px; */
+  text-align: center;
 }
 
 /* sp用検索 */
