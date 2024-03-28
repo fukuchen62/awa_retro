@@ -7,52 +7,196 @@
     margin-bottom: 5rem;
 }
 
+
 .qa_box{
-    background-color: hsl(39, 80%, 82%);
-    width: 1280px;
-    height: 400px;
+    /* background-color: #ffedd1; */
+    width: 100%;
+    height: auto;
+    padding-top: 70px;
+    padding-bottom: 0;
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column; */
 }
 
-.qa_flex_box{
+.qa_box:nth-of-type(4){
+    padding-bottom: 70px;
+}
+
+/* 760px以下のとき */
+@media screen and (max-width: 760px){
+    .qa_box{
+    /* background-color: hsl(39, 80%, 82%); */
+    width: 100%;
+    height: auto;
+    padding-top: 55px;
+    padding-bottom: 70px;
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column; */
+}
+}
+
+.qa_flex_box_upper{
+    /* width: 94%; */
     display: flex;
+    justify-content: center;
+    /* margin: 0 auto 20px; */
+    margin-bottom: 20px;
+}
+
+.qa_flex_box_lower{
+    /* width: 94%; */
+    display: flex;
+    justify-content: center;
+    /* margin: 0 auto 20px; */
+    margin-bottom: 0;
+}
+
+/* 760px以下のとき */
+@media screen and (max-width: 760px){
+    .qa_flex_box_upper{
+    background-color: #ffffff;
+    width: 95%;
+    height: auto;
+    padding: 40px 11%;
+    position: relative;
+    display: block;
+    /* display: flex;
+    justify-content: center; */
+    margin: 0 auto 65px;
+    border-radius: 20px;
+}
+
+    .qa_flex_box_lower{
+    background-color: #ffedd1;
+    width: 95%;
+    height: auto;
+    padding: 40px 11%;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    border-radius: 20px;
+}
 }
 
 .q_left_box{
     background-color: #b3b3b3;
-    width: 135px;
-    height: 170px;
+    /* width: 11%; */
+    width: 9%;
+    max-width: 135px;
+    height: 100px;
+    background-color: #ffbb3e;
 }
 
-.content_box{
-    background-color: #ffffff;
-    width: 1065px;
-    height: 170px;
+.a_left_box{
+    background-color: #979797;
+    /* width: 11%; */
+    width: 9%;
+    max-width: 135px;
+    height: 100px;
+    background-color: #ffbb3e;
+}
+
+.q_left_box,.a_left_box{
+    border-radius: 20px;
+    /* background-color: #ffcf77; */
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 40px;
+    margin-right: 10px;
+    /* margin-left: 40px; */
+}
+
+/* 760px以下のとき */
+@media screen and (max-width: 760px){
+    .q_left_box,.a_left_box{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 40px;
+    top: -55px;
+}
+}
+
+.qa_letter_box .q_ul{
+    border-bottom: 2px dotted #028391;
+}
+
+.qa_letter_box .a_ul{
+    border-bottom: 2px dotted #f85525;
+}
+
+.q_content_box{
+    background-color: #ffffff;
+    /* width: 82%; */
+    width: 78%;
+    max-width: 1055px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 40px;
+    padding-bottom: 40px; */
+    /* margin-right: 40px; */
+    border-radius: 20px;
+}
+
+.a_content_box{
+    background-color: #ffedd1;
+    /* width: 82%; */
+    width: 78%;
+    max-width: 1055px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    align-items: center;
+    /* margin-right: 40px; */
+    border-radius: 20px;
+}
+
+/* 760px以下のとき */
+@media screen and (max-width: 760px){
+    .q_content_box{
+    width: auto;
+    height: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    justify-content: flex-start;
+}
+
+    .a_content_box{
+    background-color: #ffedd1;
+    width: auto;
+    height: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    justify-content: flex-start;
+}
 }
 
 .qa_text_box{
-    width: 865px;
+    width: 68%;
     height: auto;
     line-height: 1.5;
     letter-spacing: 3px;
 }
 
-.a_left_box{
-    background-color: #979797;
-    width: 135px;
-    height: 170px;
+/* 760px以下のとき */
+@media screen and (max-width: 760px){
+    .qa_text_box{
+    width: auto;
+    height: auto;
+}
 }
 
-.q_left_box,.a_left_box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 40px;
-}
+/* .qa_letter_box h3{
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    border-bottom: 2px dotted #028391;
+} */
 
-.q_left_box,.a_left_box,.content_box{
+/* .q_left_box,.a_left_box,.content_box{
     margin-top: 20px;
-}
+} */
