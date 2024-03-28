@@ -140,7 +140,7 @@ function awaretro_wp_enqueue_scripts()
         );
 
         wp_enqueue_style('awaretro-colamn', get_template_directory_uri() . '/assets/css/site_about.css');
-    } else if (is_post_type_archive('spot_list')) {
+    } else if (is_post_type_archive('spot')) {
 
         wp_enqueue_style('awaretro-spot_list', get_template_directory_uri() . '/assets/css/spot_list.css');
 
