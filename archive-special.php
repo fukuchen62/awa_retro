@@ -42,7 +42,7 @@
       <?php
       // 検索条件を定義
       $myspot = [
-        'post_type' => 'spot', // 投稿タイプ
+        'post_type' => 'special', // 投稿タイプ
         'posts_per_page' => '6', // 6件を取得
         'orderby' => 'asc' //
       ];
@@ -121,7 +121,7 @@
             <div class="colamn_content_name">
               <h3>
                 <!-- ギャラリー喫茶グレイス <br>昭和53年創業 -->
-                <?php the_field('spot_name'); ?>
+                <?php the_field('sp_title1'); ?>
               </h3>
             </div>
 
@@ -142,44 +142,7 @@
       <?php endif; ?>
       <?php wp_reset_postdata(); ?>
 
-      <div class="colamn_card">
 
-        <!-- カード全体をhoverした時のリンク -->
-        <a href="#" tabindex="-1"></a>
-
-        <!-- 内側枠(飾り) -->
-        <div class="colamn_card_inner"></div>
-
-        <!-- カード画像 -->
-        <div class="colamn_contant_img">
-          <img src="../uploads/baic.jpg" alt="周辺スポットの写真">
-        </div>
-
-        <!-- カードタグ -->
-        <div class="colamn_contant_tag">
-          <a href="#">インタビュー</a>
-          <a href="#">体験</a>
-          <a href="#">コラム</a>
-        </div>
-
-
-        <!-- カードタイトル -->
-        <div class="colamn_content_name">
-          <h3>ギャラリー喫茶グレイス <br>昭和53年創業</h3>
-        </div>
-
-        <!-- カードテキスト -->
-        <div class="colamn_contant_text">
-          <!-- <p>
-                                    ここにはお店の説明文が入ります。
-                                    ここにはお店の説明文が入ります。
-                                    ここにはお店の説明文が入ります。
-                                    ここにはお店の説明文が入ります。
-                                    ここにはお店の説明文が入ります。
-                                </p> -->
-        </div>
-
-      </div>
 
     </div>
 
