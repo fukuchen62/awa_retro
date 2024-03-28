@@ -79,6 +79,7 @@
 
 body {
   background-color: #fffdf0;
+  overflow: hidden;
 }
 
 .wrap {
