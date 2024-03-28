@@ -265,8 +265,29 @@
 
                         <?php if (get_field('url')) : ?>
                             <tr>
-                                <th>HP/SNS</th>
+                                <th>スポットのHP</th>
                                 <td><?php the_field('url'); ?></td>
+                            </tr>
+                        <?php endif; ?>
+
+                        <?php if (get_field('url1')) : ?>
+                            <tr>
+                                <th>スポットのSNS1</th>
+                                <td><?php the_field('url1'); ?></td>
+                            </tr>
+                        <?php endif; ?>
+
+                        <?php if (get_field('url2')) : ?>
+                            <tr>
+                                <th>スポットのSNS2</th>
+                                <td><?php the_field('url2'); ?></td>
+                            </tr>
+                        <?php endif; ?>
+
+                        <?php if (get_field('url3')) : ?>
+                            <tr>
+                                <th>スポットのSNS3</th>
+                                <td><?php the_field('url3'); ?></td>
                             </tr>
                         <?php endif; ?>
                         <!-- <tr>
