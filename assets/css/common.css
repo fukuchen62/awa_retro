@@ -13,18 +13,32 @@
     } */
 }
 
+.right {
+  right: -15%;
+  width: 25%;
+  position: absolute;
+}
+
+.left {
+  left: -30%;
+}
+
 .about_img {
   position: absolute;
-  width: 25%;
-  right: -30%;
   transform: rotate(42deg);
 }
 
-.about_img img {
+.about_img {
+  position: absolute;
+  width: 25%;
+  transform: rotate(42deg);
+}
+
+.right img {
+  width: 200px;
   transform-origin: center bottom;
-  animation: fuwafuwa 4s linear infinite;
-  vertical-align: middle;
-  border-style: none;
+  overflow: x hidden;
+  /* animation: fuwafuwa 4s linear infinite; */
 }
 
 .fuwafuwa {
@@ -65,6 +79,7 @@
 
 body {
   background-color: #fffdf0;
+
 }
 
 .wrap {
