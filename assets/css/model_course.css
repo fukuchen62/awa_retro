@@ -18,6 +18,11 @@ a {
     margin: 0 auto;
     text-align: center;
     position: relative;
+    z-index: 15;
+}
+
+.model_body_text {
+    z-index: 15;
 }
 
 .animation {
@@ -30,7 +35,7 @@ a {
 .keyframe3 {
     animation-name: anim_s;
     transform: rotate(30deg);
-    animation-duration: 5s;
+    animation-duration: 10s;
 }
 
 @keyframes anim_s {
@@ -43,6 +48,35 @@ a {
     }
 }
 
+.model_time {
+    position: relative;
+    z-index: 15;
+}
+
+/* 狸のアニメーション */
+.chara {
+    width: 40%;
+}
+
+.jump {
+    animation-name: jump;
+    width: 128px;
+    animation-duration: .6s;
+    width: 20%;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+}
+
+@keyframes jump {
+    0% {
+        transform: translate(0%, 30px) rotateX(30deg);
+    }
+
+    100% {
+        transform: translate(0%, 0%);
+    }
+}
 
 .model_box {
     max-width: 60%;
@@ -146,13 +180,9 @@ a {
 }
 
 @media screen and (max-width:760px) {
-
-
-
     .model_box {
         max-width: 80%;
     }
-
 
     .model_body {
         width: 80%;
@@ -161,6 +191,12 @@ a {
     .tag {
         margin: 0 auto;
     }
+
+    .jump {
+        left: 10%;
+        top: 45%;
+    }
+
 }
 
 @media screen and (max-width:500px) {
@@ -173,6 +209,55 @@ a {
     }
 }
 
+
+/* 船のアニメーション */
+@keyframes return {
+    0% {
+        left: 10%;
+    }
+
+    50% {
+        left: 83%;
+    }
+
+    100% {
+        left: 10%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    @keyframes return {
+        0% {
+            left: 10%;
+        }
+
+        50% {
+            left: 63%;
+        }
+
+        100% {
+            left: 10%;
+        }
+    }
+
+    .return {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.return {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 2rem;
+    top: 12px;
+
+    animation-name: return;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
 
 hr {
     width: 80%;
@@ -217,28 +302,4 @@ hr {
 .other_model_spot_titile {
     margin: 1rem;
     font-size: 17px;
-}
-
-@keyframes return {
-    50% {
-        left: 100%;
-    }
-
-    100% {
-        left: 0px;
-    }
-}
-
-.return {
-    width: 100px;
-    height: 100px;
-    background-color: Lavender;
-    position: relative;
-    left: 0px;
-    top: 0;
-
-    animation-name: return;
-    animation-duration: 50s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease;
 }

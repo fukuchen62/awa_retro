@@ -14,9 +14,21 @@
 }
 
 .right {
-  right: -15%;
-  width: 25%;
+  right: -35%;
+  top: -35%;
+  width: 65%;
   position: absolute;
+  z-index: 10;
+}
+
+@media screen and (max-width:500px) {
+  .right {
+    right: -30%;
+  }
+
+  .right img {
+    width: 70%;
+  }
 }
 
 .left {
@@ -35,9 +47,8 @@
 }
 
 .right img {
-  width: 200px;
+  width: 50%;
   transform-origin: center bottom;
-  overflow: x hidden;
   /* animation: fuwafuwa 4s linear infinite; */
 }
 
