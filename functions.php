@@ -129,7 +129,7 @@ function awaretro_wp_enqueue_scripts()
         //     '',
         //     true
         // );
-    } else if (is_page()) {
+    } else if (is_page('contact')) {
 
         wp_enqueue_style('awaretro-contact', get_template_directory_uri() . '/assets/css/contact.css');
 
@@ -140,16 +140,18 @@ function awaretro_wp_enqueue_scripts()
             '',
             true
         );
+    } else if (is_page('about')) {
 
-        wp_enqueue_style('awaretro-colamn', get_template_directory_uri() . '/assets/css/site_about.css');
+        wp_enqueue_style('awaretro-site_about', get_template_directory_uri() . '/assets/css/site_about.css');
+    } else if (is_page('policy')) {
+
+        wp_enqueue_style('awaretro-privacy_policy', get_template_directory_uri() . '/assets/css/privacy_policy.css');
     } else if (is_post_type_archive('spot')) {
 
         wp_enqueue_style('awaretro-spot_list', get_template_directory_uri() . '/assets/css/spot_list.css');
-
     } else if (is_post_type_archive('special')) {
 
         wp_enqueue_style('awaretro-colamn', get_template_directory_uri() . '/assets/css/colamn.css');
-
     } else if (is_post_type_archive('gallery')) {
 
         wp_enqueue_style('awaretro-gallery', get_template_directory_uri() . '/assets/css/gallery.css');
