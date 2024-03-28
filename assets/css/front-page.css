@@ -120,6 +120,10 @@ body {
     width: 100%;
 }
 
+.top_text_box_inner p {
+    margin: 0 20px 0 20px;
+}
+
 .top_link_box {
     width: 100%;
     display: flex;
