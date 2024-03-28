@@ -114,8 +114,7 @@
                     $myspot = [
                         'post_type' => 'spot', // 投稿タイプ
                         'posts_per_page' => '6', // 6件を取得
-                        'post__not_in' => array(get_the_ID()), //現在表示している記事のID
-                        'orderby' => 'rand' // ランダムに
+                        'orderby' => 'asc' // 
                     ];
                     // クエリを実行する
                     $query = new WP_Query($myspot);
