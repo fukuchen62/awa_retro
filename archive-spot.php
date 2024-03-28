@@ -114,7 +114,7 @@
                     $myspot = [
                         'post_type' => 'spot', // 投稿タイプ
                         'posts_per_page' => '6', // 6件を取得
-                        'orderby' => 'asc' // 
+                        'orderby' => 'asc' //
                     ];
                     // クエリを実行する
                     $query = new WP_Query($myspot);
@@ -212,19 +212,23 @@
                 </div>
 
                 <!-- ページ番号と次へ進むリンク -->
-                <div class="spot_pagination_box">
-                    <div class="spot_pagination">
-                        <a href="#">&laquo;</a>
+                <!-- ページナビゲーション -->
+                <?php if (function_exists('wp_pagenavi')) : ?>
+                    <div class="spot_pagination_box">
+                        <div class="spot_pagination">
+                            <?php wp_pagenavi(); ?>
+                            <!-- <a href="#">&laquo;</a>
                         <a href="#">1</a>
                         <a href="#" class="active">2</a>
                         <a href="#">3</a>
-                        <!-- <a href="#">4</a>
+                        <a href="#">4</a>
                                 <a href="#">5</a>
-                                <a href="#">6</a> -->
-                        <a href="#">&raquo;</a>
-                    </div>
-                </div>
+                                <a href="#">6</a>
+                        <a href="#">&raquo;</a> -->
 
+                        </div>
+                    </div>
+                <?php endif; ?>
                 <!-- <div class="page_next_box">
                             <div>
                                 <span>

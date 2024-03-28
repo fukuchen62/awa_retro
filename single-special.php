@@ -42,7 +42,7 @@
                     <?php else :  ?>
                     <?php endif;  ?>
                 </div>
-                <h3 class="colamn_titile">[ご案内]徳島珈琲店さまにインタビュー！</h3>
+                <h3 class="colamn_titile"><?php the_field('sp_title1'); ?></h3>
             </div>
             <div></div>
             <div class="colamn_contant_img"><a class="detail_link" href="spot_detail.html"><span>→詳細ページへ</span></a>
@@ -152,8 +152,7 @@
                             <!-- カードタイトル -->
                             <div class="colamn_content_name">
                                 <!-- <h3>ギャラリー喫茶グレイス <br>昭和53年創業</h3> -->
-                                <?php the_field('sp_title1'); ?>
-                                <!-- フィールド待ち -->
+                                <h3><?php the_field('sp_title1'); ?></h3>
                             </div>
 
                         </div>
