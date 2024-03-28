@@ -325,8 +325,98 @@ body {
 
 .map_box_data {
     margin-top: 50px;
-    width: 1000px;
-    height: 700px;
+    /* width: 1000px;
+    height: 700px; */
+    width: 100%;
+    height: fit-content;
+    position: relative;
+}
+
+
+
+.map_box_data_area {
+    position: absolute;
+    z-index: 1;
+    width: fit-content;
+    height: fit-content;
+    transition: 0.3s;
+
+}
+
+.map_box_data_area a {
+    font-size: 16px;
+    color: #181818;
+    background-color: #FBD266;
+    padding: 0.3em 2em;
+    border-radius: 50px;
+    border: 2px dotted #181818;
+    box-shadow: 3px 3px #18181843;
+    transition: 0.3s;
+}
+
+.map_box_data_area:hover {
+    transform: translate(2px, 2px);
+}
+
+.map_box_data_area a:hover {
+    box-shadow: 1px 1px #18181843;
+}
+
+.map_box_data_area.area1 {
+    top: 33%;
+    left: 65%;
+}
+
+.map_box_data_area.area2 {
+    top: 33%;
+    left: 55%;
+}
+
+.map_box_data_area.area3 {
+    top: 60%;
+    left: 53%;
+}
+
+.map_box_data_area.area4 {
+    top: 40%;
+    left: 28%;
+}
+
+@media screen and (max-width: 1200px) {
+    .map_box_data_area.area1 {
+        top: 31%;
+        left: 60%;
+    }
+
+    .map_box_data_area.area2 {
+        top: 38%;
+        left: 56%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .map_box_data_area a {
+        font-size: 13px;
+        padding: 0.1em 1em;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .map_box_data_area.area1 {
+        top: 28%;
+        left: 60%;
+    }
+
+    .map_box_data_area.area2 {
+        top: 38%;
+        left: 55%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .map_box_data_area a {
+        padding: 0 1em;
+    }
 }
 
 
