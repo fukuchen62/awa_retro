@@ -16,6 +16,9 @@
 
             <h2 class="detail_title"><?php the_field('restaurant_name'); ?></h2>
 
+            <!-- お気に入り登録ボタン -->
+            <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
+
             <div class="detail_title_sub food">
                 <!-- <a>種別</a>
                         <a>目的別</a>
