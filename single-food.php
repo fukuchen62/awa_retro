@@ -163,7 +163,8 @@
 
                     <!-- コラムページへのリンク -->
                     <div class="detail_colamn_food_link">
-                        <a href="colamn_detail.html">コラムページへ →</a>
+                        <!-- <a href="colamn_detail.html">コラムページへ →</a> -->
+                        <a href="<?php the_field('inner_link'); ?>">コラムページへ →</a>
                     </div>
                 </div>
 
@@ -297,8 +298,29 @@
 
                         <?php if (get_field('url')) : ?>
                             <tr>
-                                <th>HP/SNS</th>
+                                <th>お店のHP</th>
                                 <td><?php the_field('url'); ?></td>
+                            </tr>
+                        <?php endif; ?>
+
+                        <?php if (get_field('url1')) : ?>
+                            <tr>
+                                <th>お店のSNS1</th>
+                                <td><?php the_field('url1'); ?></td>
+                            </tr>
+                        <?php endif; ?>
+
+                        <?php if (get_field('url2')) : ?>
+                            <tr>
+                                <th>お店のSNS2</th>
+                                <td><?php the_field('url2'); ?></td>
+                            </tr>
+                        <?php endif; ?>
+
+                        <?php if (get_field('url3')) : ?>
+                            <tr>
+                                <th>お店のSNS3</th>
+                                <td><?php the_field('url3'); ?></td>
                             </tr>
                         <?php endif; ?>
 
