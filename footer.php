@@ -3,7 +3,7 @@
     <div class="footer__container">
         <div class="footer__head">
             <a href="<?php echo home_url(); ?>">
-                <img src="<?php echo get_template_directory_uri(); ?>../uploads/阿波レトロロゴ案１.png" alt="" />
+                <img src="<?php echo get_template_directory_uri(); ?>/uploads/阿波レトロロゴ案１.png" alt="" />
             </a>
             <p class="footer__caption">
                 阿波レトロ発見伝<br />QLIPプログラミングスクール<br />Webプログラマー養成科16期生
@@ -43,13 +43,10 @@
                 <a href="<?php echo home_url('/about'); ?>" class="footer__link">このサイトについて</a>
             </p>
             <p class="footer__title">
-                <a href="<?php echo home_url('/qa'); ?>" class="footer__link">Q & A</a>
-            </p>
-            <p class="footer__title">
                 <a href="<?php echo home_url('/contact'); ?>" class="footer__link">お問い合わせ</a>
+            </p>
             <p class="footer__title">
                 <a href="<?php echo home_url('/mypage'); ?>" class="footer__link">お気に入り</a>
-            </p>
             </p>
             <p class="footer__title">
                 <a href="<?php echo home_url('/sitemap'); ?>" class="footer__link">サイトマップ</a>

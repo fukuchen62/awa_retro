@@ -1,4 +1,13 @@
-<?php get_header(); ?>
+<!-- header.phpを読み込む -->
+<?php
+get_header();
+?>
+
+
+<!-- WordPress ループの開始 -->
+<?php if (have_posts()) : ?>
+    <?php while (have_posts()) : ?>
+        <?php the_post(); ?>
 
         <main>
             <section class="site_about">
@@ -41,4 +50,19 @@
             </section>
         </main>
 
-<?php get_footer(); ?>
+        <!-- WordPress ループの終了 -->
+    <?php endwhile; ?>
+<?php endif; ?>
+
+
+<!-- <main>
+    <section class="section is-black">
+        <h2>このサイトについて</h2>
+    </section>
+</main> -->
+
+
+<!-- footer.phpを読み込む -->
+<?php
+get_footer();
+?>

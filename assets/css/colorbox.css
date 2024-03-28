@@ -204,6 +204,7 @@
     width: 38px;
     height: 28px;
     text-indent: -9999px;
+    /* filter: drop-shadow(1px 1px 3px #ffffff); */
     transform: scale(1.2);
     background: url(colorbox_images/gallery_close.png) no-repeat top center;
 }
