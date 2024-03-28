@@ -76,7 +76,7 @@
                         <?php if (get_field('pic' . $i)) : ?>
                             <?php
                             $pic = get_field('pic' . $i);
-                            $pic_url = $pic['sizes']['large']; //大サイズ画像
+                            $pic_url = $pic['sizes']['medium']; //大サイズ画像
                             ?>
                             <div><img src="<?php echo $pic_url; ?>" alt="お店の写真<?php echo $i; ?>"></div>
                         <?php endif; ?>
@@ -125,7 +125,7 @@
                             <!-- ここにはお店の説明文が入ります。
                                     ここにはお店の説明文が入ります。
                                     ここにはお店の説明文が入ります。 -->
-                            <?php the_field('menu_comment'); ?>
+                            <?php the_field('menu_detail'); ?>
                         </p>
                     </div>
                 </div>
@@ -137,7 +137,7 @@
                         <!-- ここにはお店の説明文が入ります。
                                 ここにはお店の説明文が入ります。
                                 ここにはお店の説明文が入ります。 -->
-                        <?php the_field('menu_detail'); ?>
+                        <?php the_field('shop_vibe'); ?>
                     </p>
 
                     <h3>歴史</h3>
@@ -150,7 +150,7 @@
                                 ここにはお店の説明文が入ります。
                                 ここにはお店の説明文が入ります。
                                 ここにはお店の説明文が入ります。 -->
-                        <?php the_field('menu_history'); ?>
+                        <?php the_field('shop_history'); ?>
                     </p>
 
                     <h3>その他</h3>

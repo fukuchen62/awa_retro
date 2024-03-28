@@ -3,7 +3,7 @@
     <div class="footer__container">
         <div class="footer__head">
             <a href="<?php echo home_url(); ?>">
-                <img src="<?php echo get_template_directory_uri(); ?>../uploads/阿波レトロロゴ案１.png" alt="" />
+                <img src="<?php echo get_template_directory_uri(); ?>/uploads/阿波レトロロゴ案１.png" alt="" />
             </a>
             <p class="footer__caption">
                 阿波レトロ発見伝<br />QLIPプログラミングスクール<br />Webプログラマー養成科16期生

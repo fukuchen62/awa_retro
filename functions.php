@@ -146,12 +146,19 @@ function awaretro_wp_enqueue_scripts()
     } else if (is_page('policy')) {
 
         wp_enqueue_style('awaretro-privacy_policy', get_template_directory_uri() . '/assets/css/privacy_policy.css');
+
+    } else if (is_post_type_archive('food')) {
+
+        wp_enqueue_style('awaretro-food_list', get_template_directory_uri() . '/assets/css/food_list.css');
+
     } else if (is_post_type_archive('spot')) {
 
         wp_enqueue_style('awaretro-spot_list', get_template_directory_uri() . '/assets/css/spot_list.css');
+
     } else if (is_post_type_archive('special')) {
 
         wp_enqueue_style('awaretro-colamn', get_template_directory_uri() . '/assets/css/colamn.css');
+
     } else if (is_post_type_archive('gallery')) {
 
         wp_enqueue_style('awaretro-gallery', get_template_directory_uri() . '/assets/css/gallery.css');
