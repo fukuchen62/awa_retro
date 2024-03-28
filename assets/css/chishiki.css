@@ -31,7 +31,7 @@ a {
 
 .model_box {
   max-width: 60%;
-  /* margin: 0 auto; */
+  margin: 0 auto;
 }
 
 .tag {
@@ -75,8 +75,8 @@ a {
   gap: 20px;
   grid-template-columns: repeat(auto-fit, 250px);
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
+  text-align: right;
 }
 
 .model_spot_box {
