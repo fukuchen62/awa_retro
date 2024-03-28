@@ -151,6 +151,15 @@ function awaretro_wp_enqueue_scripts()
 
         wp_enqueue_style('awaretro-food_list', get_template_directory_uri() . '/assets/css/food_list.css');
 
+        // JSファイルを読み込む
+        wp_enqueue_script(
+            'awaretro-food_list-min',
+            get_template_directory_uri() . '/assets/js/food_list.js',
+            '',
+            '',
+            true
+        );
+
     } else if (is_post_type_archive('spot')) {
 
         wp_enqueue_style('awaretro-spot_list', get_template_directory_uri() . '/assets/css/spot_list.css');
