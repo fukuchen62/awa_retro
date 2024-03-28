@@ -1,148 +1,243 @@
 @charset "utf-8";
 
-.chishiki_container {
+main {
   padding-top: 1rem;
   margin: 0.7rem;
-  /* padding: 2rem; */
-  /* box-shadow: 0 0 0 10px #f6f3c0; */
   border-left: 15px dashed;
   border-right: 15px dashed;
-  /* background-color: #f6f3c0; */
+}
+a {
+  color: black;
 }
 
-.chishiki_titile {
-  text-align: center;
+.model {
+  color: orange;
 }
 
-/* .chisiki00_text {
-  text-align: center;
+.model_title {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* .model_time {
+  display: flex;
 } */
 
-/*==================================================
-スライダーのためのcss
-===================================*/
-.slider {
-  position: relative;
-  z-index: 1;
-  /*↑z-indexの値をh1のz-indexの値よりも小さくして背景に回す*/
-  height: 100vh; /*スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
-}
-/*　背景画像設定　*/
-
-.slider-item01 {
-  background: url(https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-2/img/img_01.jpg);
-}
-
-.slider-item02 {
-  background: url(https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-2/img/img_02.jpg);
-}
-
-.slider-item03 {
-  background: url(https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-2/img/img_03.jpg);
-}
-
-.slider-item {
-  width: 100%; /*各スライダー全体の横幅を画面の高さいっぱい（100%）にする*/
-  height: 100vh; /*各スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
-  background-repeat: no-repeat; /*背景画像をリピートしない*/
-  background-position: center; /*背景画像の位置を中央に*/
-  background-size: cover; /*背景画像が.slider-item全体を覆い表示*/
-}
-
-/*矢印の設定*/
-
-.slick-prev,
-.slick-next {
-  position: absolute;
-  z-index: 3;
-  top: 42%;
-  cursor: pointer; /*マウスカーソルを指マークに*/
-  outline: none; /*クリックをしたら出てくる枠線を消す*/
-  border-top: 2px solid #fff; /*矢印の色*/
-  border-right: 2px solid #fff; /*矢印の色*/
-  height: 25px;
-  width: 25px;
-}
-
-.slick-prev {
-  /*戻る矢印の位置と形状*/
-  left: 2.5%;
-  transform: rotate(-135deg);
-}
-
-.slick-next {
-  /*次へ矢印の位置と形状*/
-  right: 2.5%;
-  transform: rotate(45deg);
-}
-
-/*ドットナビゲーションの設定*/
-
-.slick-dots {
-  position: relative;
-  z-index: 3;
+.model_body_textbox {
+  width: 60%;
+  margin: 0 auto;
   text-align: center;
-  margin: -50px 0 0 0; /*ドットの位置*/
 }
 
-.slick-dots li {
+.model_box {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.tag {
+  margin-right: 3rem;
+}
+
+.model_inner {
+  width: 50%;
   display: inline-block;
-  margin: 0 5px;
+  white-space: nowrap;
 }
 
-.slick-dots button {
-  color: transparent;
-  outline: none;
-  width: 8px; /*ドットボタンのサイズ*/
-  height: 8px; /*ドットボタンのサイズ*/
-  display: block;
-  border-radius: 50%;
-  background: #fff; /*ドットボタンの色*/
+/* .model_inner_time {
+  padding: 0.8rem 1.5rem 0.8rem 0.8rem;
+  background-color: gray;
+  color: #fff;
+  box-shadow: 8px 10px 13px 0px rgba(0, 0, 0, 0.25);
+} */
+
+.model_inner_body {
+  /* background-color: #fff;
+  padding: 0.8rem 2rem 0.8rem 2rem;
+  box-shadow: 8px 10px 13px 0px rgba(0, 0, 0, 0.25); */
+  font-size: 42px;
+  font-weight: bold;
+  font-family: "Kaisei Opti", serif;
+  text-align: center;
 }
 
-.slick-dots .slick-active button {
-  background: #333; /*ドットボタンの現在地表示の色*/
+.model_body {
+  width: 60%;
+  right: 4rem;
+  margin: 0rem auto;
 }
 
-/*========= レイアウトのためのCSS ===============*/
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.model_spot_contanier {
+  max-width: 1240px;
+  margin: 0 auto;
+  /* padding-bottom: 100px; */
+  display: flex;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, 250px);
+  justify-content: center;
+  align-items: flex-start;
+  text-align: right;
 }
 
-a {
+.model_spot_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.model__title_box {
+  width: 70%;
+}
+
+.detail_link {
+  position: relative;
+}
+
+.model_spot_titile {
+  font-size: 20px;
+  /* border: 1px solid; */
+  background-color: #345268;
   color: #fff;
 }
 
-a:hover,
-a:active {
-  text-decoration: none;
+.model_img {
+  height: 100%;
 }
 
-h1 {
+.model_img img {
+  height: 100%;
+  vertical-align: bottom;
+}
+
+.model_spot_img {
+  width: 70%;
+}
+
+@media screen and (max-width: 1100px) {
+  .model_inner {
+    width: 90%;
+    white-space: normal;
+  }
+
+  .model_inner span {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .course_title {
+    font-size: 20px;
+    margin: 5px;
+  }
+
+  .model_box {
+    max-width: 80%;
+  }
+
+  .model_body {
+    width: 80%;
+  }
+
+  .tag {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .model_spot_contanier {
+    display: block;
+  }
+}
+
+hr {
+  width: 80%;
+  margin: 0 auto;
+  border: 2px solid;
+}
+
+/* その他モデルコース */
+.other_model_spot_contanier {
+  max-width: 1240px;
+  margin: 2rem auto;
+  padding-bottom: 100px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, 180px);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.other_model_spot_box {
+  width: 180px;
+  height: fit-content;
+  background-color: rgba(226, 216, 198, 0.5);
+  border: dashed 4px #181818;
+  box-shadow: 10px 14px 6px 2px rgba(223, 187, 120, 0.7);
+  position: relative;
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 4;
+  gap: 0;
+}
+
+.other_model_spot_body {
+  margin: 1rem;
+}
+
+.other_model_spot_body p {
+  font-size: 14px;
+}
+
+.other_model_spot_titile {
+  margin: 1rem;
+  font-size: 17px;
+}
+
+/* スライド */
+
+.slide {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+@keyframes slideshow {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  28% {
+    opacity: 1;
+  }
+  38% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.slide img {
   position: absolute;
-  z-index: 2;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
-  font-size: 6vw;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: #fff;
+  width: 400px;
+  height: 300px;
+  opacity: 0;
+  animation: slideshow 24s linear infinite;
+  object-fit: cover;
 }
 
-.wrapper {
-  position: relative;
+.slide img:nth-child(2) {
+  animation-delay: 8s;
 }
 
-.container {
-  background: #555;
-}
-
-.container p {
-  padding: 300px 0;
-  text-align: center;
-  color: #fff;
+.slide img:last-child {
+  animation-delay: 16s;
 }

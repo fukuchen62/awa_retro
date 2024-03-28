@@ -112,6 +112,4 @@
             </div>
         </header>
 
-</body>
 
-</html>

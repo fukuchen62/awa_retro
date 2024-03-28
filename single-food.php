@@ -76,7 +76,7 @@
                         <?php if (get_field('pic' . $i)) : ?>
                             <?php
                             $pic = get_field('pic' . $i);
-                            $pic_url = $pic['sizes']['large']; //大サイズ画像
+                            $pic_url = $pic['sizes']['medium']; //大サイズ画像
                             ?>
                             <div><img src="<?php echo $pic_url; ?>" alt="お店の写真<?php echo $i; ?>"></div>
                         <?php endif; ?>
@@ -125,7 +125,7 @@
                             <!-- ここにはお店の説明文が入ります。
                                     ここにはお店の説明文が入ります。
                                     ここにはお店の説明文が入ります。 -->
-                            <?php the_field('menu_comment'); ?>
+                            <?php the_field('menu_detail'); ?>
                         </p>
                     </div>
                 </div>
@@ -137,7 +137,7 @@
                         <!-- ここにはお店の説明文が入ります。
                                 ここにはお店の説明文が入ります。
                                 ここにはお店の説明文が入ります。 -->
-                        <?php the_field('menu_detail'); ?>
+                        <?php the_field('shop_vibe'); ?>
                     </p>
 
                     <h3>歴史</h3>
@@ -150,7 +150,7 @@
                                 ここにはお店の説明文が入ります。
                                 ここにはお店の説明文が入ります。
                                 ここにはお店の説明文が入ります。 -->
-                        <?php the_field('menu_history'); ?>
+                        <?php the_field('shop_history'); ?>
                     </p>
 
                     <h3>その他</h3>
@@ -163,7 +163,8 @@
 
                     <!-- コラムページへのリンク -->
                     <div class="detail_colamn_food_link">
-                        <a href="colamn_detail.html">コラムページへ →</a>
+                        <!-- <a href="colamn_detail.html">コラムページへ →</a> -->
+                        <a href="<?php the_field('inner_link'); ?>">コラムページへ →</a>
                     </div>
                 </div>
 
@@ -297,8 +298,29 @@
 
                         <?php if (get_field('url')) : ?>
                             <tr>
-                                <th>HP/SNS</th>
+                                <th>お店のHP</th>
                                 <td><?php the_field('url'); ?></td>
+                            </tr>
+                        <?php endif; ?>
+
+                        <?php if (get_field('url1')) : ?>
+                            <tr>
+                                <th>お店のSNS1</th>
+                                <td><?php the_field('url1'); ?></td>
+                            </tr>
+                        <?php endif; ?>
+
+                        <?php if (get_field('url2')) : ?>
+                            <tr>
+                                <th>お店のSNS2</th>
+                                <td><?php the_field('url2'); ?></td>
+                            </tr>
+                        <?php endif; ?>
+
+                        <?php if (get_field('url3')) : ?>
+                            <tr>
+                                <th>お店のSNS3</th>
+                                <td><?php the_field('url3'); ?></td>
                             </tr>
                         <?php endif; ?>
 

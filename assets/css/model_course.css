@@ -17,7 +17,55 @@ a {
     width: 60%;
     margin: 0 auto;
     text-align: center;
+    position: relative;
+    z-index: 7;
 }
+
+.about_img {
+    position: absolute;
+    width: 25%;
+    right: -30%;
+    transform: rotate(42deg);
+}
+
+.about_img img {
+    transform-origin: center bottom;
+    animation: fuwafuwa 4s linear infinite;
+    vertical-align: middle;
+    border-style: none;
+}
+
+.fuwafuwa {
+    /* アニメーションの名前 */
+    animation-name: fuwafuwa;
+    /* アニメーションの１回分の長さ */
+    animation-duration: 1.5s;
+    /* アニメーションの回数 */
+    animation-iteration-count: infinite;
+    /* アニメーションの進行具合 */
+    animation-timing-function: ease-in-out;
+    /* アニメーション再生の向き */
+    animation-direction: alternate;
+}
+
+/* アニメーションの設定 */
+@keyframes fuwafuwa {
+
+    /* 開始地点 */
+    0% {
+        /* Y軸0px */
+        transform: translateY(0);
+    }
+
+    /* 終了地点 */
+    100% {
+        /* Y軸50px */
+        transform: translateY(50px);
+    }
+}
+
+
+
 
 .model_box {
     max-width: 60%;
@@ -100,8 +148,8 @@ a {
 
 .model_spot_img {
     width: 70%;
-
 }
+
 
 @media screen and (max-width:1100px) {
     .model_inner {
@@ -115,12 +163,14 @@ a {
 
 }
 
+.course_title {
+    font-size: 20px;
+    margin: 5px;
+}
+
 @media screen and (max-width:760px) {
 
-    .course_title {
-        font-size: 20px;
-        margin: 5px;
-    }
+
 
     .model_box {
         max-width: 80%;
