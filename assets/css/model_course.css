@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+.hidden {
+    overflow-x: hidden;
+}
+
 a {
     color: black;
 }
@@ -18,10 +22,6 @@ a {
     margin: 0 auto;
     text-align: center;
     position: relative;
-    z-index: 15;
-}
-
-.model_body_text {
     z-index: 15;
 }
 
@@ -60,11 +60,9 @@ a {
 
 .jump {
     animation-name: jump;
-    width: 128px;
     animation-duration: .6s;
     width: 20%;
     position: absolute;
-    left: 10%;
     top: 50%;
 }
 
@@ -193,7 +191,7 @@ a {
     }
 
     .jump {
-        left: 10%;
+        left: 0%;
         top: 45%;
     }
 
@@ -286,7 +284,7 @@ hr {
     box-shadow: 10px 14px 6px 2px rgba(223, 187, 120, 0.7);
     position: relative;
     display: grid;
-    grid-template-rows: subgrid;
+    /* grid-template-rows: subgrid; */
     grid-row: span 4;
     gap: 0;
 }

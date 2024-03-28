@@ -14,16 +14,15 @@
 }
 
 .right {
-  right: -35%;
+  right: -60%;
   top: -35%;
   width: 65%;
   position: absolute;
-  z-index: 10;
 }
 
 @media screen and (max-width:500px) {
   .right {
-    right: -30%;
+    right: -55%;
   }
 
   .right img {
