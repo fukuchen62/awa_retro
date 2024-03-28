@@ -37,6 +37,10 @@ a {
 .tag {
   margin-right: 3rem;
 }
+.slide img {
+  width: 400px;
+  height: 300px;
+}
 
 .model_inner {
   width: 50%;
@@ -62,9 +66,10 @@ a {
 }
 
 .model_body {
-  width: 60%;
+  width: 70%;
   right: 4rem;
-  margin: 0rem auto;
+  margin: 1rem 1rem;
+  text-align: left;
 }
 
 .model_spot_contanier {
@@ -114,7 +119,7 @@ a {
   width: 70%;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1032px) {
   .model_inner {
     width: 90%;
     white-space: normal;
@@ -144,7 +149,7 @@ a {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .model_spot_contanier {
     display: block;
   }
@@ -227,8 +232,8 @@ hr {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 400px;
-  height: 300px;
+  width: auto;
+  height: auto;
   opacity: 0;
   animation: slideshow 24s linear infinite;
   object-fit: cover;
