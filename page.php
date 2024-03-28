@@ -8,25 +8,17 @@ get_header();
     <?php while (have_posts()) : ?>
         <?php the_post(); ?>
 
-        <main>
-            <section class="section">
-                <div class="section_inner">
-                    <div class="section_header">
-                        <h2 class="heading heading-primary">
-                            <span><?php the_title(); ?></span><?php echo strtoupper($post->post_name); ?>
-                        </h2>
-                    </div>
+        <!-- メイン ================== -->
+        <main id="contact_main" class="contact_main">
 
-                    <div class="section_body">
-                        <div class="content">
+            <!-- お問い合わせフォーム -->
+            <div class="contact_form_container">
 
-                            <!-- 固定ページの中身を読み込ンで出力 -->
-                            <?php the_content(); ?>
+                <!-- 固定ページの中身を読み込ンで出力 -->
+                <?php the_content(); ?>
 
-                        </div>
-                    </div>
-                </div>
-            </section>
+            </div>
+
         </main>
 
         <!-- WordPress ループの終了 -->

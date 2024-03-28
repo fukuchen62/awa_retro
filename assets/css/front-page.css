@@ -28,7 +28,7 @@ body {
 .container {
     width: 100%;
     height: 100%;
-    background-color: #ffe49f;
+    /* background-color: #ffe49f; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,9 +52,9 @@ body {
 }
 
 /* 背景橙付与 */
-.bgc_secthion_y {
+/* .bgc_secthion_y {
     background-color: #ffd771;
-}
+} */
 
 /* 背景白付与 */
 .bgc_secthion_w {
@@ -193,7 +193,7 @@ body {
 }
 
 .top_look_box {
-    width: 100;
+    width: 100%;
     height: 300px;
     display: flex;
     justify-content: flex-end;
@@ -302,7 +302,7 @@ body {
 }
 
 .template_look_box {
-    width: 100;
+    width: 100%;
     height: 300px;
     display: flex;
     justify-content: flex-end;
@@ -332,8 +332,7 @@ body {
 
 /* モデルコースーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
 .model_box {
-    width: 100%;
-    height: 100%;
+    margin: 100px 0 50px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -343,20 +342,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    margin-top: 40px;
-    margin-bottom: 40px;
 }
 
 .model_box_list_item {
     border: dashed 2px;
-    padding: 20px 40px 20px 40px;
-    width: 30%;
-    margin-right: 40px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-    background-color: #ffe3b5;
+    background-color: #ffe49f;
+    height: 100px;
+    width: 300px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
 }
 
 /* ギャラリーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
@@ -377,6 +374,7 @@ body {
 
 /* インスタグラムーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー */
 .insta_box {
+    margin-top: 20px;
     width: 100%;
     height: 100%;
     display: flex;
@@ -419,7 +417,7 @@ body {
 
 
 /* レスポンシブ */
-@media screen and (max-width: 850px) {}
+/* @media screen and (max-width: 850px) {} */
 
 @media screen and (max-width: 760px) {
     h2 {
@@ -440,7 +438,7 @@ body {
     }
 
     .template_section_box_text {
-        padding-top: 23%;
+        padding-top: 15%;
     }
 
     .top_text_box_inner p {
@@ -467,20 +465,10 @@ body {
     }
 
     .model_box_list {
-        display: block;
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
-
-    .model_box_list_item {
-        border: dashed 2px;
-        padding: 20px 40px 20px 40px;
-        width: 100%;
-        margin-right: 40px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        text-align: center;
-        background-color: #ffe3b5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
     .insta_box_data_item {
@@ -491,4 +479,10 @@ body {
         margin-bottom: 5px;
     }
 
+}
+
+@media screen and (max-width: 400px) {
+    .template_section_box_text {
+        padding-top: 23%;
+    }
 }

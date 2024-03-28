@@ -1,28 +1,36 @@
-<!-- header.phpを読み込む -->
-<?php
-get_header();
-?>
+<?php get_header(); ?>
 
-<main>
-  <section class="section">
-    <div class="section_inner">
-      <div class="section_header">
-        <h2 class="heading heading-primary"><span>エラー</span>404 Not Found</h2>
+<!-- メイン ================== -->
+<main id="page404_main" class="page404_main">
+
+  <!-- お店の詳細エリア ========================-->
+  <section id="page404_container" class="page404_container">
+
+    <div class="page404_box">
+      <h2>
+        <span>404 </span>
+        <span>Not Found</span>
+      </h2>
+
+      <p>お探しのページは見つかりませんでした。</p>
+
+      <a href="<?php echo home_url(); ?>">トップページに戻る</a>
+
+
+      <!-- 背景画像 -->
+      <div class="p404_bg1">
+        <img src="<?php echo get_template_directory_uri() ?>/assets/images/404/404_bg1.png" alt="404背景画像1">
+      </div>
+      <div class="p404_bg2">
+        <img src="<?php echo get_template_directory_uri() ?>/assets/images/404/404_bg2.png" alt="404背景画像2">
       </div>
 
-      <div class="section_body">
-        <div class="content">
 
-          <p>お探しのページが見つかりませんでした。</p>
-          <p>申し訳ございませんが、<a href="<?php echo home_url('/'); ?>">こちらのリンク</a>からトップページにお戻りください。</p>
-
-        </div>
-      </div>
     </div>
   </section>
+
 </main>
 
-<!-- footer.phpを読み込む -->
-<?php
-get_footer();
-?>
+
+
+<?php get_footer(); ?>

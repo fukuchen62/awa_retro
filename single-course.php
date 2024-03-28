@@ -13,9 +13,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@700&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@700&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -144,7 +142,7 @@
         <main>
             <section class="title">
                 <div class="title_box model">
-                    <h2>モデルコース</h2>
+                    <h2>モデルコース1</h2>
                 </div>
                 <div class="model_body_textbox">
                     <p class="model_body_text">
@@ -158,12 +156,6 @@
                         心も体も幸せな気持ちでまけまけいっぱいになるんじょ！！<br>
                         ほないってらっしゃい<br>
                     </p>
-<<<<<<< HEAD
-                    <span class="about_img">
-                        <img src="../uploads/dummy_pg.png" alt="img画像">
-                    </span>
-=======
->>>>>>> 883586e43542f12c864a26fdbf48f12b997073ee
                 </div>
             </section>
 
@@ -178,8 +170,7 @@
                 <div class="model_time ">
                     <div class="model_box am">
                         <div class="model_inner">
-                            <p><span class="model_inner_time">9:00～10:00</span><span
-                                    class="model_inner_body">森珈琲おいしいでモーニング</span></p>
+                            <p><span class="model_inner_time">9:00～10:00</span><span class="model_inner_body">森珈琲おいしいでモーニング</span></p>
                         </div>
                         <div class="model_spot_contanier">
 
@@ -212,8 +203,7 @@
                 <div class="model_time ">
                     <div class="model_box tag">
                         <div class="model_inner">
-                            <p><span class="model_inner_time">10:30～11:00</span><span
-                                    class="model_inner_body">ひょうたん島クルーズ</span></p>
+                            <p><span class="model_inner_time">10:30～11:00</span><span class="model_inner_body">ひょうたん島クルーズ</span></p>
                         </div>
                         <div class="model_spot_contanier">
 
@@ -278,8 +268,7 @@
                 <div class="model_time ">
                     <div class="model_box tag">
                         <div class="model_inner">
-                            <p><span class="model_inner_time">13:30～15:00</span><span
-                                    class="model_inner_body">眉山（ケーブル）・阿波踊り見学</span></p>
+                            <p><span class="model_inner_time">13:30～15:00</span><span class="model_inner_body">眉山（ケーブル）・阿波踊り見学</span></p>
                         </div>
                         <div class="model_spot_contanier">
 
