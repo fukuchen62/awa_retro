@@ -13,6 +13,49 @@
     } */
 }
 
+.about_img {
+  position: absolute;
+  width: 25%;
+  right: -30%;
+  transform: rotate(42deg);
+}
+
+.about_img img {
+  transform-origin: center bottom;
+  animation: fuwafuwa 4s linear infinite;
+  vertical-align: middle;
+  border-style: none;
+}
+
+.fuwafuwa {
+  /* アニメーションの名前 */
+  animation-name: fuwafuwa;
+  /* アニメーションの１回分の長さ */
+  animation-duration: 1.5s;
+  /* アニメーションの回数 */
+  animation-iteration-count: infinite;
+  /* アニメーションの進行具合 */
+  animation-timing-function: ease-in-out;
+  /* アニメーション再生の向き */
+  animation-direction: alternate;
+}
+
+/* アニメーションの設定 */
+@keyframes fuwafuwa {
+
+  /* 開始地点 */
+  0% {
+    /* Y軸0px */
+    transform: translateY(0);
+  }
+
+  /* 終了地点 */
+  100% {
+    /* Y軸50px */
+    transform: translateY(50px);
+  }
+}
+
 @media screen and (max-width: 400px) {
   .colamn_card {
     transform: scale(0.85);
@@ -31,7 +74,6 @@ body {
   background-repeat: repeat;
   position: relative;
   z-index: 5;
-
 }
 
 /* .header_image {
