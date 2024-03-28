@@ -14,7 +14,7 @@
                 <img src="<?php echo get_template_directory_uri() ?>/assets/images/detail/food_detail_bg1.PNG" alt="背景画像1">
             </div>
 
-            <h2 class="detail_title"><?php the_field('restaurant_name'); ?></h2>
+            <h2 class="detail_title"><?php the_title(); ?></h2>
 
             <!-- お気に入り登録ボタン -->
             <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
@@ -115,7 +115,7 @@
                 <!-- img & おすすめテキスト -->
                 <div class="shop_point_content">
                     <?php
-                    $shop = get_field('menu_pic1');
+                    $shop = get_field('shop_pic1');
                     $pic_url5 = $shop['sizes']['medium'];
                     ?>
                     <div class="shop_point_item">
