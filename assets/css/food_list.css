@@ -1,5 +1,4 @@
 @charset "utf-8";
-/* ページ全体 */
 
 body {
     background-image: url(../images/food_list/back_img.jpg);
@@ -39,13 +38,11 @@ body {
     background-position: center center;
 }
 
-.title_box_img {
-    img {
-        margin-top: 20px;
-        max-width: 200px;
-        max-height: 80px;
-        transform: rotate(30deg);
-    }
+.title_box_img img {
+    margin-top: 20px;
+    max-width: 200px;
+    max-height: 80px;
+    transform: rotate(30deg);
 }
 
 /* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーータイトル */
@@ -65,13 +62,10 @@ body {
     padding: 0;
 }
 
-.explanation_box {
-    img {
-        margin-top: 20px;
-        max-width: 200px;
-        max-height: 200px;
-        /* transform: rotate(30deg); */
-    }
+.explanation_box img {
+    margin-top: 20px;
+    max-width: 200px;
+    max-height: 200px;
 }
 
 /* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーページ解説 */
