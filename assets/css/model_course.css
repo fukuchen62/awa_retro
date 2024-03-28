@@ -18,53 +18,30 @@ a {
     margin: 0 auto;
     text-align: center;
     position: relative;
-    z-index: 7;
 }
 
-.about_img {
-    position: absolute;
-    width: 25%;
-    right: -30%;
-    transform: rotate(42deg);
-}
-
-.about_img img {
-    transform-origin: center bottom;
-    animation: fuwafuwa 4s linear infinite;
-    vertical-align: middle;
-    border-style: none;
-}
-
-.fuwafuwa {
-    /* アニメーションの名前 */
-    animation-name: fuwafuwa;
-    /* アニメーションの１回分の長さ */
-    animation-duration: 1.5s;
-    /* アニメーションの回数 */
-    animation-iteration-count: infinite;
-    /* アニメーションの進行具合 */
+.animation {
     animation-timing-function: ease-in-out;
-    /* アニメーション再生の向き */
+    animation-iteration-count: infinite;
     animation-direction: alternate;
+    animation-duration: 1.5s;
 }
 
-/* アニメーションの設定 */
-@keyframes fuwafuwa {
+.keyframe3 {
+    animation-name: anim_s;
+    transform: rotate(30deg);
+    animation-duration: 5s;
+}
 
-    /* 開始地点 */
-    0% {
-        /* Y軸0px */
-        transform: translateY(0);
+@keyframes anim_s {
+    50% {
+        transform: rotate(-30deg);
     }
 
-    /* 終了地点 */
     100% {
-        /* Y軸50px */
-        transform: translateY(50px);
+        transform: rotate(30deg);
     }
 }
-
-
 
 
 .model_box {
