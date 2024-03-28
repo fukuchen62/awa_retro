@@ -7,6 +7,7 @@ img {
 
 .front-page_body {
     background-color: #ffe49f;
+    overflow-x: hidden;
 }
 
 /* テンプレート */
@@ -74,6 +75,10 @@ img {
     transform: scale(0.9);
 }
 
+.front-page_hover_link:hover {
+    color: #028391;
+}
+
 /* セクションフラッグ */
 .front-page_red_section {
     background-image: url(../images/front_page/title-flag01.png);
@@ -86,6 +91,17 @@ img {
 }
 
 /* ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーセクションフラッグ */
+
+/* TOP画像 */
+.front-page_top_img_box{
+    margin-top: 100px;
+    width: 100%;
+    height: 80vh;
+    border: #181818;
+    background-color: #ffffff;
+    text-align: center;
+}
+/* TOP画像 */
 
 /* セクション１－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－－ */
 .front-page_top_title_box {
@@ -205,7 +221,7 @@ img {
 .front-page_deco_01 {
     width: 150px;
     height: 350px;
-    top: 350px;
+    top: 1080px;
     left: -20px;
     position: absolute;
     z-index: 9;
@@ -215,7 +231,7 @@ img {
 .front-page_deco_02 {
     width: 350px;
     height: 250px;
-    top: 600px;
+    top: 1330px;
     left: -20px;
     position: absolute;
     z-index: 8;
@@ -225,7 +241,7 @@ img {
 .front-page_deco_03 {
     width: 150px;
     height: 350px;
-    top: 350px;
+    top: 1080px;
     right: 20px;
     position: absolute;
     z-index: 9;
@@ -235,7 +251,7 @@ img {
 .front-page_deco_04 {
     width: 350px;
     height: 250px;
-    top: 600px;
+    top: 1330px;
     right: 20px;
     position: absolute;
     z-index: 8;
