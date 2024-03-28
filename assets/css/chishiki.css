@@ -19,10 +19,9 @@ a {
   margin: 0 auto;
 }
 
-.model_time {
+/* .model_time {
   display: flex;
-  flex-direction: row-reverse;
-}
+} */
 
 .model_body_textbox {
   width: 60%;
@@ -45,17 +44,21 @@ a {
   white-space: nowrap;
 }
 
-.model_inner_time {
+/* .model_inner_time {
   padding: 0.8rem 1.5rem 0.8rem 0.8rem;
   background-color: gray;
   color: #fff;
   box-shadow: 8px 10px 13px 0px rgba(0, 0, 0, 0.25);
-}
+} */
 
 .model_inner_body {
-  background-color: #fff;
+  /* background-color: #fff;
   padding: 0.8rem 2rem 0.8rem 2rem;
-  box-shadow: 8px 10px 13px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 8px 10px 13px 0px rgba(0, 0, 0, 0.25); */
+  font-size: 42px;
+  font-weight: bold;
+  font-family: "Kaisei Opti", serif;
+  text-align: center;
 }
 
 .model_body {
